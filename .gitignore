@@ -1,8 +1,6 @@
-# Ignore generated plot images
-*.png
-
-# Ignore outputs folder with generated plots
-/outputs/
+# Previously we ignored generated PNGs and the outputs folder.
+# PNG plot files are now kept in version control on request, so those
+# ignore patterns were removed.
 
 # Ignore any other commonly-generated artifacts
 # (keep PDFs tracked; removed `*.pdf` to allow report PDFs to be committed)

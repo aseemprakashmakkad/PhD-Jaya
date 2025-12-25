@@ -19,7 +19,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-IN_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/20251214-ScalesData-Combined_ver0.7-Cleaned.csv')
+IN_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-Cleaned.csv')
 OUT_PATH = IN_PATH.parent / (IN_PATH.stem + '-IncomeNormalized' + IN_PATH.suffix)
 
 if not IN_PATH.exists():

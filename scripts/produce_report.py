@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_pdf import PdfPages
 
-CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv')
+CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv')
 OUT_DIR = CSV.parent / 'outputs' / 'plots'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 PDF_OUT = CSV.parent / 'scales_plots_report.pdf'
@@ -98,14 +98,32 @@ for col in flagged_numeric:
     outliers = ser[(ser < lower) | (ser > upper)]
     n_out = int(outliers.count())
     pct_out = n_out / n if n>0 else 0
+    # compute skewness
+    skewness = float(ser.skew()) if n>2 else 0.0
     skew_note = ''
-    if mean - median > 0.5 * std:
-        skew_note = 'Distribution appears right-skewed.'
-    elif median - mean > 0.5 * std:
-        skew_note = 'Distribution appears left-skewed.'
+    if skewness > 0.8:
+        skew_note = 'Strong right skew (consider log or Box-Cox transform).'
+    elif skewness > 0.3:
+        skew_note = 'Moderate right skew (consider transform).'
+    elif skewness < -0.8:
+        skew_note = 'Strong left skew (consider reflection + transform).'
+    elif skewness < -0.3:
+        skew_note = 'Moderate left skew.'
+
+    # suggest outlier handling
+    if pct_out >= 0.05:
+        outlier_sugg = 'High proportion of outliers — consider inspection, winsorizing, or robust methods.'
+    elif pct_out >= 0.01:
+        outlier_sugg = 'Some outliers present — consider trimming or robust estimators.'
+    else:
+        outlier_sugg = 'Few outliers — standard methods likely OK.'
+
     # Compose description
-    desc = (f'Count={n}; mean={mean:.2f}; median={median:.2f}; std={std:.2f}; '
-            f'min={mn:.2f}; max={mx:.2f}; outliers={n_out} ({pct_out:.1%}). {skew_note}')
+    desc = (
+        f'Count={n}; mean={mean:.2f}; median={median:.2f}; std={std:.2f}; '
+        f'min={mn:.2f}; max={mx:.2f}; outliers={n_out} ({pct_out:.1%}). '
+        f'Skewness={skewness:.2f}. {skew_note} {outlier_sugg}'
+    )
 
     fig, ax = plt.subplots(figsize=(8,5))
     sns.histplot(ser, kde=True, ax=ax)
@@ -132,7 +150,7 @@ for col in flagged_numeric:
     pp.savefig()
     plt.close(fig)
 
-# Categorical plots: choose top categorical columns with manageable cardinality
+    # Categorical plots: choose top categorical columns with manageable cardinality
 cat_to_plot = []
 for col in cat:
     nunique = df[col].nunique(dropna=True)
@@ -151,8 +169,29 @@ for col in cat_to_plot:
     plt.xlabel('Count')
     plt.ylabel(col)
     plt.tight_layout()
+    # compose categorical description: top categories and %
+    total = int(ser.shape[0])
+    lines = []
+    for idx, (k,v) in enumerate(vc.items()):
+        pct = v / total if total>0 else 0
+        lines.append(f'{k}: {v} ({pct:.1%})')
+    # importance note
+    top_pct = vc.iloc[0] / total if total>0 and len(vc)>0 else 0
+    if top_pct > 0.8:
+        importance = 'Single category dominates — low variability.'
+    elif top_pct > 0.4:
+        importance = 'Top category is sizeable — consider grouping smaller categories.'
+    else:
+        importance = 'Healthy spread across categories.'
+
+    desc_cat = ' | '.join(lines)
+    desc_full = f'Top categories: {desc_cat}. Note: {importance}'
+
     fname_bar = OUT_DIR / f'{sanitize(col)}_bar.png'
     plt.savefig(fname_bar)
+    # write description under the bar chart in the PDF
+    fig = plt.gcf()
+    fig.text(0.01, 0.02, '\n'.join(textwrap.wrap(desc_full, 200)), ha='left', va='bottom', fontsize=9)
     pp.savefig()
     plt.close()
 

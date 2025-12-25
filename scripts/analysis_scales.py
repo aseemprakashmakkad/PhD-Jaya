@@ -13,7 +13,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-CSV_PATH = sys.argv[1] if len(sys.argv) > 1 else "/home/pranav/PhD-Jaya/20251214-ScalesData-Combined_ver0.7-WorkingCopy.csv"
+CSV_PATH = sys.argv[1] if len(sys.argv) > 1 else "/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-WorkingCopy.csv"
 
 p = Path(CSV_PATH)
 if not p.exists():

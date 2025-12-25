@@ -1,5 +1,5 @@
-File analyzed: /home/pranav/PhD-Jaya/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
-Rows: 104  Columns: 75
+File analyzed: 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+Rows: 104  Columns: 71
 
 Columns with >20% missing values:
 
@@ -8,59 +8,51 @@ Columns with >20% missing values:
 
 Numeric columns summary (top issues):
 
- - Occupational & Relationship Consequences: mean=6.73, median=5.00, std=3.56, outliers=2 (1.9%)
+ - Occupational & Relationship Consequences with Internet Usage: mean=6.73, median=5.00, std=3.56, outliers=2 (1.9%)
 
- - Occupational & Relationship Consequences  (Wt. 0.10): mean=0.67, median=0.50, std=0.36, outliers=2 (1.9%)
+ - Occupational & Relationship Consequences  with Internet Usage Weighted Score: mean=0.67, median=0.50, std=0.36, outliers=2 (1.9%)
 
- - Emotional Support: mean=48.48, median=51.00, std=13.58, outliers=3 (2.9%)
+ - Emotional Support Score: mean=48.48, median=51.00, std=13.58, outliers=3 (2.9%)
 
  - Perceived Social Support TOTAL SCORE: mean=85.48, median=90.00, std=21.89, outliers=2 (1.9%)
 
- - Emotional Support - T Score: mean=44.11, median=48.29, std=17.00, outliers=8 (7.8%)
+ - Power Self Concept – Real Self Concept Score: mean=21.16, median=22.00, std=6.06, outliers=4 (3.9%)
 
- - Informational Support - T Score: mean=41.72, median=43.85, std=17.84, outliers=11 (10.7%)
+ - Power Self Concept –Ideal Self Concept Score: mean=24.08, median=26.00, std=6.29, outliers=6 (5.8%)
 
- - Instrumental Support - T Score: mean=44.28, median=47.50, std=17.18, outliers=9 (8.7%)
+ - Power Self Concept –Social Self Concept Score: mean=20.48, median=22.00, std=7.15, outliers=8 (7.8%)
 
- - Perceived Social Support TOTAL T SCORE: mean=41.54, median=47.41, std=20.62, outliers=16 (15.5%)
+ - Social Self Concept- Real Self Concept Score: mean=22.26, median=22.00, std=6.09, outliers=4 (3.9%)
 
- - Power Self Concept – Real Self Concept Total: mean=21.16, median=22.00, std=6.06, outliers=4 (3.9%)
+ - Social Self Concept- Ideal Self Concept Score: mean=23.59, median=25.00, std=7.06, outliers=8 (7.8%)
 
- - Power Self Concept –Ideal Self Concept Total: mean=24.08, median=26.00, std=6.29, outliers=6 (5.8%)
+ - Social Self Concept- Social Self Concept Score: mean=21.30, median=23.00, std=7.38, outliers=8 (7.8%)
 
- - Power Self Concept –Social Self Concept Total: mean=20.48, median=22.00, std=7.15, outliers=8 (7.8%)
+ - Ability Self Concept- Real Self Concept Score: mean=21.82, median=22.00, std=6.38, outliers=3 (2.9%)
 
- - Social Self Concept- Real Self Concept Total.1: mean=22.26, median=22.00, std=6.09, outliers=4 (3.9%)
+ - Ability Self Concept- Ideal Self Concept Score: mean=23.69, median=26.00, std=7.16, outliers=6 (5.8%)
 
- - Social Self Concept- Ideal Self Concept Total.1: mean=23.59, median=25.00, std=7.06, outliers=8 (7.8%)
+ - Ability Self Concept- Social Self Concept Score: mean=21.03, median=21.00, std=7.06, outliers=8 (7.8%)
 
- - Social Self Concept- Social Self Concept Total.1: mean=21.30, median=23.00, std=7.38, outliers=8 (7.8%)
+ - Physical Self Concept - Real Self Concept Score: mean=21.63, median=21.00, std=6.04, outliers=3 (2.9%)
 
- - Ability Self Concept- Real Self Concept Total.2: mean=21.82, median=22.00, std=6.38, outliers=3 (2.9%)
+ - Physical Self Concept - Ideal Self Concept Score: mean=23.92, median=26.00, std=6.91, outliers=6 (5.8%)
 
- - Ability Self Concept- Ideal Self Concept Total.2: mean=23.69, median=26.00, std=7.16, outliers=6 (5.8%)
+ - Physical Self Concept – Social Self Concept Score: mean=20.76, median=21.00, std=7.36, outliers=8 (7.8%)
 
- - Ability Self Concept- Social Self Concept Total.2: mean=21.03, median=21.00, std=7.06, outliers=8 (7.8%)
+ - Psychological Self Concept- Real Self Concept Score: mean=52.83, median=55.00, std=14.39, outliers=4 (3.9%)
 
- - Physical Self Concept - Real Self Concept Total.3: mean=21.63, median=21.00, std=6.04, outliers=3 (2.9%)
+ - Psychological Self Concept -  Ideal Self Concept Score: mean=57.09, median=62.00, std=17.05, outliers=6 (5.8%)
 
- - Physical Self Concept - Ideal Self Concept Total.3: mean=23.92, median=26.00, std=6.91, outliers=6 (5.8%)
+ - Psychological Self Concept- Social Self Concept Score: mean=50.32, median=54.00, std=17.68, outliers=8 (7.8%)
 
- - Physical Self Concept – Social Self Concept Total.3: mean=20.76, median=21.00, std=7.36, outliers=8 (7.8%)
+ - Real Self Concept Total Score: mean=139.70, median=138.00, std=37.15, outliers=3 (2.9%)
 
- - Psychological Self Concept- Real Self Concept Total.4: mean=52.83, median=55.00, std=14.39, outliers=4 (3.9%)
+ - Ideal Self Concept Total Score: mean=152.37, median=164.00, std=43.52, outliers=6 (5.8%)
 
- - Psychological Self Concept -  Ideal Self Concept Total.4: mean=57.09, median=62.00, std=17.05, outliers=6 (5.8%)
+ - Social Self Concept Total Score: mean=133.88, median=140.00, std=45.44, outliers=10 (9.7%)
 
- - Psychological Self Concept- Social Self Concept Total.4: mean=50.32, median=54.00, std=17.68, outliers=8 (7.8%)
-
- - Real Self Concept Total: mean=139.70, median=138.00, std=37.15, outliers=3 (2.9%)
-
- - Ideal Self Concept Total: mean=152.37, median=164.00, std=43.52, outliers=6 (5.8%)
-
- - Social Self Concept Total: mean=133.88, median=140.00, std=45.44, outliers=10 (9.7%)
-
- - SOCIAL STRESS Total: mean=55.36, median=58.00, std=16.11, outliers=9 (8.7%)
+ - PERCEIVED SOCIAL STRESS Total Score: mean=55.36, median=58.00, std=16.11, outliers=9 (8.7%)
 
 
 Top recommended next steps:

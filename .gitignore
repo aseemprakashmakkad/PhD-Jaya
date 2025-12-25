@@ -5,4 +5,4 @@
 /outputs/
 
 # Ignore any other commonly-generated artifacts
-*.pdf
+# (keep PDFs tracked; removed `*.pdf` to allow report PDFs to be committed)

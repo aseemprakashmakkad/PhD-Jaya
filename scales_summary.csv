@@ -1,0 +1,76 @@
+column,dtype,n_missing,pct_missing,n_unique,sample_values
+Name,object,1,0.009615384615384616,103,muskan | Ablisha | Manya Tayal
+Age (IN YEARS),float64,4,0.038461538461538464,34,25.0 | 35.0 | 40.0
+Marital Status,object,2,0.019230769230769232,2,Single | Married | Married
+Highest level of education completed,object,3,0.028846153846153848,6,Postgraduate degree | Other (please specify) | Postgraduate degree
+Current Employment Status,object,3,0.028846153846153848,7,Student | Employed full-time | Employed full-time
+Number of children,object,61,0.5865384615384616,4,3 | 2 | 2
+Type of family structure,object,1,0.009615384615384616,2,Nuclear | Nuclear | Joint
+Monthly household income,object,6,0.057692307692307696,5,"10,000 - 30,000 INR per month | 50,000 - 100,000 INR per month | 50,000 - 100,000 INR per month"
+Access to healthcare services,object,7,0.0673076923076923,3,Somewhat accessible | Easily accessible | Easily accessible
+Overall health status,object,1,0.009615384615384616,4,Good | Fair | Excellent
+Are you covered by health insurance?,object,2,0.019230769230769232,3,No | Yes | Yes
+Participation in community or social activities,object,2,0.019230769230769232,3,Not involved | Occasionally involved | Actively involved
+Functional Impairment,float64,1,0.009615384615384616,23,15.0 | 2.0 | 2.0
+Withdrawl,float64,1,0.009615384615384616,40,19.0 | 11.0 | 11.0
+Occupational & Relationship Consequences,float64,1,0.009615384615384616,17,6.0 | 4.0 | 5.0
+Compulsive Behaviour,float64,1,0.009615384615384616,14,8.0 | 7.0 | 4.0
+Obsession with Internet,float64,1,0.009615384615384616,14,6.0 | 6.0 | 5.0
+Internet as a Source of Recreation,float64,1,0.009615384615384616,11,4.0 | 3.0 | 4.0
+Enhanced Socialization,float64,1,0.009615384615384616,13,10.0 | 3.0 | 4.0
+Perceived Control of Internet Use,float64,1,0.009615384615384616,10,4.0 | 0.0 | 2.0
+Functional Impairment  (Wt. 0.14),float64,1,0.009615384615384616,23,2.1 | 0.28 | 0.28
+Withdrawl (Wt. 0.33),float64,1,0.009615384615384616,40,6.27 | 3.63 | 3.63
+Occupational & Relationship Consequences  (Wt. 0.10),float64,1,0.009615384615384616,17,0.6 | 0.4 | 0.5
+Compulsive Behaviour  (Wt. 0.08),float64,1,0.009615384615384616,14,0.64 | 0.56 | 0.32
+Obsession with Internet (Wt. 0.06),float64,1,0.009615384615384616,14,0.36 | 0.36 | 0.3
+Internet as a Source of Recreation (Wt. 0.09),float64,1,0.009615384615384616,11,0.36 | 0.27 | 0.36
+Enhanced Socialization  (Wt. 0.06),float64,1,0.009615384615384616,13,0.6 | 0.18 | 0.24
+Perceived Control of Internet Use  (Wt. 0.06),float64,1,0.009615384615384616,10,0.24 | 0.0 | 0.12
+Internet Usage TOTAL Score,float64,1,0.009615384615384616,95,11.17 | 5.68 | 5.75
+Functional Impairment  (Wt. 0.14).1,object,1,0.009615384615384616,4,Low | Low | Low
+Withdrawl (Wt. 0.33).1,object,1,0.009615384615384616,4,Low | Low | Low
+Occupational & Relationship Consequences  (Wt. 0.10).1,object,1,0.009615384615384616,4,Low | Low | Low
+Compulsive Behaviour  (Wt. 0.08).1,object,1,0.009615384615384616,4,Low | Mild | Low
+Obsession with Internet (Wt. 0.06).1,object,1,0.009615384615384616,4,Low | Low | Low
+Internet as a Source of Recreation (Wt. 0.09).1,object,1,0.009615384615384616,4,Low | Low | Low
+Enhanced Socialization  (Wt. 0.06).1,object,1,0.009615384615384616,4,Severe | Low | Low
+Perceived Control of Internet Use  (Wt. 0.06).1,object,1,0.009615384615384616,4,Low | Low | Low
+Internet Usage TOTAL Category.1,object,1,0.009615384615384616,4,Low | Low | Low
+Emotional Support,float64,1,0.009615384615384616,44,41.0 | 0.0 | 55.0
+Informational Support,float64,1,0.009615384615384616,20,7.0 | 0.0 | 20.0
+Instrumental Support,float64,1,0.009615384615384616,25,23.0 | 0.0 | 27.0
+Perceived Social Support TOTAL SCORE,float64,1,0.009615384615384616,50,71.0 | 0.0 | 102.0
+Emotional Support - T Score,float64,1,0.009615384615384616,37,36.93 | 0.0 | 52.84
+Informational Support - T Score,float64,1,0.009615384615384616,16,0.0 | 0.0 | 60.3
+Instrumental Support - T Score,float64,1,0.009615384615384616,20,47.5 | 0.0 | 57.11
+Perceived Social Support TOTAL T SCORE,float64,1,0.009615384615384616,40,32.96 | 0.0 | 56.54
+Emotional Support - Rank,object,1,0.009615384615384616,5,Low | Very Low | Average
+Informational Support - Rank,object,1,0.009615384615384616,5,Very Low | Very Low | High
+Instrumental Support - Rank,object,1,0.009615384615384616,5,Average | Very Low | High
+Perceived Social Support TOTAL - Rank,object,1,0.009615384615384616,5,Low | Very Low | Average
+Power Self Concept – Real Self Concept Total,float64,1,0.009615384615384616,24,20.0 | 0.0 | 9.0
+Power Self Concept –Ideal Self Concept Total,float64,1,0.009615384615384616,20,28.0 | 0.0 | 18.0
+Power Self Concept –Social Self Concept Total,float64,1,0.009615384615384616,24,18.0 | 0.0 | 0.0
+Social Self Concept- Real Self Concept Total.1,float64,1,0.009615384615384616,22,23.0 | 0.0 | 12.0
+Social Self Concept- Ideal Self Concept Total.1,float64,1,0.009615384615384616,23,26.0 | 0.0 | 12.0
+Social Self Concept- Social Self Concept Total.1,float64,1,0.009615384615384616,21,17.0 | 0.0 | 0.0
+Ability Self Concept- Real Self Concept Total.2,float64,1,0.009615384615384616,22,23.0 | 0.0 | 9.0
+Ability Self Concept- Ideal Self Concept Total.2,float64,1,0.009615384615384616,23,29.0 | 0.0 | 12.0
+Ability Self Concept- Social Self Concept Total.2,float64,1,0.009615384615384616,23,24.0 | 0.0 | 0.0
+Physical Self Concept - Real Self Concept Total.3,float64,1,0.009615384615384616,23,22.0 | 0.0 | 8.0
+Physical Self Concept - Ideal Self Concept Total.3,float64,1,0.009615384615384616,20,28.0 | 0.0 | 15.0
+Physical Self Concept – Social Self Concept Total.3,float64,1,0.009615384615384616,20,22.0 | 0.0 | 0.0
+Psychological Self Concept- Real Self Concept Total.4,float64,1,0.009615384615384616,42,46.0 | 0.0 | 33.0
+Psychological Self Concept -  Ideal Self Concept Total.4,float64,1,0.009615384615384616,37,63.0 | 0.0 | 24.0
+Psychological Self Concept- Social Self Concept Total.4,float64,1,0.009615384615384616,41,50.0 | 0.0 | 0.0
+Real Self Concept Total,float64,1,0.009615384615384616,58,134.0 | 0.0 | 71.0
+Ideal Self Concept Total,float64,1,0.009615384615384616,62,174.0 | 0.0 | 81.0
+Social Self Concept Total,float64,1,0.009615384615384616,66,131.0 | 0.0 | 0.0
+Real Self Concept Total Category,object,1,0.009615384615384616,3,AVERAGE | LOW | LOW
+Ideal Self Concept Total Category,object,1,0.009615384615384616,3,HIGH | LOW | LOW
+Social Self Concept Total Category,object,1,0.009615384615384616,3,AVERAGE | LOW | LOW
+SOCIAL STRESS Total,float64,1,0.009615384615384616,46,58.0 | 0.0 | 60.0
+SOCIAL STRESS CATEGORY,object,1,0.009615384615384616,3,AVERAGE | LOW | AVERAGE
+Monthly household income_midpoint_INR,float64,6,0.057692307692307696,5,20000.0 | 75000.0 | 75000.0
+Monthly household income_cat,object,0,0.0,6,Unknown | 10k-30k | 50k-100k

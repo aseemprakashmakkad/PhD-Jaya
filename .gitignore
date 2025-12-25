@@ -1,0 +1,8 @@
+# Ignore generated plot images
+*.png
+
+# Ignore outputs folder with generated plots
+/outputs/
+
+# Ignore any other commonly-generated artifacts
+*.pdf

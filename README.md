@@ -30,17 +30,29 @@ cd /home/pranav/PhD-Jaya
 python3 scripts/normalize_income.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned.csv
 ```
 
-2) Run analysis on the income-normalized CSV (this also writes an `-analysis-ready.csv` file that the report script consumes):
+2) Run analysis on the income-normalized CSV:
 
 ```bash
 python3 scripts/analysis_scales.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
 ```
 
-3) Produce plots and consolidated PDF report (consumes the `-analysis-ready.csv` file produced by the previous step):
+3) Produce plots and consolidated PDF report (from the normalized file):
 
 ```bash
-python3 scripts/produce_report.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-analysis-ready.csv
+python3 scripts/produce_report.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
 ```
+
+4) (Optional) Remove outliers and regenerate plots/PDF into a separate outputs folder:
+
+```bash
+python3 scripts/remove_outliers_and_regen.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+```
+
+This helper produces:
+
+- `InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.csv`
+- `InputData/outputs_nooutliers/plots/` (individual PNGs)
+- `InputData/scales_plots_report_nooutliers.pdf`
 
 Notes: if you omit the path argument for each script they will try to use the repository defaults in `InputData/` (the filenames shown above).
 

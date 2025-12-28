@@ -1,0 +1,5 @@
+{
+  "input": "InputData/20251214-ScalesData-Combined_ver0.7-Cleaned.csv",
+  "output": "InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv",
+  "n_rows": 104
+}

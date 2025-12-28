@@ -13,7 +13,8 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-CSV_PATH = sys.argv[1] if len(sys.argv) > 1 else "/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-WorkingCopy.csv"
+# By default analyze the Income-normalized file produced by `normalize_income.py`.
+CSV_PATH = sys.argv[1] if len(sys.argv) > 1 else "/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv"
 
 p = Path(CSV_PATH)
 if not p.exists():
@@ -153,7 +154,9 @@ report_lines.append(' 4) If multi-row header semantics are important (e.g. group
 # Write report
 report_path = p.parent / 'scales_analysis_report.txt'
 with report_path.open('w', encoding='utf-8') as fh:
+    # write the report lines and ensure the file ends with a newline
     fh.writelines('\n'.join(report_lines))
+    fh.write('\n')
 
 print('\n'.join(report_lines))
 print('\nSaved files:')
@@ -161,6 +164,15 @@ print(' -', p.parent / 'scales_summary.csv')
 print(' -', p.parent / 'numeric_stats.csv')
 print(' -', p.parent / 'categorical_summary.csv')
 print(' -', report_path)
+
+# Also write a lightweight CSV that is intended as the canonical input for plotting
+# (so that `produce_report.py` can consume a single known file).
+analysis_ready = p.parent / (p.stem + '-analysis-ready' + p.suffix)
+try:
+    df.to_csv(analysis_ready, index=False, encoding='utf-8')
+    print(' - analysis-ready CSV written to', analysis_ready)
+except Exception as _e:
+    print('Could not write analysis-ready CSV:', _e)
 
 # Exit cleanly
 sys.exit(0)

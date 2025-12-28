@@ -18,7 +18,19 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_pdf import PdfPages
 
-CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv')
+# Ensure figures and saved output use a white background so text placed
+# in the figure (e.g. footer/summary) remains visible in PDF viewers.
+plt.rcParams.update({
+    'figure.facecolor': 'white',
+    'axes.facecolor': 'white',
+    'savefig.facecolor': 'white'
+})
+
+# helper
+def sanitize(s):
+    return ''.join(c if c.isalnum() or c in (' ', '_', '-') else '_' for c in s).strip().replace(' ', '_')
+
+CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/home/pranav/PhD-Jaya/InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-analysis-ready.csv')
 OUT_DIR = CSV.parent / 'outputs' / 'plots'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 PDF_OUT = CSV.parent / 'scales_plots_report.pdf'
@@ -62,147 +74,143 @@ print('Flagged numeric columns:', flagged_numeric)
 
 # Prepare PDF
 pp = PdfPages(str(PDF_OUT))
-# Title page
-plt.figure(figsize=(11.7,8.3))
-plt.axis('off')
-plt.text(0.5, 0.7, 'Scales Data EDA Report', ha='center', va='center', fontsize=20)
-plt.text(0.5, 0.6, f'File: {CSV.name}', ha='center', va='center', fontsize=10)
-plt.text(0.5, 0.55, f'Rows: {len(df)}  Columns: {len(df.columns)}', ha='center', va='center', fontsize=10)
-plt.text(0.05, 0.3, 'Notes:\n - Numeric flagged by simple IQR/outlier heuristics\n - Categorical plots limited to top categories', fontsize=9)
-pp.savefig()
-plt.close()
+# Title page (explicitly use a Figure so we can control facecolor)
+fig = plt.figure(figsize=(11.7,8.3), facecolor='white')
+ax = fig.add_subplot(111)
+ax.axis('off')
+fig.text(0.5, 0.7, 'Scales Data EDA Report', ha='center', va='center', fontsize=22)
+fig.text(0.5, 0.6, f'File: {CSV.name}', ha='center', va='center', fontsize=10)
+fig.text(0.5, 0.55, f'Rows: {len(df)}  Columns: {len(df.columns)}', ha='center', va='center', fontsize=10)
+fig.text(0.05, 0.3, 'Notes:\n - Numeric flagged by simple IQR/outlier heuristics\n - Categorical plots limited to top categories', fontsize=9)
+pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
+plt.close(fig)
+# Plot every column as its own page in the PDF
+import textwrap
 
-# helper
-def sanitize(s):
-    return ''.join(c if c.isalnum() or c in (' ', '_', '-') else '_' for c in s).strip().replace(' ', '_')
+all_columns = list(df.columns)
+print('Plotting all columns (count):', len(all_columns))
 
-# Numeric plots
-# Numeric plots
-for col in flagged_numeric:
-    ser = df[col].dropna()
-    if ser.empty:
-        continue
-    # Histogram with descriptive text below
-    import textwrap
-    n = int(ser.count())
-    mean = float(ser.mean())
-    median = float(ser.median())
-    std = float(ser.std())
-    mn = float(ser.min())
-    mx = float(ser.max())
-    q1 = float(ser.quantile(0.25))
-    q3 = float(ser.quantile(0.75))
-    iqr = q3 - q1
-    lower = q1 - 1.5 * iqr
-    upper = q3 + 1.5 * iqr
-    outliers = ser[(ser < lower) | (ser > upper)]
-    n_out = int(outliers.count())
-    pct_out = n_out / n if n>0 else 0
-    # compute skewness
-    skewness = float(ser.skew()) if n>2 else 0.0
-    skew_note = ''
-    if skewness > 0.8:
-        skew_note = 'Strong right skew (consider log or Box-Cox transform).'
-    elif skewness > 0.3:
-        skew_note = 'Moderate right skew (consider transform).'
-    elif skewness < -0.8:
-        skew_note = 'Strong left skew (consider reflection + transform).'
-    elif skewness < -0.3:
-        skew_note = 'Moderate left skew.'
+for col in all_columns:
+    ser = df[col]
+    # handle numeric columns: histogram + boxplot on one page
+    if pd.api.types.is_numeric_dtype(ser):
+        ser_clean = ser.dropna()
+        n = int(ser_clean.count()) if not ser_clean.empty else 0
+        mean = float(ser_clean.mean()) if n>0 else np.nan
+        median = float(ser_clean.median()) if n>0 else np.nan
+        std = float(ser_clean.std()) if n>0 else np.nan
+        mn = float(ser_clean.min()) if n>0 else np.nan
+        mx = float(ser_clean.max()) if n>0 else np.nan
+        q1 = float(ser_clean.quantile(0.25)) if n>0 else np.nan
+        q3 = float(ser_clean.quantile(0.75)) if n>0 else np.nan
+        iqr = q3 - q1 if n>0 else np.nan
+        lower = q1 - 1.5 * iqr if n>0 else np.nan
+        upper = q3 + 1.5 * iqr if n>0 else np.nan
+        outliers = ser_clean[(ser_clean < lower) | (ser_clean > upper)] if n>0 else ser_clean.iloc[0:0]
+        n_out = int(outliers.count())
+        pct_out = n_out / n if n>0 else 0
+        skewness = float(ser_clean.skew()) if n>2 else 0.0
+        skew_note = ''
+        if skewness > 0.8:
+            skew_note = 'Strong right skew (consider log or Box-Cox transform).'
+        elif skewness > 0.3:
+            skew_note = 'Moderate right skew (consider transform).'
+        elif skewness < -0.8:
+            skew_note = 'Strong left skew (consider reflection + transform).'
+        elif skewness < -0.3:
+            skew_note = 'Moderate left skew.'
 
-    # suggest outlier handling
-    if pct_out >= 0.05:
-        outlier_sugg = 'High proportion of outliers — consider inspection, winsorizing, or robust methods.'
-    elif pct_out >= 0.01:
-        outlier_sugg = 'Some outliers present — consider trimming or robust estimators.'
+        if pct_out >= 0.05:
+            outlier_sugg = 'High proportion of outliers — consider inspection, winsorizing, or robust methods.'
+        elif pct_out >= 0.01:
+            outlier_sugg = 'Some outliers present — consider trimming or robust estimators.'
+        else:
+            outlier_sugg = 'Few outliers — standard methods likely OK.'
+
+        # prepare formatted numeric strings (handle NaN)
+        mean_f = f"{mean:.2f}" if not np.isnan(mean) else "nan"
+        median_f = f"{median:.2f}" if not np.isnan(median) else "nan"
+        std_f = f"{std:.2f}" if not np.isnan(std) else "nan"
+        mn_f = f"{mn:.2f}" if not np.isnan(mn) else "nan"
+        mx_f = f"{mx:.2f}" if not np.isnan(mx) else "nan"
+        skew_f = f"{skewness:.2f}"
+
+        desc = (
+            f'Count={n}; mean={mean_f}; median={median_f}; std={std_f}; '
+            f'min={mn_f}; max={mx_f}; outliers={n_out} ({pct_out:.1%}). '
+            f'Skewness={skew_f}. {skew_note} {outlier_sugg}'
+        )
+
+        fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(8.5,11), facecolor='white', gridspec_kw={'height_ratios':[3,1]})
+        # histogram (top)
+        ax_hist = axes[0]
+        sns.histplot(ser_clean, kde=True, ax=ax_hist)
+        ax_hist.set_title(f'Histogram: {col}')
+        ax_hist.set_xlabel(col)
+        # boxplot (bottom)
+        ax_box = axes[1]
+        sns.boxplot(x=ser_clean, orient='h', ax=ax_box)
+        ax_box.set_title(f'Boxplot: {col}')
+        ax_box.set_xlabel('')
+
+        # description footer
+        wrapped = textwrap.fill(desc, 200)
+        fig.patch.set_facecolor('white')
+        fig.text(0.01, 0.02, wrapped, ha='left', va='bottom', fontsize=9)
+        plt.tight_layout(rect=[0,0.06,1,0.98])
+
+        # save individual images (optional, keep old filenames)
+        fname_hist = OUT_DIR / f'{sanitize(col)}_hist.png'
+        fname_box = OUT_DIR / f'{sanitize(col)}_box.png'
+        # save the combined page to PDF and also save the separate files
+        fig.savefig(fname_hist, bbox_inches='tight', facecolor=fig.get_facecolor())
+        # also save a box-only image for consistency
+        # create a separate small fig for the boxplot image
+        fig_box_small, axb = plt.subplots(figsize=(8,3), facecolor='white')
+        sns.boxplot(x=ser_clean, orient='h', ax=axb)
+        axb.set_title(f'Boxplot: {col}')
+        plt.tight_layout()
+        fig_box_small.savefig(fname_box, bbox_inches='tight', facecolor=fig_box_small.get_facecolor())
+        plt.close(fig_box_small)
+
+        pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
+        plt.close(fig)
+
     else:
-        outlier_sugg = 'Few outliers — standard methods likely OK.'
-
-    # Compose description
-    desc = (
-        f'Count={n}; mean={mean:.2f}; median={median:.2f}; std={std:.2f}; '
-        f'min={mn:.2f}; max={mx:.2f}; outliers={n_out} ({pct_out:.1%}). '
-        f'Skewness={skewness:.2f}. {skew_note} {outlier_sugg}'
-    )
-
-    fig, ax = plt.subplots(figsize=(8,5))
-    sns.histplot(ser, kde=True, ax=ax)
-    ax.set_title(f'Histogram: {col}')
-    ax.set_xlabel(col)
-    # add description as wrapped text below the plot area
-    wrapped = textwrap.fill(desc, 160)
-    fig.text(0.01, 0.02, wrapped, ha='left', va='bottom', fontsize=9)
-    plt.tight_layout(rect=[0,0.05,1,1])
-    fname_hist = OUT_DIR / f'{sanitize(col)}_hist.png'
-    fig.savefig(fname_hist)
-    pp.savefig()
-    plt.close(fig)
-
-    # Boxplot with descriptive text
-    fig, ax = plt.subplots(figsize=(8,3))
-    sns.boxplot(x=ser, orient='h', ax=ax)
-    ax.set_title(f'Boxplot: {col}')
-    wrapped_box = textwrap.fill('IQR-based outliers count: {} ({:.1%}). {}'.format(n_out, pct_out, skew_note), 160)
-    fig.text(0.01, 0.02, wrapped_box, ha='left', va='bottom', fontsize=9)
-    plt.tight_layout(rect=[0,0.05,1,1])
-    fname_box = OUT_DIR / f'{sanitize(col)}_box.png'
-    fig.savefig(fname_box)
-    pp.savefig()
-    plt.close(fig)
-
-    # Categorical plots: choose top categorical columns with manageable cardinality
-cat_to_plot = []
-for col in cat:
-    nunique = df[col].nunique(dropna=True)
-    if nunique <= 30 and nunique > 1:
-        cat_to_plot.append(col)
-# limit the number
-cat_to_plot = cat_to_plot[:20]
-print('Categorical columns plotted:', cat_to_plot)
-
-for col in cat_to_plot:
-    ser = df[col].fillna('<<MISSING>>')
-    vc = ser.value_counts().head(15)
-    plt.figure(figsize=(8,4))
-    sns.barplot(y=vc.index.astype(str), x=vc.values, palette='viridis')
-    plt.title(f'Value counts: {col}')
-    plt.xlabel('Count')
-    plt.ylabel(col)
-    plt.tight_layout()
-    # compose categorical description: top categories and %
-    total = int(ser.shape[0])
-    lines = []
-    for idx, (k,v) in enumerate(vc.items()):
-        pct = v / total if total>0 else 0
-        lines.append(f'{k}: {v} ({pct:.1%})')
-    # importance note
-    top_pct = vc.iloc[0] / total if total>0 and len(vc)>0 else 0
-    if top_pct > 0.8:
-        importance = 'Single category dominates — low variability.'
-    elif top_pct > 0.4:
-        importance = 'Top category is sizeable — consider grouping smaller categories.'
-    else:
-        importance = 'Healthy spread across categories.'
-
-    desc_cat = ' | '.join(lines)
-    desc_full = f'Top categories: {desc_cat}. Note: {importance}'
-
-    fname_bar = OUT_DIR / f'{sanitize(col)}_bar.png'
-    plt.savefig(fname_bar)
-    # write description under the bar chart in the PDF
-    fig = plt.gcf()
-    fig.text(0.01, 0.02, '\n'.join(textwrap.wrap(desc_full, 200)), ha='left', va='bottom', fontsize=9)
-    pp.savefig()
-    plt.close()
-
+        # categorical: bar chart per variable
+        ser_cat = ser.fillna('<<MISSING>>').astype(str)
+        vc = ser_cat.value_counts().head(50)
+        fig = plt.figure(figsize=(8.5,11), facecolor='white')
+        ax = fig.add_subplot(111)
+        sns.barplot(y=vc.index.astype(str), x=vc.values, palette='viridis', ax=ax)
+        ax.set_title(f'Value counts: {col}')
+        ax.set_xlabel('Count')
+        ax.set_ylabel(col)
+        total = int(ser_cat.shape[0])
+        lines = []
+        for k, v in vc.items():
+            pct = v / total if total>0 else 0
+            lines.append(f'{k}: {v} ({pct:.1%})')
+        top_pct = vc.iloc[0] / total if total>0 and len(vc)>0 else 0
+        if top_pct > 0.8:
+            importance = 'Single category dominates — low variability.'
+        elif top_pct > 0.4:
+            importance = 'Top category is sizeable — consider grouping smaller categories.'
+        else:
+            importance = 'Healthy spread across categories.'
+        desc_full = 'Top categories: ' + ' | '.join(lines) + f'. Note: {importance}'
+        fig.patch.set_facecolor('white')
+        fig.text(0.01, 0.02, '\n'.join(textwrap.wrap(desc_full, 300)), ha='left', va='bottom', fontsize=9)
+        plt.tight_layout(rect=[0,0.06,1,0.98])
+        fname_bar = OUT_DIR / f'{sanitize(col)}_bar.png'
+        fig.savefig(fname_bar, bbox_inches='tight', facecolor=fig.get_facecolor())
+        pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
+        plt.close(fig)
 pp.close()
 print('Saved PDF report to', PDF_OUT)
 print('Saved individual plots to', OUT_DIR)
 
-# helper
-
-def sanitize(s):
-    return ''.join(c if c.isalnum() or c in (' ', '_', '-') else '_' for c in s).strip().replace(' ', '_')
+# (sanitize defined above)
 
 # Write small index of files
 with open(CSV.parent / 'outputs' / 'plots' / 'index.txt', 'w', encoding='utf-8') as fh:

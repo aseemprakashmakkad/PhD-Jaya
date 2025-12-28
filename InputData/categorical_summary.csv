@@ -1,0 +1,38 @@
+column,n_unique,top_values
+Name,104,"{'nan': 1, 'muskan': 1, 'Ablisha': 1, 'Manya Tayal': 1, 'Reena Sood': 1}"
+Marital Status,3,"{'Single': 59, 'Married': 43, 'nan': 2}"
+Highest level of education completed,7,"{""Bachelor's degree"": 38, 'Postgraduate degree': 35, 'Secondary school': 14, 'Other (please specify)': 8, 'Diploma': 5}"
+Current Employment Status,8,"{'Student': 40, 'Employed full-time': 27, 'Unemployed': 9, 'Self-employed': 8, 'Homemaker': 8}"
+Number of children,5,"{'nan': 61, '2': 26, '1': 9, '3': 6, '4 or more': 2}"
+Type of family structure,3,"{'Nuclear': 59, 'Joint': 44, 'nan': 1}"
+Monthly household income,6,"{'50,000 - 100,000 INR per month': 28, 'Below 10,000 INR per month ': 23, '10,000 - 30,000 INR per month': 18, '30,000 - 50,000 INR per month': 15, 'Above 100,000 INR per month': 14}"
+Access to healthcare services,4,"{'Easily accessible': 80, 'Somewhat accessible': 16, 'nan': 7, 'Not accessible': 1}"
+Overall health status,5,"{'Good': 64, 'Excellent': 19, 'Fair': 17, 'Poor': 3, 'nan': 1}"
+Are you covered by health insurance?,4,"{'No': 54, 'Yes': 44, 'Not sure': 4, 'nan': 2}"
+Participation in community or social activities,4,"{'Occasionally involved': 55, 'Actively involved': 25, 'Not involved': 22, 'nan': 2}"
+"Functional Impairment 
+(Wt. 0.14).1",5,"{'Low': 70, 'Mild': 18, 'Severe': 9, 'Moderate': 6, 'nan': 1}"
+"Withdrawl
+(Wt. 0.33).1",5,"{'Low': 84, 'Mild': 13, 'Moderate': 4, 'Severe': 2, 'nan': 1}"
+"Occupational & Relationship Consequences 
+(Wt. 0.10).1",5,"{'Low': 75, 'Mild': 20, 'Moderate': 6, 'Severe': 2, 'nan': 1}"
+"Compulsive Behaviour 
+(Wt. 0.08).1",5,"{'Low': 64, 'Mild': 22, 'Severe': 10, 'Moderate': 7, 'nan': 1}"
+"Obsession with Internet
+(Wt. 0.06).1",5,"{'Low': 52, 'Mild': 21, 'Severe': 20, 'Moderate': 10, 'nan': 1}"
+"Internet as a Source of Recreation
+(Wt. 0.09).1",5,"{'Low': 58, 'Moderate': 20, 'Severe': 14, 'Mild': 11, 'nan': 1}"
+"Enhanced Socialization 
+(Wt. 0.06).1",5,"{'Low': 48, 'Severe': 24, 'Mild': 16, 'Moderate': 15, 'nan': 1}"
+"Perceived Control of Internet Use 
+(Wt. 0.06).1",5,"{'Low': 79, 'Moderate': 11, 'Severe': 10, 'Mild': 3, 'nan': 1}"
+TOTAL.1,5,"{'Low': 71, 'Mild': 17, 'Moderate': 8, 'Severe': 7, 'nan': 1}"
+Emotional Support - Rank,6,"{'Average': 40, 'Low': 25, 'Very Low': 17, 'High': 15, 'Very High': 6}"
+Informational Support - Rank,6,"{'Low': 34, 'Average': 30, 'High': 19, 'Very Low': 19, 'nan': 1}"
+Instrumental Support - Rank,6,"{'Average': 39, 'High': 23, 'Low': 22, 'Very Low': 16, 'Very High': 3}"
+TOTAL SCORE - Rank,6,"{'Average': 42, 'Low': 25, 'Very Low': 20, 'High': 13, 'Very High': 3}"
+Real Self Concept Total Category,4,"{'AVERAGE': 48, 'HIGH': 47, 'LOW': 8, 'nan': 1}"
+Ideal Self Concept Total Category,4,"{'HIGH': 71, 'AVERAGE': 24, 'LOW': 8, 'nan': 1}"
+Social Self Concept Total Category,4,"{'AVERAGE': 46, 'HIGH': 46, 'LOW': 11, 'nan': 1}"
+Unnamed: 81,4,"{'AVERAGE': 89, 'LOW': 8, 'HIGH': 6, 'nan': 1}"
+Monthly household income_cat,6,"{'50k-100k': 28, 'Below 10k': 23, '10k-30k': 18, '30k-50k': 15, 'Above 100k': 14}"

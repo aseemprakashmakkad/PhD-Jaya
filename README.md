@@ -20,24 +20,29 @@ pip install pandas numpy matplotlib seaborn
 ```
 
 How to run
-- Analysis (summary statistics):
+
+Recommended order (automates the workflow):
+
+1) Normalize income (creates `-IncomeNormalized.csv` in the same folder):
 
 ```bash
 cd /home/pranav/PhD-Jaya
-python3 scripts/analysis_scales.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
-```
-
-- Normalize income (creates `-IncomeNormalized.csv` in the same folder):
-
-```bash
 python3 scripts/normalize_income.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned.csv
 ```
 
-- Produce plots and consolidated PDF report (writes PNGs to `outputs/plots/` and `scales_plots_report.pdf`):
+2) Run analysis on the income-normalized CSV (this also writes an `-analysis-ready.csv` file that the report script consumes):
 
 ```bash
-python3 scripts/produce_report.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+python3 scripts/analysis_scales.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
 ```
+
+3) Produce plots and consolidated PDF report (consumes the `-analysis-ready.csv` file produced by the previous step):
+
+```bash
+python3 scripts/produce_report.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-analysis-ready.csv
+```
+
+Notes: if you omit the path argument for each script they will try to use the repository defaults in `InputData/` (the filenames shown above).
 
 Notes & recommendations
 - Scripts accept an explicit path to a CSV file. If you run them without arguments they will use the repository's default `InputData/` filenames (created during the analysis session).

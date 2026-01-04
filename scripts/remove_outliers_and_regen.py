@@ -32,9 +32,18 @@ def sanitize(s):
     return ''.join(c if c.isalnum() or c in (' ', '_', '-') else '_' for c in str(s)).strip().replace(' ', '_')
 
 
-def remove_outliers(df, numeric_cols):
-    # Compute fences per column and create a boolean mask of rows to keep
-    keep = pd.Series(True, index=df.index)
+def remove_outliers(df, numeric_cols, min_outlier_cols=2, iqr_multiplier=1.5):
+    """
+    Remove rows that are outliers in at least `min_outlier_cols` numeric columns.
+
+    - numeric_cols: list of numeric column names
+    - min_outlier_cols: minimum number of columns that must be flagged as outlier for the row to be removed
+    - iqr_multiplier: multiplier for the IQR fences (default 1.5). Increasing this makes outlier detection more permissive.
+
+    Returns (df_kept, keep_mask) where keep_mask is a boolean Series marking rows kept.
+    """
+    # compute fences per column
+    fences = {}
     for col in numeric_cols:
         ser = df[col].dropna()
         if ser.empty:
@@ -42,11 +51,20 @@ def remove_outliers(df, numeric_cols):
         q1 = ser.quantile(0.25)
         q3 = ser.quantile(0.75)
         iqr = q3 - q1
-        lower = q1 - 1.5 * iqr
-        upper = q3 + 1.5 * iqr
-        # mark rows where value is between lower and upper (or NaN)
-        col_keep = df[col].isna() | ((df[col] >= lower) & (df[col] <= upper))
-        keep &= col_keep
+        lower = q1 - iqr_multiplier * iqr
+        upper = q3 + iqr_multiplier * iqr
+        fences[col] = (lower, upper)
+
+    # count outlier flags per row
+    outlier_counts = pd.Series(0, index=df.index)
+    for col, (lower, upper) in fences.items():
+        # True where value is an outlier (not NaN and outside fences)
+        is_out = (~df[col].isna()) & ((df[col] < lower) | (df[col] > upper))
+        outlier_counts += is_out.astype(int)
+
+    # keep rows that have fewer than min_outlier_cols outlier flags
+    keep = outlier_counts < int(max(1, min_outlier_cols))
+    # return copy of kept rows and the boolean mask
     return df[keep].copy(), keep
 
 

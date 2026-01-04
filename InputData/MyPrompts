@@ -1,0 +1,83 @@
+
+write a python script that will take InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv as input. 
+Remove all the outliers from this file and create a new data file. 
+
+then take this new data file which has outliers removed and redraw the plots for all the variables  in a new folder other than InputData/outputs/plots and then create a new pdf other than InputData/scales_plots_report.pdf
+
+
+======================================================================
+
+In the file "20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.ods" Following are the independent variables --- 
+
+Age (IN YEARS)
+Marital Status
+Highest level of education completed
+Current Employment Status
+Number of children
+Type of family structure
+Monthly household income
+Access to healthcare services
+Overall health status
+Are you covered by health insurance?
+Participation in community or social activities
+Functional Impairment
+Withdrawl
+Occupational & Relationship Consequences 
+Compulsive Behaviour 
+Obsession with Internet
+Internet as a Source of Recreation
+Enhanced Socialization 
+Perceived Control of Internet Use 
+Monthly household income_midpoint_INR
+Monthly household income_cat
+
+
+Following are the dependent variables ---- 
+
+
+Emotional Support
+Informational Support
+Instrumental Support
+Perceived Social Support TOTAL SCORE
+Emotional Support - T Score
+Informational Support - T Score
+Instrumental Support - T Score
+Perceived Social Support TOTAL T SCORE
+Emotional Support - Rank
+Informational Support - Rank
+Instrumental Support - Rank
+TOTAL SCORE - Rank
+Real Self Concept Total
+Ideal Self Concept Total
+Social Self Concept Total
+Real Self Concept Total.1
+Ideal Self Concept Total.1
+Social Self Concept Total.1
+Real Self Concept Total.2
+Ideal Self Concept Total.2
+Social Self Concept Total.2
+Real Self Concept Total.3
+Ideal Self Concept Total.3
+Social Self Concept Total.3
+Real Self Concept Total.4
+Ideal Self Concept Total.4
+Social Self Concept Total.4
+Real Self Concept Total.5
+Ideal Self Concept Total.5
+Social Self Concept Total.5
+Real Self Concept Total Category 
+Ideal Self Concept Total Category
+Social Self Concept Total Category 
+Unnamed: 80
+Unnamed: 81
+
+
+Perform a analysis to find relationships between independent and dependent variables. 
+
+Create required python scripts 
+
+
+================================================================================================================
+
+
+The objective of the above analysis is to find out if Internet Usage has any impact of women (married & unmarried) as seen on their Perceived Social Support (including any specific type of social Support), Perceived Stress, Perceived Self Concept (including any specific type of Self Concept). From the above analysis done so far what are the findings please list them 

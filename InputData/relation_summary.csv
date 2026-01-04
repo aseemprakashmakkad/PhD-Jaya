@@ -1,0 +1,736 @@
+independent,dependent,test,statistic,pvalue,notes
+Age (IN YEARS),Emotional Support,,0.2618149344022094,,scipy not available; using pandas corr
+Age (IN YEARS),Informational Support,,0.14892547002469722,,scipy not available; using pandas corr
+Age (IN YEARS),Instrumental Support,,0.18821838018812093,,scipy not available; using pandas corr
+Age (IN YEARS),Perceived Social Support TOTAL SCORE,,0.2658642353986041,,scipy not available; using pandas corr
+Age (IN YEARS),Emotional Support - T Score,,0.2608491763438883,,scipy not available; using pandas corr
+Age (IN YEARS),Informational Support - T Score,,0.14895990409573606,,scipy not available; using pandas corr
+Age (IN YEARS),Instrumental Support - T Score,,0.18838638598084276,,scipy not available; using pandas corr
+Age (IN YEARS),Perceived Social Support TOTAL T SCORE,,0.26613836679544584,,scipy not available; using pandas corr
+Age (IN YEARS),Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Real Self Concept Total,,0.368656385890496,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total,,0.1949352063231458,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total,,0.3709147580211963,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total.1,,0.31187244900605204,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total.1,,0.28252995563908173,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total.1,,0.3399185995340326,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total.2,,0.24332492629305708,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total.2,,0.2340222322394172,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total.2,,0.2597730489700832,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total.3,,0.26141405325454203,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total.3,,0.321966482844999,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total.3,,0.2980112277461649,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total.4,,0.34062653243913826,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total.4,,0.2935312340874009,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total.4,,0.3559724632362958,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total.5,,0.3327585997536154,,scipy not available; using pandas corr
+Age (IN YEARS),Ideal Self Concept Total.5,,0.28422296805794295,,scipy not available; using pandas corr
+Age (IN YEARS),Social Self Concept Total.5,,0.3527849260446143,,scipy not available; using pandas corr
+Age (IN YEARS),Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Age (IN YEARS),Unnamed: 80,,-0.06623805391174159,,scipy not available; using pandas corr
+Age (IN YEARS),Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Marital Status,Emotional Support,,,,scipy not available
+Marital Status,Informational Support,,,,scipy not available
+Marital Status,Instrumental Support,,,,scipy not available
+Marital Status,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Marital Status,Emotional Support - T Score,,,,scipy not available
+Marital Status,Informational Support - T Score,,,,scipy not available
+Marital Status,Instrumental Support - T Score,,,,scipy not available
+Marital Status,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Marital Status,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Real Self Concept Total,,,,scipy not available
+Marital Status,Ideal Self Concept Total,,,,scipy not available
+Marital Status,Social Self Concept Total,,,,scipy not available
+Marital Status,Real Self Concept Total.1,,,,scipy not available
+Marital Status,Ideal Self Concept Total.1,,,,scipy not available
+Marital Status,Social Self Concept Total.1,,,,scipy not available
+Marital Status,Real Self Concept Total.2,,,,scipy not available
+Marital Status,Ideal Self Concept Total.2,,,,scipy not available
+Marital Status,Social Self Concept Total.2,,,,scipy not available
+Marital Status,Real Self Concept Total.3,,,,scipy not available
+Marital Status,Ideal Self Concept Total.3,,,,scipy not available
+Marital Status,Social Self Concept Total.3,,,,scipy not available
+Marital Status,Real Self Concept Total.4,,,,scipy not available
+Marital Status,Ideal Self Concept Total.4,,,,scipy not available
+Marital Status,Social Self Concept Total.4,,,,scipy not available
+Marital Status,Real Self Concept Total.5,,,,scipy not available
+Marital Status,Ideal Self Concept Total.5,,,,scipy not available
+Marital Status,Social Self Concept Total.5,,,,scipy not available
+Marital Status,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Marital Status,Unnamed: 80,,,,scipy not available
+Marital Status,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Emotional Support,,,,scipy not available
+Highest level of education completed,Informational Support,,,,scipy not available
+Highest level of education completed,Instrumental Support,,,,scipy not available
+Highest level of education completed,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Highest level of education completed,Emotional Support - T Score,,,,scipy not available
+Highest level of education completed,Informational Support - T Score,,,,scipy not available
+Highest level of education completed,Instrumental Support - T Score,,,,scipy not available
+Highest level of education completed,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Highest level of education completed,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Real Self Concept Total,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total,,,,scipy not available
+Highest level of education completed,Social Self Concept Total,,,,scipy not available
+Highest level of education completed,Real Self Concept Total.1,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total.1,,,,scipy not available
+Highest level of education completed,Social Self Concept Total.1,,,,scipy not available
+Highest level of education completed,Real Self Concept Total.2,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total.2,,,,scipy not available
+Highest level of education completed,Social Self Concept Total.2,,,,scipy not available
+Highest level of education completed,Real Self Concept Total.3,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total.3,,,,scipy not available
+Highest level of education completed,Social Self Concept Total.3,,,,scipy not available
+Highest level of education completed,Real Self Concept Total.4,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total.4,,,,scipy not available
+Highest level of education completed,Social Self Concept Total.4,,,,scipy not available
+Highest level of education completed,Real Self Concept Total.5,,,,scipy not available
+Highest level of education completed,Ideal Self Concept Total.5,,,,scipy not available
+Highest level of education completed,Social Self Concept Total.5,,,,scipy not available
+Highest level of education completed,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Highest level of education completed,Unnamed: 80,,,,scipy not available
+Highest level of education completed,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Emotional Support,,,,scipy not available
+Current Employment Status,Informational Support,,,,scipy not available
+Current Employment Status,Instrumental Support,,,,scipy not available
+Current Employment Status,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Current Employment Status,Emotional Support - T Score,,,,scipy not available
+Current Employment Status,Informational Support - T Score,,,,scipy not available
+Current Employment Status,Instrumental Support - T Score,,,,scipy not available
+Current Employment Status,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Current Employment Status,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Real Self Concept Total,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total,,,,scipy not available
+Current Employment Status,Social Self Concept Total,,,,scipy not available
+Current Employment Status,Real Self Concept Total.1,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total.1,,,,scipy not available
+Current Employment Status,Social Self Concept Total.1,,,,scipy not available
+Current Employment Status,Real Self Concept Total.2,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total.2,,,,scipy not available
+Current Employment Status,Social Self Concept Total.2,,,,scipy not available
+Current Employment Status,Real Self Concept Total.3,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total.3,,,,scipy not available
+Current Employment Status,Social Self Concept Total.3,,,,scipy not available
+Current Employment Status,Real Self Concept Total.4,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total.4,,,,scipy not available
+Current Employment Status,Social Self Concept Total.4,,,,scipy not available
+Current Employment Status,Real Self Concept Total.5,,,,scipy not available
+Current Employment Status,Ideal Self Concept Total.5,,,,scipy not available
+Current Employment Status,Social Self Concept Total.5,,,,scipy not available
+Current Employment Status,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Current Employment Status,Unnamed: 80,,,,scipy not available
+Current Employment Status,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Emotional Support,,,,scipy not available
+Number of children,Informational Support,,,,scipy not available
+Number of children,Instrumental Support,,,,scipy not available
+Number of children,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Number of children,Emotional Support - T Score,,,,scipy not available
+Number of children,Informational Support - T Score,,,,scipy not available
+Number of children,Instrumental Support - T Score,,,,scipy not available
+Number of children,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Number of children,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Real Self Concept Total,,,,scipy not available
+Number of children,Ideal Self Concept Total,,,,scipy not available
+Number of children,Social Self Concept Total,,,,scipy not available
+Number of children,Real Self Concept Total.1,,,,scipy not available
+Number of children,Ideal Self Concept Total.1,,,,scipy not available
+Number of children,Social Self Concept Total.1,,,,scipy not available
+Number of children,Real Self Concept Total.2,,,,scipy not available
+Number of children,Ideal Self Concept Total.2,,,,scipy not available
+Number of children,Social Self Concept Total.2,,,,scipy not available
+Number of children,Real Self Concept Total.3,,,,scipy not available
+Number of children,Ideal Self Concept Total.3,,,,scipy not available
+Number of children,Social Self Concept Total.3,,,,scipy not available
+Number of children,Real Self Concept Total.4,,,,scipy not available
+Number of children,Ideal Self Concept Total.4,,,,scipy not available
+Number of children,Social Self Concept Total.4,,,,scipy not available
+Number of children,Real Self Concept Total.5,,,,scipy not available
+Number of children,Ideal Self Concept Total.5,,,,scipy not available
+Number of children,Social Self Concept Total.5,,,,scipy not available
+Number of children,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Number of children,Unnamed: 80,,,,scipy not available
+Number of children,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Emotional Support,,,,scipy not available
+Type of family structure,Informational Support,,,,scipy not available
+Type of family structure,Instrumental Support,,,,scipy not available
+Type of family structure,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Type of family structure,Emotional Support - T Score,,,,scipy not available
+Type of family structure,Informational Support - T Score,,,,scipy not available
+Type of family structure,Instrumental Support - T Score,,,,scipy not available
+Type of family structure,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Type of family structure,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Real Self Concept Total,,,,scipy not available
+Type of family structure,Ideal Self Concept Total,,,,scipy not available
+Type of family structure,Social Self Concept Total,,,,scipy not available
+Type of family structure,Real Self Concept Total.1,,,,scipy not available
+Type of family structure,Ideal Self Concept Total.1,,,,scipy not available
+Type of family structure,Social Self Concept Total.1,,,,scipy not available
+Type of family structure,Real Self Concept Total.2,,,,scipy not available
+Type of family structure,Ideal Self Concept Total.2,,,,scipy not available
+Type of family structure,Social Self Concept Total.2,,,,scipy not available
+Type of family structure,Real Self Concept Total.3,,,,scipy not available
+Type of family structure,Ideal Self Concept Total.3,,,,scipy not available
+Type of family structure,Social Self Concept Total.3,,,,scipy not available
+Type of family structure,Real Self Concept Total.4,,,,scipy not available
+Type of family structure,Ideal Self Concept Total.4,,,,scipy not available
+Type of family structure,Social Self Concept Total.4,,,,scipy not available
+Type of family structure,Real Self Concept Total.5,,,,scipy not available
+Type of family structure,Ideal Self Concept Total.5,,,,scipy not available
+Type of family structure,Social Self Concept Total.5,,,,scipy not available
+Type of family structure,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Type of family structure,Unnamed: 80,,,,scipy not available
+Type of family structure,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Emotional Support,,,,scipy not available
+Monthly household income,Informational Support,,,,scipy not available
+Monthly household income,Instrumental Support,,,,scipy not available
+Monthly household income,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Monthly household income,Emotional Support - T Score,,,,scipy not available
+Monthly household income,Informational Support - T Score,,,,scipy not available
+Monthly household income,Instrumental Support - T Score,,,,scipy not available
+Monthly household income,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Monthly household income,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Real Self Concept Total,,,,scipy not available
+Monthly household income,Ideal Self Concept Total,,,,scipy not available
+Monthly household income,Social Self Concept Total,,,,scipy not available
+Monthly household income,Real Self Concept Total.1,,,,scipy not available
+Monthly household income,Ideal Self Concept Total.1,,,,scipy not available
+Monthly household income,Social Self Concept Total.1,,,,scipy not available
+Monthly household income,Real Self Concept Total.2,,,,scipy not available
+Monthly household income,Ideal Self Concept Total.2,,,,scipy not available
+Monthly household income,Social Self Concept Total.2,,,,scipy not available
+Monthly household income,Real Self Concept Total.3,,,,scipy not available
+Monthly household income,Ideal Self Concept Total.3,,,,scipy not available
+Monthly household income,Social Self Concept Total.3,,,,scipy not available
+Monthly household income,Real Self Concept Total.4,,,,scipy not available
+Monthly household income,Ideal Self Concept Total.4,,,,scipy not available
+Monthly household income,Social Self Concept Total.4,,,,scipy not available
+Monthly household income,Real Self Concept Total.5,,,,scipy not available
+Monthly household income,Ideal Self Concept Total.5,,,,scipy not available
+Monthly household income,Social Self Concept Total.5,,,,scipy not available
+Monthly household income,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income,Unnamed: 80,,,,scipy not available
+Monthly household income,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Emotional Support,,,,scipy not available
+Access to healthcare services,Informational Support,,,,scipy not available
+Access to healthcare services,Instrumental Support,,,,scipy not available
+Access to healthcare services,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Access to healthcare services,Emotional Support - T Score,,,,scipy not available
+Access to healthcare services,Informational Support - T Score,,,,scipy not available
+Access to healthcare services,Instrumental Support - T Score,,,,scipy not available
+Access to healthcare services,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Access to healthcare services,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Real Self Concept Total,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total,,,,scipy not available
+Access to healthcare services,Social Self Concept Total,,,,scipy not available
+Access to healthcare services,Real Self Concept Total.1,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total.1,,,,scipy not available
+Access to healthcare services,Social Self Concept Total.1,,,,scipy not available
+Access to healthcare services,Real Self Concept Total.2,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total.2,,,,scipy not available
+Access to healthcare services,Social Self Concept Total.2,,,,scipy not available
+Access to healthcare services,Real Self Concept Total.3,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total.3,,,,scipy not available
+Access to healthcare services,Social Self Concept Total.3,,,,scipy not available
+Access to healthcare services,Real Self Concept Total.4,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total.4,,,,scipy not available
+Access to healthcare services,Social Self Concept Total.4,,,,scipy not available
+Access to healthcare services,Real Self Concept Total.5,,,,scipy not available
+Access to healthcare services,Ideal Self Concept Total.5,,,,scipy not available
+Access to healthcare services,Social Self Concept Total.5,,,,scipy not available
+Access to healthcare services,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Access to healthcare services,Unnamed: 80,,,,scipy not available
+Access to healthcare services,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Emotional Support,,,,scipy not available
+Overall health status,Informational Support,,,,scipy not available
+Overall health status,Instrumental Support,,,,scipy not available
+Overall health status,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Overall health status,Emotional Support - T Score,,,,scipy not available
+Overall health status,Informational Support - T Score,,,,scipy not available
+Overall health status,Instrumental Support - T Score,,,,scipy not available
+Overall health status,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Overall health status,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Real Self Concept Total,,,,scipy not available
+Overall health status,Ideal Self Concept Total,,,,scipy not available
+Overall health status,Social Self Concept Total,,,,scipy not available
+Overall health status,Real Self Concept Total.1,,,,scipy not available
+Overall health status,Ideal Self Concept Total.1,,,,scipy not available
+Overall health status,Social Self Concept Total.1,,,,scipy not available
+Overall health status,Real Self Concept Total.2,,,,scipy not available
+Overall health status,Ideal Self Concept Total.2,,,,scipy not available
+Overall health status,Social Self Concept Total.2,,,,scipy not available
+Overall health status,Real Self Concept Total.3,,,,scipy not available
+Overall health status,Ideal Self Concept Total.3,,,,scipy not available
+Overall health status,Social Self Concept Total.3,,,,scipy not available
+Overall health status,Real Self Concept Total.4,,,,scipy not available
+Overall health status,Ideal Self Concept Total.4,,,,scipy not available
+Overall health status,Social Self Concept Total.4,,,,scipy not available
+Overall health status,Real Self Concept Total.5,,,,scipy not available
+Overall health status,Ideal Self Concept Total.5,,,,scipy not available
+Overall health status,Social Self Concept Total.5,,,,scipy not available
+Overall health status,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Overall health status,Unnamed: 80,,,,scipy not available
+Overall health status,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Emotional Support,,,,scipy not available
+Are you covered by health insurance?,Informational Support,,,,scipy not available
+Are you covered by health insurance?,Instrumental Support,,,,scipy not available
+Are you covered by health insurance?,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Are you covered by health insurance?,Emotional Support - T Score,,,,scipy not available
+Are you covered by health insurance?,Informational Support - T Score,,,,scipy not available
+Are you covered by health insurance?,Instrumental Support - T Score,,,,scipy not available
+Are you covered by health insurance?,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Are you covered by health insurance?,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Real Self Concept Total,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total.1,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total.1,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total.1,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total.2,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total.2,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total.2,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total.3,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total.3,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total.3,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total.4,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total.4,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total.4,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total.5,,,,scipy not available
+Are you covered by health insurance?,Ideal Self Concept Total.5,,,,scipy not available
+Are you covered by health insurance?,Social Self Concept Total.5,,,,scipy not available
+Are you covered by health insurance?,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Are you covered by health insurance?,Unnamed: 80,,,,scipy not available
+Are you covered by health insurance?,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Emotional Support,,,,scipy not available
+Participation in community or social activities,Informational Support,,,,scipy not available
+Participation in community or social activities,Instrumental Support,,,,scipy not available
+Participation in community or social activities,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Participation in community or social activities,Emotional Support - T Score,,,,scipy not available
+Participation in community or social activities,Informational Support - T Score,,,,scipy not available
+Participation in community or social activities,Instrumental Support - T Score,,,,scipy not available
+Participation in community or social activities,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Participation in community or social activities,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Real Self Concept Total,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total.1,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total.1,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total.1,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total.2,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total.2,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total.2,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total.3,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total.3,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total.3,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total.4,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total.4,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total.4,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total.5,,,,scipy not available
+Participation in community or social activities,Ideal Self Concept Total.5,,,,scipy not available
+Participation in community or social activities,Social Self Concept Total.5,,,,scipy not available
+Participation in community or social activities,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Participation in community or social activities,Unnamed: 80,,,,scipy not available
+Participation in community or social activities,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Functional Impairment,Emotional Support,,-0.15104831175302208,,scipy not available; using pandas corr
+Functional Impairment,Informational Support,,-0.07391250007714004,,scipy not available; using pandas corr
+Functional Impairment,Instrumental Support,,-0.18488740504615908,,scipy not available; using pandas corr
+Functional Impairment,Perceived Social Support TOTAL SCORE,,-0.17512122599442512,,scipy not available; using pandas corr
+Functional Impairment,Emotional Support - T Score,,-0.15396303370326947,,scipy not available; using pandas corr
+Functional Impairment,Informational Support - T Score,,-0.07392411654091541,,scipy not available; using pandas corr
+Functional Impairment,Instrumental Support - T Score,,-0.1933740409750743,,scipy not available; using pandas corr
+Functional Impairment,Perceived Social Support TOTAL T SCORE,,-0.17548216149806387,,scipy not available; using pandas corr
+Functional Impairment,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Real Self Concept Total,,-0.4695639912312138,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total,,-0.3278917389801254,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total,,-0.3817433071444618,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total.1,,-0.5214779110094612,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total.1,,-0.42614679789277615,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total.1,,-0.4204402835401294,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total.2,,-0.48078472857688015,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total.2,,-0.3971937176173105,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total.2,,-0.37314605486826263,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total.3,,-0.5332725707890814,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total.3,,-0.4190734604308226,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total.3,,-0.3667149888166152,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total.4,,-0.5412805790342717,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total.4,,-0.42538509235804706,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total.4,,-0.43355324151070157,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total.5,,-0.5503822402041045,,scipy not available; using pandas corr
+Functional Impairment,Ideal Self Concept Total.5,,-0.4241961740755914,,scipy not available; using pandas corr
+Functional Impairment,Social Self Concept Total.5,,-0.42920623577104633,,scipy not available; using pandas corr
+Functional Impairment,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Functional Impairment,Unnamed: 80,,0.3347578114139765,,scipy not available; using pandas corr
+Functional Impairment,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Emotional Support,,-0.371342350291537,,scipy not available; using pandas corr
+Withdrawl,Informational Support,,-0.2054713366920571,,scipy not available; using pandas corr
+Withdrawl,Instrumental Support,,-0.20977943860018383,,scipy not available; using pandas corr
+Withdrawl,Perceived Social Support TOTAL SCORE,,-0.35751903955372916,,scipy not available; using pandas corr
+Withdrawl,Emotional Support - T Score,,-0.3729367429244488,,scipy not available; using pandas corr
+Withdrawl,Informational Support - T Score,,-0.20548758107523737,,scipy not available; using pandas corr
+Withdrawl,Instrumental Support - T Score,,-0.2125199281227459,,scipy not available; using pandas corr
+Withdrawl,Perceived Social Support TOTAL T SCORE,,-0.3577182635219133,,scipy not available; using pandas corr
+Withdrawl,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Real Self Concept Total,,-0.6250200544662453,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total,,-0.36818646836025803,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total,,-0.5030092696567585,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total.1,,-0.6322128429607293,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total.1,,-0.4396133818787146,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total.1,,-0.5324979065979294,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total.2,,-0.6077564976119143,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total.2,,-0.38435804382276356,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total.2,,-0.41701126397776056,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total.3,,-0.5692142860567934,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total.3,,-0.4288380971661754,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total.3,,-0.4842196824694119,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total.4,,-0.7236743182426294,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total.4,,-0.4316489797111988,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total.4,,-0.5996366043404008,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total.5,,-0.6937569837815626,,scipy not available; using pandas corr
+Withdrawl,Ideal Self Concept Total.5,,-0.4339915113354124,,scipy not available; using pandas corr
+Withdrawl,Social Self Concept Total.5,,-0.5611905961382992,,scipy not available; using pandas corr
+Withdrawl,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Withdrawl,Unnamed: 80,,0.21174792620503308,,scipy not available; using pandas corr
+Withdrawl,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Emotional Support,,-0.32682490432042327,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Informational Support,,-0.18168591430397987,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Instrumental Support,,-0.24341586417468564,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Perceived Social Support TOTAL SCORE,,-0.3337904944915477,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Emotional Support - T Score,,-0.3277200919904486,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Informational Support - T Score,,-0.18172857531061493,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Instrumental Support - T Score,,-0.2514270006602156,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Perceived Social Support TOTAL T SCORE,,-0.3337737106491068,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Real Self Concept Total,,-0.36146602910825737,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total,,-0.4346010848070349,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total,,-0.34252108749146437,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total.1,,-0.3607777308539159,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total.1,,-0.3896754399759413,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total.1,,-0.351851877126309,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total.2,,-0.37436648644200354,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total.2,,-0.37904044974543105,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total.2,,-0.31962152309108904,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total.3,,-0.3603203301244184,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total.3,,-0.4251092708513041,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total.3,,-0.3639083031300882,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total.4,,-0.4194653841128788,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total.4,,-0.3636668916418778,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total.4,,-0.40610496493508413,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total.5,,-0.409976702937933,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Ideal Self Concept Total.5,,-0.4077843462435678,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Social Self Concept Total.5,,-0.3911623056890899,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Occupational & Relationship Consequences ,Unnamed: 80,,0.31659547960673196,,scipy not available; using pandas corr
+Occupational & Relationship Consequences ,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Emotional Support,,-0.33342656166260554,,scipy not available; using pandas corr
+Compulsive Behaviour ,Informational Support,,-0.20212161307252974,,scipy not available; using pandas corr
+Compulsive Behaviour ,Instrumental Support,,-0.25561339919217446,,scipy not available; using pandas corr
+Compulsive Behaviour ,Perceived Social Support TOTAL SCORE,,-0.3469627078251103,,scipy not available; using pandas corr
+Compulsive Behaviour ,Emotional Support - T Score,,-0.3346216502848542,,scipy not available; using pandas corr
+Compulsive Behaviour ,Informational Support - T Score,,-0.2021924272368319,,scipy not available; using pandas corr
+Compulsive Behaviour ,Instrumental Support - T Score,,-0.2591057071224789,,scipy not available; using pandas corr
+Compulsive Behaviour ,Perceived Social Support TOTAL T SCORE,,-0.347575794113553,,scipy not available; using pandas corr
+Compulsive Behaviour ,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Real Self Concept Total,,-0.4665339531920662,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total,,-0.3978135373743031,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total,,-0.46582320197347377,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total.1,,-0.4323274616246397,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total.1,,-0.36342412584547545,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total.1,,-0.4974834818188681,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total.2,,-0.45132061305583143,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total.2,,-0.4076781308011565,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total.2,,-0.431631535302078,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total.3,,-0.4834561093412023,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total.3,,-0.43494865072920896,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total.3,,-0.46581208121249823,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total.4,,-0.5128407853134695,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total.4,,-0.36659459551328627,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total.4,,-0.48196702683143927,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total.5,,-0.5102336890628469,,scipy not available; using pandas corr
+Compulsive Behaviour ,Ideal Self Concept Total.5,,-0.40609784521411213,,scipy not available; using pandas corr
+Compulsive Behaviour ,Social Self Concept Total.5,,-0.501777465610136,,scipy not available; using pandas corr
+Compulsive Behaviour ,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Compulsive Behaviour ,Unnamed: 80,,0.2602182325638186,,scipy not available; using pandas corr
+Compulsive Behaviour ,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Emotional Support,,-0.2906410069497026,,scipy not available; using pandas corr
+Obsession with Internet,Informational Support,,-0.12805577547330663,,scipy not available; using pandas corr
+Obsession with Internet,Instrumental Support,,-0.3350202250082826,,scipy not available; using pandas corr
+Obsession with Internet,Perceived Social Support TOTAL SCORE,,-0.3268347252406107,,scipy not available; using pandas corr
+Obsession with Internet,Emotional Support - T Score,,-0.29455050970819846,,scipy not available; using pandas corr
+Obsession with Internet,Informational Support - T Score,,-0.12812171476901524,,scipy not available; using pandas corr
+Obsession with Internet,Instrumental Support - T Score,,-0.3380839784565407,,scipy not available; using pandas corr
+Obsession with Internet,Perceived Social Support TOTAL T SCORE,,-0.325915590325947,,scipy not available; using pandas corr
+Obsession with Internet,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Real Self Concept Total,,-0.3770104437176131,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total,,-0.1579583606525405,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total,,-0.37016823415281147,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total.1,,-0.2410685202646782,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total.1,,-0.26577370330362743,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total.1,,-0.3789823531872909,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total.2,,-0.26516686927976235,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total.2,,-0.23186568732221027,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total.2,,-0.32883468578613995,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total.3,,-0.3323249036801863,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total.3,,-0.26222992341961743,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total.3,,-0.32997824726276115,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total.4,,-0.3382023617632739,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total.4,,-0.26205463060512685,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total.4,,-0.3802707342651466,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total.5,,-0.3376474736536361,,scipy not available; using pandas corr
+Obsession with Internet,Ideal Self Concept Total.5,,-0.253746765724856,,scipy not available; using pandas corr
+Obsession with Internet,Social Self Concept Total.5,,-0.3858383401202876,,scipy not available; using pandas corr
+Obsession with Internet,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Obsession with Internet,Unnamed: 80,,0.13126782537984277,,scipy not available; using pandas corr
+Obsession with Internet,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Emotional Support,,-0.11187356255737672,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Informational Support,,-0.05446820968959727,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Instrumental Support,,-0.33290199276979443,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Perceived Social Support TOTAL SCORE,,-0.1927251700191185,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Emotional Support - T Score,,-0.11822844729958636,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Informational Support - T Score,,-0.054485947500262234,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Instrumental Support - T Score,,-0.3350654508262755,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Perceived Social Support TOTAL T SCORE,,-0.19295464309221297,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Real Self Concept Total,,-0.07250776161195722,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total,,-0.010834419689317656,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total,,-0.0742976039752451,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total.1,,-0.04339903554503263,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total.1,,-0.10907935226511423,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total.1,,-0.10557712119485424,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total.2,,0.05872899034335762,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total.2,,-0.034919887831452404,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total.2,,-0.018495968470499044,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total.3,,0.040160227831351994,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total.3,,-0.0811645714399229,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total.3,,0.021124617569166625,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total.4,,-0.011408025299201397,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total.4,,-0.04032457942568503,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total.4,,-0.02734418578634621,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total.5,,-0.007263982427612328,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Ideal Self Concept Total.5,,-0.054973427738291475,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Social Self Concept Total.5,,-0.04023335267905048,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Internet as a Source of Recreation,Unnamed: 80,,0.09608318157194293,,scipy not available; using pandas corr
+Internet as a Source of Recreation,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Emotional Support,,0.20382621427950479,,scipy not available; using pandas corr
+Enhanced Socialization ,Informational Support,,0.056394113506833696,,scipy not available; using pandas corr
+Enhanced Socialization ,Instrumental Support,,0.13549849933691469,,scipy not available; using pandas corr
+Enhanced Socialization ,Perceived Social Support TOTAL SCORE,,0.18904916488512558,,scipy not available; using pandas corr
+Enhanced Socialization ,Emotional Support - T Score,,0.20866237305983504,,scipy not available; using pandas corr
+Enhanced Socialization ,Informational Support - T Score,,0.056363774523642704,,scipy not available; using pandas corr
+Enhanced Socialization ,Instrumental Support - T Score,,0.1295792848467053,,scipy not available; using pandas corr
+Enhanced Socialization ,Perceived Social Support TOTAL T SCORE,,0.1874226531507879,,scipy not available; using pandas corr
+Enhanced Socialization ,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Real Self Concept Total,,-0.1009621618192159,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total,,-0.13012252693788748,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total,,0.0076495053633871294,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total.1,,-0.10245312860566277,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total.1,,-0.04804668577447539,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total.1,,0.006106017206508569,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total.2,,-0.10332003325400073,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total.2,,-0.13071280470083327,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total.2,,-0.053022974423905314,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total.3,,-0.13941258846722188,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total.3,,-0.17053270163429915,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total.3,,-0.011785639747081175,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total.4,,-0.07077997664156073,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total.4,,-0.06635917544535747,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total.4,,0.012970941277774643,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total.5,,-0.10329699616296299,,scipy not available; using pandas corr
+Enhanced Socialization ,Ideal Self Concept Total.5,,-0.1048523571602352,,scipy not available; using pandas corr
+Enhanced Socialization ,Social Self Concept Total.5,,-0.003256894507356671,,scipy not available; using pandas corr
+Enhanced Socialization ,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Enhanced Socialization ,Unnamed: 80,,0.3662626235930216,,scipy not available; using pandas corr
+Enhanced Socialization ,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Emotional Support,,-0.04105179334854116,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Informational Support,,-0.0193672724439456,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Instrumental Support,,-0.1130828969745466,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Perceived Social Support TOTAL SCORE,,-0.06764754899406063,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Emotional Support - T Score,,-0.04425052399168444,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Informational Support - T Score,,-0.019374423661623657,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Instrumental Support - T Score,,-0.11909911687155668,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Perceived Social Support TOTAL T SCORE,,-0.069362128084763,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Real Self Concept Total,,-0.11172382496766788,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total,,-0.005868047171223021,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total,,-0.14900120341891993,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total.1,,-0.15378512599054323,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total.1,,0.014355954782381414,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total.1,,-0.17349266045186332,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total.2,,-0.14737209173093702,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total.2,,-0.09722938515587712,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total.2,,-0.20602639136971698,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total.3,,-0.16453533148927715,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total.3,,-0.08684915480992605,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total.3,,-0.16604995039994835,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total.4,,-0.10960539052458637,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total.4,,-0.02897994687510663,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total.4,,-0.1531125974009768,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total.5,,-0.1405987676589585,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Ideal Self Concept Total.5,,-0.04194311726198066,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Social Self Concept Total.5,,-0.1764779547357603,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Perceived Control of Internet Use ,Unnamed: 80,,0.26356966345671984,,scipy not available; using pandas corr
+Perceived Control of Internet Use ,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Emotional Support,,0.07072465846040663,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Informational Support,,0.0992692254796721,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Instrumental Support,,0.05225171665575018,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Perceived Social Support TOTAL SCORE,,0.08666821232742429,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Emotional Support - T Score,,0.06957161053991827,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Informational Support - T Score,,0.09926458691715559,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Instrumental Support - T Score,,0.05397551382344123,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Perceived Social Support TOTAL T SCORE,,0.08694158263603963,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Emotional Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Informational Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Instrumental Support - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,TOTAL SCORE - Rank,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Real Self Concept Total,,0.17046176115006864,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total,,0.10838913637100209,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total,,0.11735661203385683,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total.1,,0.08778454355642279,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total.1,,0.1651816235912153,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total.1,,0.05611131498375499,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total.2,,0.08982748999539157,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total.2,,0.1566782613723297,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total.2,,0.02399056656561682,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total.3,,0.015370788977944753,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total.3,,0.14595852396229292,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total.3,,0.020090774152310826,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total.4,,0.11038918486129622,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total.4,,0.15048364644145468,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total.4,,0.05626628696361289,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total.5,,0.10451235007283215,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Ideal Self Concept Total.5,,0.15379457633474344,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Social Self Concept Total.5,,0.05903417761832119,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Real Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Ideal Self Concept Total Category,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Social Self Concept Total Category ,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_midpoint_INR,Unnamed: 80,,0.1471634606024943,,scipy not available; using pandas corr
+Monthly household income_midpoint_INR,Unnamed: 81,,,,ANOVA/Kruskal failed: 'NoneType' object has no attribute 'kruskal'
+Monthly household income_cat,Emotional Support,,,,scipy not available
+Monthly household income_cat,Informational Support,,,,scipy not available
+Monthly household income_cat,Instrumental Support,,,,scipy not available
+Monthly household income_cat,Perceived Social Support TOTAL SCORE,,,,scipy not available
+Monthly household income_cat,Emotional Support - T Score,,,,scipy not available
+Monthly household income_cat,Informational Support - T Score,,,,scipy not available
+Monthly household income_cat,Instrumental Support - T Score,,,,scipy not available
+Monthly household income_cat,Perceived Social Support TOTAL T SCORE,,,,scipy not available
+Monthly household income_cat,Emotional Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Informational Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Instrumental Support - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,TOTAL SCORE - Rank,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Real Self Concept Total,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total.1,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total.1,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total.1,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total.2,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total.2,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total.2,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total.3,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total.3,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total.3,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total.4,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total.4,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total.4,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total.5,,,,scipy not available
+Monthly household income_cat,Ideal Self Concept Total.5,,,,scipy not available
+Monthly household income_cat,Social Self Concept Total.5,,,,scipy not available
+Monthly household income_cat,Real Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Ideal Self Concept Total Category,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Social Self Concept Total Category ,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'
+Monthly household income_cat,Unnamed: 80,,,,scipy not available
+Monthly household income_cat,Unnamed: 81,,,,chi2 test failed: 'NoneType' object has no attribute 'chi2_contingency'

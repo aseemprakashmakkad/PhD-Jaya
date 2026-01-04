@@ -1,0 +1,2 @@
+exposure,outcome,crude_coef,crude_p,adj_coef,adj_p,adj_r2,int_terms
+Withdrawl - Weighted Score,Perceived Social Support Total T Score,-1.7962917904877993,9.767287149541551e-06,-1.660217109047989,0.001209188771102774,0.34729298803332875,"Q(""Withdrawl - Weighted Score"");Q(""Withdrawl - Weighted Score""):C(Q(""Marital Status""))[T.Single]"

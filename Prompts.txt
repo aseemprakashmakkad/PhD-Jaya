@@ -1,0 +1,237 @@
+Progress update — pipeline rerun + confounding check
+
+What I ran
+
+Re-ran the whole pipeline on your updated IncomeNormalized CSV:
+python3 [analysis_scales.py](http://_vscodecontentref_/3) InputData/...-IncomeNormalized.csv — regenerated scales_summary.csv, numeric_stats.csv, categorical_summary.csv, scales_analysis_report.txt, and an analysis-ready CSV.
+python3 [remove_outliers_and_regen.py](http://_vscodecontentref_/4) InputData/...-IncomeNormalized.csv — using the relaxed rule (remove rows only if outlier in >=2 numeric cols); saved ...-NoOutliers.csv (shape changed from 104→79 rows) and started regenerating plots/PDF under plots and scales_plots_report_nooutliers.pdf.
+python3 [relational_analysis.py](http://_vscodecontentref_/7) InputData/...-NoOutliers.csv — updated script used SciPy for exact tests and wrote relation_summary.csv and relation_report.pdf. I then applied Benjamini–Hochberg FDR to the relation summary and wrote relation_summary_with_fdr.csv.
+Quick results (files created / updated)
+
+New NoOutliers CSV: 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.csv (79 rows × 75 cols)
+Relation test summary (raw): relation_summary.csv
+Relation summary with FDR (BH): relation_summary_with_fdr.csv
+Total tested p-values parsed: 117
+Significant at FDR 0.05: 85 tests
+Plots:
+Per-variable NoOutliers plots: InputData/outputs_nooutliers/plots/
+Relation pair plots (including marital-status snapshot images): InputData/outputs_relation/plots/
+Reports:
+Per-variable PDF (NoOutliers): scales_plots_report_nooutliers.pdf (script wrote it)
+Relation PDF: relation_report.pdf
+Confounding / adjusted analysis I ran (one focused example)
+
+I installed statsmodels and fit linear models for:
+Exposure: "Withdrawl - Weighted Score"
+Outcome: "Perceived Social Support Total T Score"
+Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status
+Crude model:
+beta (Withdrawl) = -1.796, p ≈ 9.8e-06
+Adjusted model (covariates included):
+beta (Withdrawl) = -1.660, p ≈ 0.00121
+R2 reported in the saved summary
+Interaction model (Withdrawl * Marital Status):
+Main effect for base group ≈ -2.909 (p ≈ 0.0047)
+Interaction term (Single vs base): +1.652 (p ≈ 0.126)
+Interpretation: effect is stronger (more negative) in the base marital group; the interaction p-value ~0.13 (not significant at 0.05).
+Files saved for these models:
+
+adjusted_models_summary.csv — contains crude vs adjusted effect (Withdrawl → Perceived Social Support T Score) and adjusted R2.
+Interpretation — short
+
+Withdrawal (internet-withdrawal score) is negatively associated with perceived social support in the NoOutliers sample. The association remains after adjusting for age, income, education, and marital status (effect size reduced slightly from -1.796 to -1.660, but remains statistically significant).
+The interaction test suggests the negative association may be stronger in one marital group (base category) than the other, but the interaction term is not statistically significant (p ≈ 0.13).
+Many pairwise tests are significant after FDR correction (85 / 117). This is expected given many related scales and correlated measures in psychometric data.
+Causal claim? Not supported by these cross-sectional associations alone. Adjustment for confounders reduces bias but cannot rule out residual/unmeasured confounding, reverse causality, or selection bias. I list practical next steps below.
+Notes, warnings and small fixes
+
+I added BH FDR correction by parsing numeric p-values from relation_summary.csv and writing relation_summary_with_fdr.csv.
+The relation-plot generation emits seaborn FutureWarnings about passing palette without hue; harmless for now but we could tidy plots to silence warnings.
+I installed statsmodels to run OLS regressions; requirements.txt can be updated to include it (I can add it).
+The outlier plotting stage can take time (many figures). I let the scripts run to completion for each main step.
+Recommended next steps (pick any)
+
+Produce adjusted regression results for a predefined list of exposure→outcome pairs (not just Withdrawl → Perceived Social Support). I can batch-run OLS models with the same covariates for all internet-related exposures and the top dependent scores, then FDR-correct the exposure p-values across those models.
+Add a CLI to remove_outliers_and_regen.py so you can easily choose min_outlier_cols and iqr_multiplier interactively; I can implement this quickly.
+Replace row-removal with winsorization (cap outliers) and re-run relational analyses so you keep full sample but reduce influence of extremes.
+Create a short one-page PDF summary showing:
+Top 6 associations (plots + BH-adjusted p-values)
+Results of 1-2 adjusted regression models (coef, 95% CI, p)
+Short confounding & causal assessment
+If you want causal claims explored further: we can build small DAG(s) from domain knowledge and do:
+regression with covariate adjustment per the DAG,
+stratified sensitivity analyses,
+or (if you have candidate instruments) attempt IV estimation.
+Which next step should I run now?
+
+I can (A) run step 1 to batch-fit adjusted models for all internet-related exposures → chosen outcomes and write a results CSV (very quick), or (B) implement a CLI for outlier script, or (C) create the one-page PDF summary (will generate plots & text).
+Tell me A, B, or C (or a combination) and I’ll proceed and attach the new files.
+GPT-5 mini • 0x
+
+
+===========================================================================================================================
+
+
+
+
+Below is a plain‑English, step‑by‑step walkthrough of everything I did for the analysis (what each script does, the statistical choices made, files produced, how confounding and causal questions were handled, and how you can re-run or change behavior). I kept it practical so you can reproduce or modify each step.
+
+High-level pipeline (what I ran)
+Start with your cleaned Income‑normalized CSV:
+20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+Run the automated descriptive analysis: analysis_scales.py
+Remove extreme rows (outliers) and regenerate per-variable plots: remove_outliers_and_regen.py
+Run pairwise relational/statistical analysis and produce plots + summary: relational_analysis.py
+Run targeted adjusted regression(s) to check confounding and interactions (I used statsmodels in a quick script block and saved results).
+Files I used and produced (quick map)
+Inputs
+InputData/...-IncomeNormalized.csv (your main cleaned/normalized dataset)
+InputData/...-IncomeNormalized-NoOutliers.csv (generated by the outlier script)
+Descriptive outputs (from analysis_scales.py)
+scales_summary.csv (per-column summary)
+numeric_stats.csv (numeric column stats, IQR/outlier counts)
+categorical_summary.csv (top categories)
+scales_analysis_report.txt (human-readable summary)
+InputData/...-analysis-ready.csv (a copy saved for downstream plotting)
+Outlier-clean outputs (from remove_outliers_and_regen.py)
+InputData/...-NoOutliers.csv (new dataset after outlier removal; with relaxed rule this is 79 rows)
+InputData/outputs_nooutliers/plots/ (folder with per-variable PNGs)
+scales_plots_report_nooutliers.pdf (one-page-per-variable PDF)
+Relational outputs (from relational_analysis.py)
+InputData/outputs_relation/plots/ (pairwise plots; includes stratified snapshots by Marital Status)
+relation_summary.csv (raw test results per pair)
+relation_report.pdf (compiled images in a PDF)
+relation_summary_with_fdr.csv (after Benjamini–Hochberg correction)
+Confounding / regression outputs
+adjusted_models_summary.csv (example crude vs adjusted model results I fit for Withdrawl → Perceived Social Support T Score)
+Environment / reproducibility
+requirements.txt (I created this and pinned SciPy 1.15.3 and core libs)
+SciPy and statsmodels were installed in the environment (I installed scipy and statsmodels during the session).
+Step‑by‑step — what each script does (plain English)
+A. analysis_scales.py
+
+Purpose: quick, automated descriptive scan of the IncomeNormalized CSV.
+What it does:
+Attempts to find the CSV header row (looks at the first ~50 lines for 'Name' etc). If not found, uses line 5 as fallback.
+Reads the CSV into pandas and cleans column names (trims whitespace).
+For each column it records: dtype, missing count, unique count, and a few sample values and writes scales_summary.csv.
+For numeric columns it computes median, mean, std, IQR, and counts IQR-based outliers; writes numeric_stats.csv.
+For categorical (object) columns it writes top categories to categorical_summary.csv.
+Writes a small human-readable scales_analysis_report.txt.
+Saves an analysis-ready CSV copy next to the input (same stem + "-analysis-ready.csv").
+When to re-run: whenever the input CSV is modified or renamed.
+B. remove_outliers_and_regen.py (modified)
+
+Purpose: remove rows flagged as outliers and re-generate dataset-specific plots and a PDF.
+Original behavior: removed a row if it was an outlier in any numeric column (very aggressive).
+Change I implemented: less aggressive rule — a row is removed only if it is an outlier in at least N numeric columns (default N = 2). I also made the IQR multiplier configurable in the function.
+How it flags outliers:
+For each numeric column it computes IQR-based fences: q1 - kIQR and q3 + kIQR (k default 1.5).
+For each row it counts how many numeric columns are outside their fences.
+It keeps rows that have fewer than min_outlier_cols outlier flags (so rows with 0 or 1 flagged column are retained when min_outlier_cols=2).
+Outputs:
+The new CSV: InputData/...-NoOutliers.csv (with fewer rows removed than before: 79 rows with the default N=2 case).
+Per-variable PNGs under InputData/outputs_nooutliers/plots/ and an aggregated PDF InputData/scales_plots_report_nooutliers.pdf.
+Why this change: reduces data loss from isolated extreme values in single columns while still removing rows with multiple aberrant measurements.
+C. relational_analysis.py (updated)
+
+Purpose: automated pairwise relationship testing and plots, with stratification snapshot by marital status.
+Key updates I made:
+Use SciPy (pearsonr/spearmanr, f_oneway, kruskal, chi2_contingency) for exact test statistics where appropriate.
+Create scatter + regression lines (overall) for numeric-numeric pairs and add a small sentinel image showing group-wise scatter/regression by Marital Status when that column exists.
+For categorical vs numeric: boxplots and ANOVA (fallback to Kruskal when ANOVA fails).
+For categorical vs categorical: contingency table + chi‑square.
+Save pairwise PNGs and compile into a PDF.
+Write a relation_summary.csv with fields: independent, dependent, test, statistic, pvalue, notes.
+Post-processing I ran:
+Parse numeric p-values from relation_summary.csv and apply Benjamini–Hochberg FDR (BH) correction (wrote relation_summary_with_fdr.csv).
+Count: in this run, 117 tests had parsable p-values; 85 tests were significant at FDR q ≤ 0.05 (this is expected in psychometric data where many measures are correlated).
+Note on plotting/warnings: seaborn produced FutureWarnings about palette usage — harmless but we can tidy visuals later.
+D. Adjusted regression / confounding check (ad hoc statsmodels run)
+
+Purpose: go beyond pairwise correlation to check whether associations persist after controlling for plausible confounders.
+What I ran as an example:
+Outcome: Perceived Social Support Total T Score
+Exposure: Withdrawl - Weighted Score
+Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status
+Models:
+Crude OLS: outcome ~ exposure
+Adjusted OLS: outcome ~ exposure + covariates (categorical covariates entered as C(...))
+Interaction model: outcome ~ exposure * MaritalStatus + some numeric covariates
+Example results:
+crude beta ≈ -1.796 (p ~ 1e-5)
+adjusted beta ≈ -1.660 (p ~ 0.0012) — association remains after covariate adjustment (attenuated slightly)
+interaction term (exposure * Marital Status): main effect ~ -2.91 (p≈0.0047), interaction for Single vs base p≈0.13 (not significant) — suggests the association is present, and while effect size differs numerically between groups, the difference is not statistically significant (in that interaction test).
+Saved summary: adjusted_models_summary.csv
+Statistical methods used and why
+Correlation
+Pearson r for linear relationships; Spearman for rank (nonparametric) association.
+SciPy's pearsonr/spearmanr used where possible.
+Group comparisons
+One-way ANOVA for comparing numeric outcome across categories (assumes approximate normality).
+If ANOVA call fails or assumptions questionable, Kruskal-Wallis (nonparametric) fallback is used.
+Contingency
+Chi-square test for categorical vs categorical contingency tables.
+Multiple comparisons
+Benjamini–Hochberg (FDR) applied to the set of parsed p-values from relation_summary.csv to control the false discovery rate.
+Regression / confounding checks
+OLS regression (statsmodels) to estimate crude and adjusted effects and test covariate impact and interactions.
+How confounding was handled / what I did to check for it
+Controlled confounders (example): age, income_midpoint, education, marital status were included in adjusted linear models.
+Compared crude vs adjusted effect sizes:
+If the exposure coefficient changes meaningfully after adjustment, that suggests confounding.
+In the example, the coefficient shrank slightly after adjustment but remained significant (so confounding partly explains, but does not remove, the association).
+Stratified/interaction checks:
+I added marital-status stratified visualizations (scatter + regression) and fit interaction models for exposure * Marital Status to test effect heterogeneity.
+Notes on completeness:
+These adjustments reduce confounding bias for measured covariates, but they do not remove unmeasured confounders or guarantee causal interpretation.
+Causal claims — what is and isn’t supported
+Not supported:
+Strong causal claims (e.g., "Internet use causes lower social support") are not supported by these analyses alone because the data are cross‑sectional (single time point). Cross‑sectional associations can reflect reverse causality, confounding, or selection bias.
+What would strengthen causal inference:
+Longitudinal / panel data (exposure measured before outcome).
+Randomized interventions, or natural experiments.
+Instrumental variables with a valid instrument (rare and hard to find).
+Careful DAG specifying variables to adjust for and sensitivity analyses for unmeasured confounding (E-values, bias formulas).
+Practical conclusion you can make from the current work:
+There are consistent, often moderate negative associations between several Internet-problem scales (Withdrawl, Compulsive Behaviour, Occupational/Relationship Consequences, Obsession) and perceived social support / self‑concept scales. These associations persist after adjustment for common sociodemographic covariates in example models, but they are associative (not causal).
+Reproducibility — commands to re-run the whole pipeline
+Run the descriptive analysis:
+python3 analysis_scales.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+Recreate NoOutliers with the relaxed rule and generate plots:
+python3 remove_outliers_and_regen.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+(This writes the NoOutliers CSV and regenerates InputData/outputs_nooutliers/plots and PDF.)
+Re-run relational analysis (uses SciPy now):
+python3 relational_analysis.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.csv
+Recompute BH-corrected p-values (I already wrote code that parsed relation_summary.csv and created relation_summary_with_fdr.csv; you can re-run that snippet if you regenerate relation_summary.csv).
+Parameters you can tune (and where)
+Outlier rule (in remove_outliers_and_regen.py):
+min_outlier_cols (default I set = 2). Increase to 3 to be more permissive; set to 1 to be aggressive.
+iqr_multiplier (default 1.5). Increase to 2.0 or 3.0 to widen fences.
+Relational analysis:
+Which INDEP / DEPEND lists are used: edit INDEP and DEPEND lists near the top of relational_analysis.py to focus on a smaller set of exposures/outcomes.
+Minimum pairwise sample size threshold (the code currently skips very small groups).
+Regression models
+Choice of covariates (I used a small set for the Withdrawl example). Add/remove covariates to reflect your proposed DAG.
+Practical next steps I recommend (pick one)
+A: Batch adjusted regressions: run adjusted models (same covariates) for a list of internet-related exposures vs key outcomes (Perceived Social Support totals and Self Concept totals). I can produce a CSV of all adjusted coefficients, p-values and BH corrected p-values.
+B: Sensitivity analysis: run models on both the strict NoOutliers (previously 66 rows) and the relaxed NoOutliers (79 rows) and compare results to assess robustness.
+C: Add CLI flags to remove_outliers_and_regen.py for --min-outlier-cols and --iqr-mult, so you can experiment w/o editing code.
+D: Create a one-page PDF "findings summary" with the top 6 associations (plots + adjusted coefficients + FDR q-values) and a short paragraph about confounding and causality.
+Anything you want changed now?
+I can run any of the next steps immediately. Which do you prefer I do next?
+Run batch adjusted regressions for all internet-exposures → key outcomes (A),
+Add CLI flags for the outlier script (C),
+Create the short summary PDF (D),
+Or run the sensitivity check comparing strict vs relaxed outlier rules (B).
+If you want A (batch adjusted regressions), tell me:
+
+which exposures (if not the whole internet-related set), and
+which outcomes (e.g., Perceived Social Support totals, Social Self Concept Total, Real Self Concept Total).
+If you want D (one-page summary), I’ll put the top 6 associations (by absolute adjusted beta) into a single PDF slide with plots and BH-adjusted p-values.
+
+Finally — small housekeeping I can do while you decide:
+
+Add statsmodels and statsmodels version to requirements.txt (I can pin it).
+Add a small README note on how to tune the outlier rule.
+Pick the next action and I’ll run it and attach the files.

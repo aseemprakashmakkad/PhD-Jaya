@@ -135,7 +135,7 @@ def analyze_pair(df, xcol, ycol, outdir, pdf):
     ax = fig.add_subplot(111)
 
     try:
-    if (not x_cat) and (not y_cat):
+        if (not x_cat) and (not y_cat):
             # numeric-numeric: Pearson and Spearman, scatter with reg line
             # dropna pairwise
             df_xy = df[[xcol, ycol]].dropna()

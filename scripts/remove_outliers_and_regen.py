@@ -26,6 +26,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_pdf import PdfPages
 import textwrap
+try:
+    from docx import Document
+    from docx.shared import Inches
+except Exception:
+    Document = None
 
 
 def sanitize(s):
@@ -72,6 +77,7 @@ def plot_all_columns(df, out_plots_dir, pdf_out):
     out_plots_dir.mkdir(parents=True, exist_ok=True)
     pp = PdfPages(str(pdf_out))
     cols = list(df.columns)
+    metadata = []
     for col in cols:
         ser = df[col]
         if pd.api.types.is_numeric_dtype(ser):
@@ -118,20 +124,27 @@ def plot_all_columns(df, out_plots_dir, pdf_out):
             fig.text(0.01, 0.02, textwrap.fill(desc, 200), ha='left', va='bottom', fontsize=9)
             plt.tight_layout(rect=[0,0.06,1,0.98])
 
-            # save images
+            # save images (high-resolution for legibility in PDF/DOCX)
             fname_hist = out_plots_dir / f"{sanitize(col)}_hist.png"
             fname_box = out_plots_dir / f"{sanitize(col)}_box.png"
-            fig.savefig(fname_hist, bbox_inches='tight', facecolor=fig.get_facecolor())
+            fig.savefig(fname_hist, dpi=200, bbox_inches='tight', facecolor=fig.get_facecolor())
             # small box-only image
             fig_box_small, axb = plt.subplots(figsize=(8,3), facecolor='white')
             sns.boxplot(x=ser_clean, orient='h', ax=axb)
             axb.set_title(f'Boxplot: {col}')
             plt.tight_layout()
-            fig_box_small.savefig(fname_box, bbox_inches='tight', facecolor=fig_box_small.get_facecolor())
+            fig_box_small.savefig(fname_box, dpi=200, bbox_inches='tight', facecolor=fig_box_small.get_facecolor())
             plt.close(fig_box_small)
 
             pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
             plt.close(fig)
+            metadata.append({
+                'col': col,
+                'type': 'numeric',
+                'desc': desc,
+                'hist': fname_hist,
+                'box': fname_box
+            })
 
         else:
             ser_cat = ser.fillna('<<MISSING>>').astype(str)
@@ -158,12 +171,19 @@ def plot_all_columns(df, out_plots_dir, pdf_out):
             fig.patch.set_facecolor('white')
             fig.text(0.01, 0.02, '\n'.join(textwrap.wrap(desc_full, 300)), ha='left', va='bottom', fontsize=9)
             plt.tight_layout(rect=[0,0.06,1,0.98])
-            fname_bar = out_plots_dir / f"{sanitize(col)}_bar.png"
-            fig.savefig(fname_bar, bbox_inches='tight', facecolor=fig.get_facecolor())
-            pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
-            plt.close(fig)
+        fname_bar = out_plots_dir / f"{sanitize(col)}_bar.png"
+        fig.savefig(fname_bar, dpi=200, bbox_inches='tight', facecolor=fig.get_facecolor())
+        pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
+        plt.close(fig)
+        metadata.append({
+        'col': col,
+        'type': 'categorical',
+        'desc': desc_full,
+        'bar': fname_bar
+        })
 
     pp.close()
+    return metadata
 
 
 def main():
@@ -187,11 +207,68 @@ def main():
     out_plots_dir = inp.parent / 'outputs_nooutliers' / 'plots'
     pdf_out = inp.parent / 'scales_plots_report_nooutliers.pdf'
     print('Rendering plots to', out_plots_dir, 'and PDF', pdf_out)
-    plot_all_columns(df_noout, out_plots_dir, pdf_out)
+    metadata = plot_all_columns(df_noout, out_plots_dir, pdf_out)
     # write small index
     with open(inp.parent / 'outputs_nooutliers' / 'plots' / 'index.txt', 'w', encoding='utf-8') as fh:
         for p in sorted((inp.parent / 'outputs_nooutliers' / 'plots').iterdir()):
             fh.write(p.name + '\n')
+
+    # --- create Word document mirroring the PDF (if python-docx available) ---
+    if Document is not None:
+        try:
+            doc = Document()
+            doc.add_heading('Scales plots report (NoOutliers)', level=1)
+            doc.add_paragraph(f'Source file: {out_csv.name}')
+            doc.add_paragraph(f'Rows kept: {df_noout.shape[0]}; columns: {df_noout.shape[1]}')
+
+            for m in metadata:
+                col = m.get('col')
+                doc.add_heading(str(col), level=2)
+                doc.add_paragraph(m.get('desc', ''))
+
+                # insert images depending on type
+                try:
+                    if m.get('type') == 'numeric':
+                        img_hist = m.get('hist')
+                        img_box = m.get('box')
+                        if img_hist and img_hist.exists():
+                            try:
+                                doc.add_picture(str(img_hist), width=Inches(6.5))
+                            except Exception:
+                                try:
+                                    doc.add_picture(str(img_hist), width=Inches(5.5))
+                                except Exception:
+                                    pass
+                        if img_box and img_box.exists():
+                            try:
+                                doc.add_picture(str(img_box), width=Inches(6.5))
+                            except Exception:
+                                try:
+                                    doc.add_picture(str(img_box), width=Inches(5.5))
+                                except Exception:
+                                    pass
+                    else:
+                        img_bar = m.get('bar')
+                        if img_bar and img_bar.exists():
+                            try:
+                                doc.add_picture(str(img_bar), width=Inches(6.5))
+                            except Exception:
+                                try:
+                                    doc.add_picture(str(img_bar), width=Inches(5.5))
+                                except Exception:
+                                    pass
+                except Exception:
+                    pass
+
+                doc.add_page_break()
+
+            doc_out = inp.parent / 'scales_plots_report_nooutliers.docx'
+            doc.save(doc_out)
+            print('Saved Word report to', doc_out)
+        except Exception as e:
+            print('Failed to create Word document:', str(e))
+    else:
+        print('python-docx not available; skipping Word document creation. To enable, pip install python-docx')
 
     print('Done.')
 

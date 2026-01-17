@@ -17,6 +17,13 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_pdf import PdfPages
+try:
+    from docx import Document
+    from docx.shared import Inches, Pt
+except Exception:
+    Document = None
+    Inches = None
+    Pt = None
 
 # Ensure figures and saved output use a white background so text placed
 # in the figure (e.g. footer/summary) remains visible in PDF viewers.
@@ -163,14 +170,15 @@ for col in all_columns:
         fname_hist = OUT_DIR / f'{sanitize(col)}_hist.png'
         fname_box = OUT_DIR / f'{sanitize(col)}_box.png'
         # save the combined page to PDF and also save the separate files
-        fig.savefig(fname_hist, bbox_inches='tight', facecolor=fig.get_facecolor())
+        # save high-resolution images for legibility in PDF and Word
+        fig.savefig(fname_hist, bbox_inches='tight', facecolor=fig.get_facecolor(), dpi=200)
         # also save a box-only image for consistency
         # create a separate small fig for the boxplot image
         fig_box_small, axb = plt.subplots(figsize=(8,3), facecolor='white')
         sns.boxplot(x=ser_clean, orient='h', ax=axb)
         axb.set_title(f'Boxplot: {col}')
         plt.tight_layout()
-        fig_box_small.savefig(fname_box, bbox_inches='tight', facecolor=fig_box_small.get_facecolor())
+        fig_box_small.savefig(fname_box, bbox_inches='tight', facecolor=fig_box_small.get_facecolor(), dpi=200)
         plt.close(fig_box_small)
 
         pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
@@ -203,7 +211,8 @@ for col in all_columns:
         fig.text(0.01, 0.02, '\n'.join(textwrap.wrap(desc_full, 300)), ha='left', va='bottom', fontsize=9)
         plt.tight_layout(rect=[0,0.06,1,0.98])
         fname_bar = OUT_DIR / f'{sanitize(col)}_bar.png'
-        fig.savefig(fname_bar, bbox_inches='tight', facecolor=fig.get_facecolor())
+        # save high-resolution bar image
+        fig.savefig(fname_bar, bbox_inches='tight', facecolor=fig.get_facecolor(), dpi=200)
         pp.savefig(fig, bbox_inches='tight', facecolor=fig.get_facecolor())
         plt.close(fig)
 pp.close()
@@ -218,3 +227,95 @@ with open(CSV.parent / 'outputs' / 'plots' / 'index.txt', 'w', encoding='utf-8')
         fh.write(str(p.name) + '\n')
 
 print('Done.')
+
+# Additionally create a Microsoft Word (.docx) report with the same content as the PDF
+DOCX_OUT = CSV.parent / 'scales_plots_report.docx'
+if Document is None:
+    print('python-docx not available; skipping Word document creation. To enable, pip install python-docx')
+else:
+    print('Creating Word document at', DOCX_OUT)
+    doc = Document()
+    # Title page
+    doc.styles['Normal'].font.name = 'Arial'
+    doc.styles['Normal'].font.size = Pt(11)
+    h = doc.add_heading('Scales Data EDA Report', level=0)
+    h.alignment = 1
+    doc.add_paragraph(f'File: {CSV.name}')
+    doc.add_paragraph(f'Rows: {len(df)}  Columns: {len(df.columns)}')
+    doc.add_paragraph('Notes:')
+    doc.add_paragraph(' - Numeric flagged by simple IQR/outlier heuristics')
+    doc.add_paragraph(' - Categorical plots limited to top categories')
+    doc.add_page_break()
+
+    # Add one section per column mirroring the PDF
+    for col in all_columns:
+        doc.add_heading(str(col), level=2)
+        ser = df[col]
+        if pd.api.types.is_numeric_dtype(ser):
+            hist_img = OUT_DIR / f'{sanitize(col)}_hist.png'
+            box_img = OUT_DIR / f'{sanitize(col)}_box.png'
+            if hist_img.exists():
+                try:
+                    doc.add_picture(str(hist_img), width=Inches(6.5))
+                except Exception:
+                    pass
+            # add boxplot smaller
+            if box_img.exists():
+                try:
+                    doc.add_picture(str(box_img), width=Inches(6.5))
+                except Exception:
+                    pass
+            # add the same description footer as text
+            ser_clean = ser.dropna()
+            n = int(ser_clean.count()) if not ser_clean.empty else 0
+            mean = float(ser_clean.mean()) if n>0 else np.nan
+            median = float(ser_clean.median()) if n>0 else np.nan
+            std = float(ser_clean.std()) if n>0 else np.nan
+            mn = float(ser_clean.min()) if n>0 else np.nan
+            mx = float(ser_clean.max()) if n>0 else np.nan
+            q1 = float(ser_clean.quantile(0.25)) if n>0 else np.nan
+            q3 = float(ser_clean.quantile(0.75)) if n>0 else np.nan
+            iqr = q3 - q1 if n>0 else np.nan
+            lower = q1 - 1.5 * iqr if n>0 else np.nan
+            upper = q3 + 1.5 * iqr if n>0 else np.nan
+            outliers = ser_clean[(ser_clean < lower) | (ser_clean > upper)] if n>0 else ser_clean.iloc[0:0]
+            n_out = int(outliers.count())
+            pct_out = n_out / n if n>0 else 0
+            skewness = float(ser_clean.skew()) if n>2 else 0.0
+            mean_f = f"{mean:.2f}" if not np.isnan(mean) else "nan"
+            median_f = f"{median:.2f}" if not np.isnan(median) else "nan"
+            std_f = f"{std:.2f}" if not np.isnan(std) else "nan"
+            mn_f = f"{mn:.2f}" if not np.isnan(mn) else "nan"
+            mx_f = f"{mx:.2f}" if not np.isnan(mx) else "nan"
+            desc = (
+                f'Count={n}; mean={mean_f}; median={median_f}; std={std_f}; '
+                f'min={mn_f}; max={mx_f}; outliers={n_out} ({pct_out:.1%}). Skewness={skewness:.2f}.'
+            )
+            p = doc.add_paragraph()
+            run = p.add_run(desc)
+            run.font.size = Pt(10)
+        else:
+            bar_img = OUT_DIR / f'{sanitize(col)}_bar.png'
+            if bar_img.exists():
+                try:
+                    doc.add_picture(str(bar_img), width=Inches(6.5))
+                except Exception:
+                    pass
+            # add top categories text
+            ser_cat = ser.fillna('<<MISSING>>').astype(str)
+            vc = ser_cat.value_counts().head(50)
+            total = int(ser_cat.shape[0])
+            lines = []
+            for k, v in vc.items():
+                pct = v / total if total>0 else 0
+                lines.append(f'{k}: {v} ({pct:.1%})')
+            desc_full = 'Top categories: ' + ' | '.join(lines)
+            p = doc.add_paragraph()
+            run = p.add_run(desc_full)
+            run.font.size = Pt(10)
+        doc.add_page_break()
+    try:
+        doc.save(str(DOCX_OUT))
+        print('Saved Word report to', DOCX_OUT)
+    except Exception as e:
+        print('Could not save Word doc:', e)

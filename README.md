@@ -41,8 +41,16 @@ python3 scripts/analysis_scales.py InputData/20251214-ScalesData-Combined_ver0.7
 ```bash
 python3 scripts/produce_report.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
 ```
+- Primary outputs (saved under `InputData/` by default):
+  - `InputData/scales_plots_report.pdf` — consolidated PDF with one page per variable (box/hist/category plots and short summaries).
+  - `InputData/outputs/plots/` — individual high-resolution PNG files (one per plot). These are not committed to git by default.
 
-4) (Optional) Remove outliers and regenerate plots/PDF into a separate outputs folder:
+- Optional Word export (DOCX):
+  - If `python-docx` is installed in the environment, the script also writes `InputData/scales_plots_report.docx` (mirrors the PDF content and embeds the PNGs).
+  - To enable: `pip install --user python-docx`
+  
+  
+4) Remove outliers and regenerate plots/PDF into a separate outputs folder:
 
 ```bash
 python3 scripts/remove_outliers_and_regen.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
@@ -54,7 +62,28 @@ This helper produces:
 - `InputData/outputs_nooutliers/plots/` (individual PNGs)
 - `InputData/scales_plots_report_nooutliers.pdf`
 
-Notes: if you omit the path argument for each script they will try to use the repository defaults in `InputData/` (the filenames shown above).
+
+5) relational tests and relation report 
+
+```bash
+python3 scripts/relational_analysis.py \
+  InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.csv
+```
+
+Produces: `relation_summary.csv, relation_summary_with_fdr.csv, relation_report.pdf` (and outputs_relation for its plots). It may also create adjusted_models_summary.csv for regression checks.
+
+Inputs for relational_analysis.py:
+
+Any analysis-ready CSV (e.g. `InputData/...-IncomeNormalized-analysis-ready.csv`), or the NoOutliers CSV if you want cleaned-data relationships.
+It expects the usual variable names present from analysis_scales.py output.
+Outputs written by `relational_analysis.py` (default locations):
+
+`relation_summary.csv` — raw pairwise test results
+`relation_summary_with_fdr.csv` — same with Benjamini–Hochberg FDR applied
+`relation_report.pdf ` — compiled plots/images showing relationships
+`outputs_relation` — directory with individual relation plots (PNG)
+
+
 
 Notes & recommendations
 - Scripts accept an explicit path to a CSV file. If you run them without arguments they will use the repository's default `InputData/` filenames (created during the analysis session).

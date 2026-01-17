@@ -42,6 +42,12 @@ except Exception:
     sm = None
     multitest = None
 
+try:
+    from docx import Document
+    from docx.shared import Inches
+except Exception:
+    Document = None
+
 sns.set(style='whitegrid')
 
 
@@ -180,7 +186,8 @@ def analyze_pair(df, xcol, ycol, outdir, pdf):
                         ax2.set_title('By Marital Status')
                         # save it temporarily
                         fname2 = outdir / f"{sanitize(xcol)}__vs__{sanitize(ycol)}__by_Marital_Status.png"
-                        fig2.savefig(fname2, bbox_inches='tight', facecolor=fig2.get_facecolor())
+                        # save high-resolution stratified image to keep text/axes legible in PDF/DOCX
+                        fig2.savefig(fname2, dpi=200, bbox_inches='tight', facecolor=fig2.get_facecolor())
                         plt.close(fig2)
                     except Exception:
                         pass
@@ -260,7 +267,8 @@ def analyze_pair(df, xcol, ycol, outdir, pdf):
 
     # save plot file
     fname = outdir / f"{sanitize(xcol)}__vs__{sanitize(ycol)}.png"
-    fig.savefig(fname, bbox_inches='tight', facecolor=fig.get_facecolor())
+    # save high-resolution main image so embedded versions in PDF/DOCX remain legible
+    fig.savefig(fname, dpi=200, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.close(fig)
     # append to pdf
     try:
@@ -328,6 +336,63 @@ def main():
     print('Wrote summary to', out_summary)
     print('Plots to', out_plots)
     print('PDF to', pdf_out)
+
+    # --- Create Word document mirroring the PDF (if python-docx is available) ---
+    if Document is not None:
+        try:
+            doc = Document()
+            doc.add_heading('Relation report', level=1)
+            doc.add_paragraph(f'Source file: {inp.name}')
+            doc.add_paragraph(f'Pairs analyzed: {len(summary_rows)}')
+
+            # Recreate the per-pair content in the same order as the PDF
+            for r in summary_rows:
+                x = r.get('independent')
+                y = r.get('dependent')
+                test = r.get('test')
+                stat = r.get('statistic')
+                pval = r.get('pvalue')
+                notes = r.get('notes', '')
+
+                # Heading and brief summary
+                doc.add_heading(f'{y}  vs  {x}', level=2)
+                summary_para = f"Test: {test if test is not None else 'N/A'}; statistic: {stat}; p-value: {pval}; {notes}"
+                doc.add_paragraph(summary_para)
+
+                # insert main plot image (high-res)
+                img_main = out_plots / f"{sanitize(x)}__vs__{sanitize(y)}.png"
+                if img_main.exists():
+                    try:
+                        doc.add_picture(str(img_main), width=Inches(6.5))
+                    except Exception:
+                        # fallback: add smaller width if insertion fails
+                        try:
+                            doc.add_picture(str(img_main), width=Inches(5.5))
+                        except Exception:
+                            pass
+
+                # insert marital-status stratified image if present
+                img_ms = out_plots / f"{sanitize(x)}__vs__{sanitize(y)}__by_Marital_Status.png"
+                if img_ms.exists():
+                    try:
+                        doc.add_paragraph('By Marital Status:')
+                        doc.add_picture(str(img_ms), width=Inches(6.5))
+                    except Exception:
+                        try:
+                            doc.add_picture(str(img_ms), width=Inches(5.5))
+                        except Exception:
+                            pass
+
+                # add a page break to avoid crowding
+                doc.add_page_break()
+
+            doc_out = inp.parent / 'relation_report.docx'
+            doc.save(doc_out)
+            print('Saved Word report to', doc_out)
+        except Exception as e:
+            print('Failed to create Word document:', str(e))
+    else:
+        print('python-docx not available; skipping Word document creation. To enable, pip install python-docx')
 
 
 if __name__ == '__main__':

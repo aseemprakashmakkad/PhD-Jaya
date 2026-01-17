@@ -181,29 +181,46 @@ Controlled confounders (example): age, income_midpoint, education, marital statu
 Compared crude vs adjusted effect sizes:
 If the exposure coefficient changes meaningfully after adjustment, that suggests confounding.
 In the example, the coefficient shrank slightly after adjustment but remained significant (so confounding partly explains, but does not remove, the association).
+
 Stratified/interaction checks:
 I added marital-status stratified visualizations (scatter + regression) and fit interaction models for exposure * Marital Status to test effect heterogeneity.
 Notes on completeness:
 These adjustments reduce confounding bias for measured covariates, but they do not remove unmeasured confounders or guarantee causal interpretation.
 Causal claims — what is and isn’t supported
+
+
+
 Not supported:
 Strong causal claims (e.g., "Internet use causes lower social support") are not supported by these analyses alone because the data are cross‑sectional (single time point). Cross‑sectional associations can reflect reverse causality, confounding, or selection bias.
+
 What would strengthen causal inference:
 Longitudinal / panel data (exposure measured before outcome).
 Randomized interventions, or natural experiments.
 Instrumental variables with a valid instrument (rare and hard to find).
 Careful DAG specifying variables to adjust for and sensitivity analyses for unmeasured confounding (E-values, bias formulas).
 Practical conclusion you can make from the current work:
+
+
 There are consistent, often moderate negative associations between several Internet-problem scales (Withdrawl, Compulsive Behaviour, Occupational/Relationship Consequences, Obsession) and perceived social support / self‑concept scales. These associations persist after adjustment for common sociodemographic covariates in example models, but they are associative (not causal).
+
+
 Reproducibility — commands to re-run the whole pipeline
-Run the descriptive analysis:
+
+
+1) Run the descriptive analysis:
 python3 analysis_scales.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
-Recreate NoOutliers with the relaxed rule and generate plots:
+
+2) Recreate NoOutliers with the relaxed rule and generate plots:
 python3 remove_outliers_and_regen.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
 (This writes the NoOutliers CSV and regenerates InputData/outputs_nooutliers/plots and PDF.)
-Re-run relational analysis (uses SciPy now):
+
+3) Re-run relational analysis (uses SciPy now):
 python3 relational_analysis.py 20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized-NoOutliers.csv
-Recompute BH-corrected p-values (I already wrote code that parsed relation_summary.csv and created relation_summary_with_fdr.csv; you can re-run that snippet if you regenerate relation_summary.csv).
+
+4) Recompute BH-corrected p-values (I already wrote code that parsed relation_summary.csv and created relation_summary_with_fdr.csv; you can re-run that snippet if you regenerate relation_summary.csv).
+
+
+
 Parameters you can tune (and where)
 Outlier rule (in remove_outliers_and_regen.py):
 min_outlier_cols (default I set = 2). Increase to 3 to be more permissive; set to 1 to be aggressive.
@@ -213,12 +230,16 @@ Which INDEP / DEPEND lists are used: edit INDEP and DEPEND lists near the top of
 Minimum pairwise sample size threshold (the code currently skips very small groups).
 Regression models
 Choice of covariates (I used a small set for the Withdrawl example). Add/remove covariates to reflect your proposed DAG.
+
 Practical next steps I recommend (pick one)
-A: Batch adjusted regressions: run adjusted models (same covariates) for a list of internet-related exposures vs key outcomes (Perceived Social Support totals and Self Concept totals). I can produce a CSV of all adjusted coefficients, p-values and BH corrected p-values.
-B: Sensitivity analysis: run models on both the strict NoOutliers (previously 66 rows) and the relaxed NoOutliers (79 rows) and compare results to assess robustness.
-C: Add CLI flags to remove_outliers_and_regen.py for --min-outlier-cols and --iqr-mult, so you can experiment w/o editing code.
-D: Create a one-page PDF "findings summary" with the top 6 associations (plots + adjusted coefficients + FDR q-values) and a short paragraph about confounding and causality.
+	A: Batch adjusted regressions: run adjusted models (same covariates) for a list of internet-related exposures vs key outcomes (Perceived Social Support totals and Self Concept totals). I can produce a CSV of all adjusted coefficients, p-values and BH corrected p-values.
+	B: Sensitivity analysis: run models on both the strict NoOutliers (previously 66 rows) and the relaxed NoOutliers (79 rows) and compare results to assess robustness.
+	C: Add CLI flags to remove_outliers_and_regen.py for --min-outlier-cols and --iqr-mult, so you can experiment w/o editing code.
+	D: Create a one-page PDF "findings summary" with the top 6 associations (plots + adjusted coefficients + FDR q-values) and a short paragraph about confounding and causality.
+
+
 Anything you want changed now?
+
 I can run any of the next steps immediately. Which do you prefer I do next?
 Run batch adjusted regressions for all internet-exposures → key outcomes (A),
 Add CLI flags for the outlier script (C),
@@ -235,3 +256,108 @@ Finally — small housekeeping I can do while you decide:
 Add statsmodels and statsmodels version to requirements.txt (I can pin it).
 Add a small README note on how to tune the outlier rule.
 Pick the next action and I’ll run it and attach the files.
+
+
+========================================================================================================
+
+
+Produce adjusted regression results for a predefined list of exposure→outcome pairs (not just Withdrawl → Perceived Social Support). 
+
+
+
+Create a python script to batch-run OLS models with the same covariates (Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status) for all internet-related exposures and the top dependent scores, then FDR-correct the exposure p-values across those models.
+
+
+create a MS Word summary showing:
+Top 10 associations (plots + BH-adjusted p-values)
+Results of 1-2 adjusted regression models (coef, 95% CI, p)
+Also create a detailed confounding & causal assessment
+======================================================================================================
+
+Based on the OLS model analysis done for internet-related exposures and the dependent scores modulated with Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status  ----- what is the analysis of relationship between the internet-related exposures and the dependent scores
+
+
+
+=========================================================================================================
+
+Please update the remove_outliers_and_regen.py script to also create a MS word document. The contents of this word document need to be same exactly as the pdf. Make sure the content in the word document and the PNGs & PDF is very legible. No over writing on text on the titles, axis, summary comments etc. 
+
+
+==========================================================================================================
+
+
+For the above analysis done write a commentary that will work as part of the thesis write up that will be done for my PhD Titled "Social Networking and Its Impact on Perceived Stress, Self-Concept & Social Support of Married Females versus Un-Married Females". 
+
+Start the write up by telling the objective of the Thesis being -- 
+
+" 
+To investigate the multifaceted impact of social networking on the perceived stress levels, self-concept, and social support networks of Indian females in the context of their marital status. 	
+By addressing these questions, this research seeks to provide valuable insights into the complex interplay between social networking, psychological well-being, and social relationships among Indian women, shedding light on the unique experiences and challenges faced by both married and unmarried individuals in the digital age.
+" 
+
+Then tell what were the questionnaires used. 
+
+"
+VVVVVVVVVVVVVVVVVVV
+QQQQQQQQQQQQQQQQQ
+"
+
+Then tell based on questionnaire what were the independent & dependent variables. 
+List of independent & dependent variables are as below. 
+
+Tell following valiables will be used as covariates. 
+
+	Age (IN YEARS)
+	Marital Status
+	Highest level of education completed
+	Current Employment Status
+	Number of children
+	Type of family structure
+	Monthly household income
+	Access to healthcare services
+	Overall health status
+	Are you covered by health insurance?
+	Participation in community or social activities
+
+
+
+
+Following variables will be used as independent variables - 
+
+	Functional Impairment 
+	Withdrawl
+	Occupational & Relationship Consequences
+	Compulsive Behaviour
+	Obsession with Internet
+	Internet as a Source of Recreation
+	Enhanced Socialization 
+	Perceived Control of Internet Use
+	Internet Usage Total Score 
+
+
+
+Following varibales will be used as dependent variables: 
+
+	Emotional Support 
+	Informational Support 
+	Instrumental Support 
+
+
+
+Then explain the statistical analysis that was done - 
+
+- Describe the descriptive analysis done for the variables. 
+- Summarize the findings from descriptive statistical analysis in terms of what are the observed groupings, what is the skewness of data as shown in histograms and quartile charts. What do the descriptive statistics tell us about the demographics data.  
+- ANOVA & Chi-square tests that were done to find causal and associative relationship between the covriates and dependent variables 
+- Summarize the key findings from ANOVA & Chi-square tests. How are independent variables related to the dependent scores and categories ? Based on the ANOVA & Chi-square tests what are the important relationships that can be found between the independent and dependent scores ?    
+- Describe the OLS regression that was done to find relationship between for all internet-related exposures and the dependent scores / variables
+- Provide reason, based on the statistical descriptive analysis & ANOVA & Chi-square tests, why  Covariates ( that is - Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status were used ) were used in OLS models 
+
+
+Finally summarize the key findings. 
+Based on the OLS model analysis done for internet-related exposures and the dependent scores modulated with Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status  ----- what is the analysis of relationship between the internet-related exposures and the dependent scores
+
+Add all of the above analysis to a well formatted MS Word document 
+ 
+
+

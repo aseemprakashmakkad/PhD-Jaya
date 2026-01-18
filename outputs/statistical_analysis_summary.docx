@@ -1,0 +1,172 @@
+Statistical Analysis of Relationships Between Exposures, Covariates, and Outcomes
+
+1. Pearson/Spearman Correlation Analysis
+
+The following section summarizes the results of Pearson and Spearman correlation analyses conducted to assess the strength and direction of relationships between demographic covariates (e.g., Age, Monthly household income) and dependent variables (Emotional Support, Informational Support, Instrumental Support T Scores). The strength of association is interpreted using the correlation coefficient (r), and statistical significance is determined by the p-value.
+
+- Age (IN YEARS) vs. Emotional Support - T Score:
+  - Spearman r = 0.403, p = 0.0003; Pearson r = 0.42, p = 0.00015
+  - Interpretation: Moderate, statistically significant positive association. Older age is associated with higher emotional support scores.
+
+- Age (IN YEARS) vs. Informational Support - T Score:
+  - Spearman r = 0.306, p = 0.00725; Pearson r = 0.28, p = 0.0136
+  - Interpretation: Weak-to-moderate, statistically significant positive association. Older age is associated with higher informational support.
+
+- Age (IN YEARS) vs. Instrumental Support - T Score:
+  - Spearman r = 0.299, p = 0.00859; Pearson r = 0.26, p = 0.0243
+  - Interpretation: Weak, statistically significant positive association. Older age is associated with higher instrumental support.
+
+- Monthly household income_midpoint_INR vs. Emotional Support - T Score:
+  - Spearman r = 0.098, p = 0.406; Pearson r = 0.10, p = 0.375
+  - Interpretation: Very weak, non-significant positive association. No evidence of a relationship.
+
+- Monthly household income_midpoint_INR vs. Informational Support - T Score:
+  - Spearman r = 0.15, p = 0.203; Pearson r = 0.18, p = 0.13
+  - Interpretation: Weak, non-significant positive association. No evidence of a relationship.
+
+- Monthly household income_midpoint_INR vs. Instrumental Support - T Score:
+  - Spearman r = 0.012, p = 0.919; Pearson r = -0.013, p = 0.913
+  - Interpretation: No association between income and instrumental support.
+
+[Further results for other variables can be added here as needed.]
+
+2. ANOVA Analysis
+
+The following section summarizes the results of ANOVA tests conducted to assess the strength of relationships between categorical independent/covariate variables and dependent variables. The F-statistic indicates the ratio of variance explained by the group differences to the variance within groups, and the p-value indicates statistical significance.
+
+- Age (IN YEARS) vs. Emotional Support - Rank:
+  - F = 4.99, p = 0.0013
+  - Interpretation: Statistically significant group differences. Age groups differ in emotional support ranks.
+
+- Age (IN YEARS) vs. Informational Support - Rank:
+  - F = 3.26, p = 0.0163
+  - Interpretation: Statistically significant group differences. Age groups differ in informational support ranks.
+
+- Age (IN YEARS) vs. Instrumental Support - Rank:
+  - F = 2.11, p = 0.0885
+  - Interpretation: No statistically significant group differences.
+
+- Age (IN YEARS) vs. Real Self Concept Total Category:
+  - F = 6.85, p = 0.00187
+  - Interpretation: Statistically significant group differences. Age groups differ in real self-concept.
+
+- Age (IN YEARS) vs. Ideal Self Concept Total Category:
+  - F = 3.99, p = 0.0492
+  - Interpretation: Statistically significant group differences. Age groups differ in ideal self-concept.
+
+- Age (IN YEARS) vs. Social Self Concept Total Category:
+  - F = 7.89, p = 0.00079
+  - Interpretation: Statistically significant group differences. Age groups differ in social self-concept.
+
+- Marital Status vs. Emotional Support - T Score:
+  - F = 17.43, p = 0.000078
+  - Interpretation: Strong, statistically significant group differences. Marital status is strongly associated with emotional support.
+
+- Marital Status vs. Instrumental Support - T Score:
+  - F = 6.04, p = 0.0163
+  - Interpretation: Statistically significant group differences. Marital status is associated with instrumental support.
+
+- Current Employment Status vs. Emotional Support - T Score:
+  - F = 2.67, p = 0.0216
+  - Interpretation: Statistically significant group differences. Employment status is associated with emotional support.
+
+- Are you covered by health insurance? vs. Emotional Support - T Score:
+  - F = 10.66, p = 0.000085
+  - Interpretation: Strong, statistically significant group differences. Health insurance coverage is strongly associated with emotional support.
+
+- Are you covered by health insurance? vs. Informational Support - T Score:
+  - F = 6.19, p = 0.00325
+  - Interpretation: Statistically significant group differences. Health insurance coverage is associated with informational support.
+
+- Participation in community or social activities vs. Informational Support - T Score:
+  - F = 4.80, p = 0.0110
+  - Interpretation: Statistically significant group differences. Participation is associated with informational support.
+
+[Other ANOVA results with p > 0.05 are not statistically significant and are omitted for brevity.]
+
+3. Chi-square Analysis
+
+The following section summarizes the results of Chi-square tests conducted to assess non-random associations between categorical independent/covariate variables and dependent variables. The Chi-square statistic (χ²) measures the strength of association, and the p-value indicates statistical significance.
+
+- Marital Status vs. Emotional Support - Rank:
+  - χ² = 16.23, p = 0.0027
+  - Interpretation: Statistically significant association. Marital status is associated with differences in emotional support ranks.
+
+- Marital Status vs. Instrumental Support - Rank:
+  - χ² = 12.00, p = 0.0173
+  - Interpretation: Statistically significant association. Marital status is associated with differences in instrumental support ranks.
+
+- Marital Status vs. Real Self Concept Total Category:
+  - χ² = 9.66, p = 0.0080
+  - Interpretation: Statistically significant association. Marital status is associated with differences in real self-concept.
+
+- Marital Status vs. Social Self Concept Total Category:
+  - χ² = 9.93, p = 0.0070
+  - Interpretation: Statistically significant association. Marital status is associated with differences in social self-concept.
+
+- Highest level of education completed vs. Informational Support - Rank:
+  - χ² = 41.96, p = 0.0028
+  - Interpretation: Statistically significant association. Education level is associated with differences in informational support ranks.
+
+- Current Employment Status vs. Emotional Support - Rank:
+  - χ² = 44.13, p = 0.0074
+  - Interpretation: Statistically significant association. Employment status is associated with differences in emotional support ranks.
+
+- Current Employment Status vs. Instrumental Support - Rank:
+  - χ² = 36.43, p = 0.0498
+  - Interpretation: Statistically significant association. Employment status is associated with differences in instrumental support ranks.
+
+- Current Employment Status vs. Social Self Concept Total Category:
+  - χ² = 23.38, p = 0.0247
+  - Interpretation: Statistically significant association. Employment status is associated with differences in social self-concept.
+
+- Number of children vs. Emotional Support - Rank:
+  - χ² = 21.84, p = 0.0393
+  - Interpretation: Statistically significant association. Number of children is associated with differences in emotional support ranks.
+
+- Monthly household income vs. Emotional Support - Rank:
+  - χ² = 26.94, p = 0.0422
+  - Interpretation: Statistically significant association. Income is associated with differences in emotional support ranks.
+
+- Monthly household income vs. Informational Support - Rank:
+  - χ² = 26.56, p = 0.0466
+  - Interpretation: Statistically significant association. Income is associated with differences in informational support ranks.
+
+- Access to healthcare services vs. Instrumental Support - Rank:
+  - χ² = 10.07, p = 0.0393
+  - Interpretation: Statistically significant association. Healthcare access is associated with differences in instrumental support ranks.
+
+- Overall health status vs. Real Self Concept Total Category:
+  - χ² = 13.43, p = 0.0367
+  - Interpretation: Statistically significant association. Health status is associated with differences in real self-concept.
+
+- Overall health status vs. Ideal Self Concept Total Category:
+  - χ² = 10.40, p = 0.0154
+  - Interpretation: Statistically significant association. Health status is associated with differences in ideal self-concept.
+
+- Are you covered by health insurance? vs. Emotional Support - Rank:
+  - χ² = 22.79, p = 0.0036
+  - Interpretation: Statistically significant association. Health insurance coverage is associated with differences in emotional support ranks.
+
+- Are you covered by health insurance? vs. Informational Support - Rank:
+  - χ² = 20.08, p = 0.0100
+  - Interpretation: Statistically significant association. Health insurance coverage is associated with differences in informational support ranks.
+
+- Are you covered by health insurance? vs. Social Self Concept Total Category:
+  - χ² = 9.74, p = 0.0451
+  - Interpretation: Statistically significant association. Health insurance coverage is associated with differences in social self-concept.
+
+- Participation in community or social activities vs. Informational Support - Rank:
+  - χ² = 21.39, p = 0.0062
+  - Interpretation: Statistically significant association. Participation is associated with differences in informational support ranks.
+
+- Participation in community or social activities vs. Real Self Concept Total Category:
+  - χ² = 10.58, p = 0.0317
+  - Interpretation: Statistically significant association. Participation is associated with differences in real self-concept.
+
+[Other Chi-square results with p > 0.05 are not statistically significant and are omitted for brevity.]
+[Other Chi-square results with p > 0.05 are not statistically significant and are omitted for brevity.]
+
+Conclusion
+----------
+The statistical analyses reveal several significant associations between demographic and socioeconomic covariates and the key outcome variables (emotional, informational, and instrumental support, as well as self-concept domains). Age, marital status, employment status, health insurance coverage, and participation in community activities consistently show significant relationships with various support and self-concept outcomes. Income and education also demonstrate associations in specific domains. These findings highlight the multifactorial nature of social support and self-concept among Indian females, emphasizing the importance of both demographic and social determinants in shaping psychosocial well-being.

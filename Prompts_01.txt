@@ -288,6 +288,19 @@ Please update the remove_outliers_and_regen.py script to also create a MS word d
 
 For the above analysis done write a commentary that will work as part of the thesis write up that will be done for my PhD Titled "Social Networking and Its Impact on Perceived Stress, Self-Concept & Social Support of Married Females versus Un-Married Females". 
 
+Following scales (questionnaires) were decided to be used: 
+
+1) Internet Overuse Scale By Dr. Darshna Shah (Vallabh Vidyanagar) & Prof. Urmi Nanda Biswas (Vadodara)
+
+2) Self CONCEPT Scale by R. K. Saraswat, Ph.D.
+
+3) Perceived Social Support by 
+Dr. Madhu Asthana, Head, Department of Psychology Sri Agrasen Kanya Autonomous P. G. College, Varanasi
+Dr. Dr. Kiran Bala Verma, Head, Department of Psychology Harishchandra P. G. College Varanasi.
+
+4) Perceived Stress Scale by Arun K. Singh (Patna) & Ashish Kumar Singh (Patna)
+
+ 
 Start the write up by telling the objective of the Thesis being -- 
 
 " 
@@ -295,17 +308,11 @@ To investigate the multifaceted impact of social networking on the perceived str
 By addressing these questions, this research seeks to provide valuable insights into the complex interplay between social networking, psychological well-being, and social relationships among Indian women, shedding light on the unique experiences and challenges faced by both married and unmarried individuals in the digital age.
 " 
 
-Then tell what were the questionnaires used. 
-
-"
-VVVVVVVVVVVVVVVVVVV
-QQQQQQQQQQQQQQQQQ
-"
 
 Then tell based on questionnaire what were the independent & dependent variables. 
 List of independent & dependent variables are as below. 
 
-Tell following valiables will be used as covariates. 
+Tell following valiables will be are covariates.  
 
 	Age (IN YEARS)
 	Marital Status
@@ -341,23 +348,120 @@ Following varibales will be used as dependent variables:
 	Emotional Support 
 	Informational Support 
 	Instrumental Support 
+	Perceived Social Support Total Score 	
 
+	Power Self Concept - Real Self Concept Score	
+	Power Self Concept - Ideal Self Concept score	
+	Power Self Concept – Social Self Concept Score	
+	Social Self Concept - Real Self Concept Score	
+	Social Self Concept – Ideal Self Concept Score 	
+	Social Self Concept – Social Self Concept Score	
+	Ability Self Concept - Real Self Concept Score	
+	Ability Self Concept - Ideal Self Concept Score	
+	Ability Self Concept – Social Self Concept Score	
+	Physical Self Concept - Real Self Concept Score	
+	Physical Self Concept – Ideal Self Concept Score	
+	Physical Self Concept – Social Self Concept Score	
+	Psychological Self Concept - Real Self Concept Score	
+	Psychological Self Concept – Ideal Self Concept Score	
+	Psychological Self Concept – Social Self Concept Score	
+	Real Self Concept Total Score	
+	Ideal Self Concept Total Score	
+	Social Self Concept Total Score
 
 
 Then explain the statistical analysis that was done - 
 
-- Describe the descriptive analysis done for the variables. 
-- Summarize the findings from descriptive statistical analysis in terms of what are the observed groupings, what is the skewness of data as shown in histograms and quartile charts. What do the descriptive statistics tell us about the demographics data.  
-- ANOVA & Chi-square tests that were done to find causal and associative relationship between the covriates and dependent variables 
-- Summarize the key findings from ANOVA & Chi-square tests. How are independent variables related to the dependent scores and categories ? Based on the ANOVA & Chi-square tests what are the important relationships that can be found between the independent and dependent scores ?    
+- Based on the files /home/pranav/PhD-Jaya/InputData/categorical_summary.csv & /home/pranav/PhD-Jaya/InputData/numeric_stats.csv -  Describe the descriptive analysis done for the variables. 
+- Summarize the findings for descriptive statistical analysis in terms of what are the observed patterns, outliers, means, medians, standard deviations, ranges, skewness of data as shown in histograms and quartile charts. Make comments by each variable if the data is well distributed or not.  
+
+Add all of the above analysis to a well formatted MS Word document 
+
+======================================
+
+Now explain the statistical analysis that was done - 
+
+- Based on the output data in the file "/home/pranav/PhD-Jaya/InputData/relation_summary.csv" pearson/spearman, ANOVA & Chi-square tests that were done to find causal and associative relationship between the internet-related exposures, demographic covariates and dependent variables 
+- Summarize the key findings from pearson/spearman, ANOVA & Chi-square tests:  
+	- For each person/spearman test done provide comments on strength/direction of relationship between independent/covariate and dependent basis the "r" & "p" values 
+	- For each ANOVA test done provide comments on strength of relationship between independent/covariate and dependent basis the "F" & "p" values  
+	- For each Chi-square test done provide comments on non-random associations between independent/covariate and dependent basis the "χ²" & "p" values  
+
+Add all of the above analysis to a well formatted MS Word document 
+====================================================
 - Describe the OLS regression that was done to find relationship between for all internet-related exposures and the dependent scores / variables
-- Provide reason, based on the statistical descriptive analysis & ANOVA & Chi-square tests, why  Covariates ( that is - Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status were used ) were used in OLS models 
+- Provide reason why  Covariates ( that is - Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status were used ) were used in OLS models 
 
 
 Finally summarize the key findings. 
 Based on the OLS model analysis done for internet-related exposures and the dependent scores modulated with Covariates: Age (IN YEARS), Monthly household income_midpoint_INR, Highest level of education completed, Marital Status  ----- what is the analysis of relationship between the internet-related exposures and the dependent scores
 
+Add charts to support the numbers shown in tables on : 
+- Key findings from ANOVA & Chi-square tests
+- Key Findings from OLS Models
+(take png generated by scripts analysis_scales.py, produce_report.py, emove_outliers_and_regen.py, relational_analysis.py ) 
+
+
 Add all of the above analysis to a well formatted MS Word document 
  
+
+===========================================================
+
+
+
+The /home/pranav/PhD-Jaya/scripts/relational_analysis.py script does relationship analysis using the following independent variables - 
+
+
+Age (IN YEARS)
+Marital Status
+Highest level of education completed
+Current Employment Status
+Number of children
+Type of family structure
+Monthly household income
+Access to healthcare services
+Overall health status
+Are you covered by health insurance?
+Participation in community or social activities
+Functional Impairment - Raw Score
+
+
+But relationship analysis using the following independent variables is not done -- 
+
+
+Functional Impairment - Raw Score
+Withdrawl - Raw Score
+Occupational & Relationship Consequences - Raw Score
+Compulsive Behaviour - Raw Score
+Obsession with Internet - Raw Score
+Internet as a Source of Recreation - Raw Score
+Enhanced Socialization - Raw Score
+Perceived Control of Internet Use - Raw Score
+Functional Impairment - Weighted Score
+Withdrawl - Weighted Score
+Occupational & Relationship Consequences - Weighted Score
+Compulsive Behaviour - Weighted Score
+Obsession with Internet - Weighted Score
+Internet as a Source of Recreation - Weighted Score
+Enhanced Socialization - Weighted Score
+Perceived Control of Internet Use - Weighted Score
+Internet Usage Total Score (Weighted)
+Functional Impairment  - Category
+Withdrawl – Category
+Occupational & Relationship Consequences – Category
+Compulsive Behaviour – Category
+Obsession with Internet – Category
+Internet as a Source of Recreation – Category
+Enhanced Socialization - Category 
+Perceived Control of Internet Use - Category 
+Internet Usage Total Categoty
+
+
+can you tell the reason why ? 
+
+
+=================================================================================================
+
+
 
 

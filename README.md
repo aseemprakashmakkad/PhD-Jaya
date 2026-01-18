@@ -90,6 +90,56 @@ Notes & recommendations
 - The `outputs/plots/` folder is `.gitignore`d so PNGs are kept local. The consolidated PDF report `scales_plots_report.pdf` is tracked in git.
 - If you'd like scripts to auto-detect the newest `ScalesData` file in `InputData/` instead of using a hard-coded filename, I can update them to do so.
 
+
+# Thesis Documentation Scripts
+
+The following scripts generate MS Word (DOCX) documents summarizing the findings and outcomes for thesis reporting:
+
+### 1. `write_thesis_descriptive.py`
+**Purpose:** Generates a descriptive analysis report with study objectives, variables, and summary statistics.
+
+**Inputs:**
+- Main cleaned/normalized CSV (default: `InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv`)
+- Uses summary CSVs: `scales_summary.csv`, `numeric_stats.csv`, `categorical_summary.csv`
+
+**Outputs:**
+- `InputData/thesis_descriptive_analysis.docx` — Word document with descriptive statistics and commentary.
+
+**Parameters:**
+- No required command-line arguments; uses default file paths. Edit script to change input/output locations.
+
+### 2. `write_thesis_analysis.py`
+**Purpose:** Produces a DOCX report summarizing regression and analytical findings, including key results and interpretations.
+
+**Inputs:**
+- Main cleaned/normalized CSV (default: `InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv`)
+- Regression/analysis outputs: e.g., `relation_summary.csv`, `relation_summary_with_fdr.csv`, and model summary files.
+
+**Outputs:**
+- `InputData/thesis_analysis_internet.docx` — Word document with regression/analysis results and thesis-style commentary.
+
+**Parameters:**
+- No required command-line arguments; uses default file paths. Edit script to change input/output locations.
+
+### 3. `batch_ols_internet.py`
+**Purpose:** Runs batch OLS regressions for internet-related exposures vs. outcomes, adjusting for covariates, and generates a DOCX summary.
+
+**Inputs:**
+- Analysis-ready CSV file (e.g., `InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv`)
+
+**Outputs:**
+- `InputData/batch_ols_report.docx` — Word summary of top OLS associations and model tables.
+- `InputData/adjusted_models_batch_summary.csv` — CSV with model results.
+- `InputData/outputs_models/plots/` — Plots for top associations.
+
+**Parameters:**
+- Path to input CSV file (required):
+  ```bash
+  python3 scripts/batch_ols_internet.py InputData/20251214-ScalesData-Combined_ver0.7-Cleaned-IncomeNormalized.csv
+  ```
+
+---
+
 Contact / reproducibility
 - To reproduce on another machine: clone the repo, create a Python virtual environment, install the dependencies above, and run the scripts as shown.
 

@@ -1,0 +1,745 @@
+independent,dependent,test,statistic,pvalue,notes,pvalue_fdr,significant_fdr
+Functional Impairment - Raw Score,Emotional Support - Raw Score,spearman,-0.17245800872346576,0.2687827867971684,,,False
+Functional Impairment - Raw Score,Informational Support - Raw Score,spearman,-0.3116314824699502,0.041925812303801865,,,False
+Functional Impairment - Raw Score,Instrumental Support - Raw Score,spearman,-0.20771986577237836,0.18135159644023977,,,False
+Functional Impairment - Raw Score,Emotional Support - T Score,spearman,-0.19859594066748693,0.20171979643099933,,,False
+Functional Impairment - Raw Score,Informational Support - T Score,spearman,-0.3172413079716049,0.0381841741256046,,,False
+Functional Impairment - Raw Score,Instrumental Support - T Score,spearman,-0.21034894690283396,0.17576536981943017,,,False
+Functional Impairment - Raw Score,Perceived Social Support Total T Score,spearman,-0.2526890052932903,0.10208706920347223,,,False
+Functional Impairment - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.2314563146683522,0.13533259027513964,,,False
+Functional Impairment - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.12830643520535062,0.4122353439802954,,,False
+Functional Impairment - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.1517597675179289,0.33131271433069887,,,False
+Functional Impairment - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.1806940343265327,0.24623211250843802,,,False
+Functional Impairment - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.097626881657345,0.5334103455854657,,,False
+Functional Impairment - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.20481153669651098,0.18767768325350956,,,False
+Functional Impairment - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.15335148493835193,0.32620619198970924,,,False
+Functional Impairment - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.08136602869460163,0.6039756232492337,,,False
+Functional Impairment - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.22177295357725055,0.15292437789781033,,,False
+Functional Impairment - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.11954373547919851,0.44513805290969877,,,False
+Functional Impairment - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,0.11047111258527531,0.4806705999283336,,,False
+Functional Impairment - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.21072359634881188,0.17497949377036925,,,False
+Functional Impairment - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.14770071445535338,0.3445587052318506,,,False
+Functional Impairment - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.15622701739246533,0.31710658043125867,,,False
+Functional Impairment - Raw Score,Real Self Concept Total Score,spearman,-0.24328005601815872,0.11594893159456786,,,False
+Functional Impairment - Raw Score,Ideal Self Concept Total Score,spearman,-0.18261886056352908,0.24115167879772037,,,False
+Functional Impairment - Raw Score,Social Self Concept Total Score,spearman,-0.11879321144463471,0.44802155808784183,,,False
+Functional Impairment - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Raw Score,Perceived Social Stress Score,spearman,0.21552401634450297,0.16513255640877514,,,False
+Functional Impairment - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Emotional Support - Raw Score,spearman,-0.47760400271309816,0.0012006509334110576,,,True
+Withdrawl - Raw Score,Informational Support - Raw Score,spearman,-0.44190610756242815,0.0030094142949537695,,,False
+Withdrawl - Raw Score,Instrumental Support - Raw Score,spearman,-0.539867702828622,0.00018673550745538443,,,True
+Withdrawl - Raw Score,Emotional Support - T Score,spearman,-0.3751049476320953,0.01319402827664035,,,False
+Withdrawl - Raw Score,Informational Support - T Score,spearman,-0.44805171770254093,0.002586887954592931,,,True
+Withdrawl - Raw Score,Instrumental Support - T Score,spearman,-0.5426546771569922,0.00017032802889979944,,,True
+Withdrawl - Raw Score,Perceived Social Support Total T Score,spearman,-0.5264274817972828,0.00028775713848645454,,,True
+Withdrawl - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.12667307948334663,0.4182607367776221,,,False
+Withdrawl - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,0.019191094391355624,0.9027823624452951,,,False
+Withdrawl - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.1427865558682239,0.36102380034346504,,,False
+Withdrawl - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.309342951690406,0.04353559625988234,,,False
+Withdrawl - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.2585180280721134,0.09415970402266327,,,False
+Withdrawl - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.18204706768603213,0.24265340421702655,,,False
+Withdrawl - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.04356303858500495,0.7814914232725052,,,False
+Withdrawl - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.1562313120846687,0.317093110960217,,,False
+Withdrawl - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.18048298866224532,0.24679351234820598,,,False
+Withdrawl - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.03158627445854503,0.8406424741059877,,,False
+Withdrawl - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,-0.03565437734774918,0.8204361653809452,,,False
+Withdrawl - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.29842167585870255,0.05192390607502403,,,False
+Withdrawl - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.06648913014182746,0.671842890433694,,,False
+Withdrawl - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.26711219703308187,0.08334906203200844,,,False
+Withdrawl - Raw Score,Real Self Concept Total Score,spearman,-0.2737388184588309,0.07569471857054497,,,False
+Withdrawl - Raw Score,Ideal Self Concept Total Score,spearman,-0.07166817320054929,0.6478871493839404,,,False
+Withdrawl - Raw Score,Social Self Concept Total Score,spearman,-0.21156233844147287,0.1732292830418637,,,False
+Withdrawl - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Raw Score,Perceived Social Stress Score,spearman,0.35939201389643727,0.017936155835435293,,,False
+Withdrawl - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Emotional Support - Raw Score,spearman,-0.41468092186861494,0.005695587125398835,,,False
+Occupational & Relationship Consequences - Raw Score,Informational Support - Raw Score,spearman,-0.3838121279816235,0.011059816868540852,,,False
+Occupational & Relationship Consequences - Raw Score,Instrumental Support - Raw Score,spearman,-0.2896198824189484,0.059592252653171196,,,False
+Occupational & Relationship Consequences - Raw Score,Emotional Support - T Score,spearman,-0.3665639660027575,0.015618449768578433,,,False
+Occupational & Relationship Consequences - Raw Score,Informational Support - T Score,spearman,-0.3884630781687879,0.010046061881725271,,,False
+Occupational & Relationship Consequences - Raw Score,Instrumental Support - T Score,spearman,-0.29139497382721635,0.05797706218823278,,,False
+Occupational & Relationship Consequences - Raw Score,Perceived Social Support Total T Score,spearman,-0.3962033559663377,0.008535299101304832,,,False
+Occupational & Relationship Consequences - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.33574813684723254,0.027728643387694537,,,False
+Occupational & Relationship Consequences - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.19553213154824348,0.20890627214205487,,,False
+Occupational & Relationship Consequences - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.3728412834027946,0.013803082537748807,,,False
+Occupational & Relationship Consequences - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.35779716124007993,0.018489190847792988,,,False
+Occupational & Relationship Consequences - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.3034423980617438,0.047918966401283014,,,False
+Occupational & Relationship Consequences - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.2549664431133226,0.09893106366366773,,,False
+Occupational & Relationship Consequences - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.15824651963006953,0.3108126716940432,,,False
+Occupational & Relationship Consequences - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.2946519019424563,0.05510472700025707,,,False
+Occupational & Relationship Consequences - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.3688306931079416,0.014940892192700114,,,False
+Occupational & Relationship Consequences - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.22387398672994838,0.14897210242374537,,,False
+Occupational & Relationship Consequences - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,-0.1889995681178728,0.22482070270134685,,,False
+Occupational & Relationship Consequences - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.3312818135082925,0.03000407344696769,,,False
+Occupational & Relationship Consequences - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.1971332499930575,0.2051287256893956,,,False
+Occupational & Relationship Consequences - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.42487411687058957,0.0045125481575784415,,,False
+Occupational & Relationship Consequences - Raw Score,Real Self Concept Total Score,spearman,-0.3719198733647318,0.014057750191810282,,,False
+Occupational & Relationship Consequences - Raw Score,Ideal Self Concept Total Score,spearman,-0.20973297606571795,0.17706295247949416,,,False
+Occupational & Relationship Consequences - Raw Score,Social Self Concept Total Score,spearman,-0.38838266049950243,0.010062888972597134,,,False
+Occupational & Relationship Consequences - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Raw Score,Perceived Social Stress Score,spearman,0.20120701785774708,0.19573370799409667,,,False
+Occupational & Relationship Consequences - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Emotional Support - Raw Score,spearman,-0.4529405229410867,0.002288989637193242,,,True
+Compulsive Behaviour - Raw Score,Informational Support - Raw Score,spearman,-0.4128771995166683,0.005930825523191863,,,False
+Compulsive Behaviour - Raw Score,Instrumental Support - Raw Score,spearman,-0.30998517924373703,0.04307885353652257,,,False
+Compulsive Behaviour - Raw Score,Emotional Support - T Score,spearman,-0.3720758850275539,0.014014351662463856,,,False
+Compulsive Behaviour - Raw Score,Informational Support - T Score,spearman,-0.4112828081044108,0.006145734809020281,,,False
+Compulsive Behaviour - Raw Score,Instrumental Support - T Score,spearman,-0.3099971660645394,0.043070365896757175,,,False
+Compulsive Behaviour - Raw Score,Perceived Social Support Total T Score,spearman,-0.4089669498611764,0.006469902585841442,,,False
+Compulsive Behaviour - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.3487104741064729,0.021921452365185296,,,False
+Compulsive Behaviour - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.32444721119617764,0.03378354881234858,,,False
+Compulsive Behaviour - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.5971343656320519,2.3682389705624092e-05,,,True
+Compulsive Behaviour - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.5055189649580306,0.0005445879070848674,,,True
+Compulsive Behaviour - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.6270165899242539,6.828912421620542e-06,,,True
+Compulsive Behaviour - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.3360716625116638,0.027569541782305203,,,False
+Compulsive Behaviour - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.355079953434253,0.01946449691650352,,,False
+Compulsive Behaviour - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.4505839907915589,0.0024285800870769737,,,True
+Compulsive Behaviour - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.5242057554693758,0.00030854626694123245,,,True
+Compulsive Behaviour - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.4280921304432696,0.004186571191357492,,,False
+Compulsive Behaviour - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,-0.4958782954863421,0.0007210223433888703,,,True
+Compulsive Behaviour - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.4734672436687013,0.0013423863796327615,,,True
+Compulsive Behaviour - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.34195237300647446,0.02480711638465881,,,False
+Compulsive Behaviour - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.608585283071328,1.4926275763752764e-05,,,True
+Compulsive Behaviour - Raw Score,Real Self Concept Total Score,spearman,-0.46823589244308544,0.001542782226918845,,,True
+Compulsive Behaviour - Raw Score,Ideal Self Concept Total Score,spearman,-0.3492344614984102,0.021709980074278795,,,False
+Compulsive Behaviour - Raw Score,Social Self Concept Total Score,spearman,-0.6196776262346355,9.379232048271658e-06,,,True
+Compulsive Behaviour - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Raw Score,Perceived Social Stress Score,spearman,0.2523061861850142,0.10262505775971162,,,False
+Compulsive Behaviour - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Emotional Support - Raw Score,spearman,-0.3511736478542488,0.02094216580811693,,,False
+Obsession with Internet - Raw Score,Informational Support - Raw Score,spearman,-0.34446397259950884,0.02369975294394006,,,False
+Obsession with Internet - Raw Score,Instrumental Support - Raw Score,spearman,-0.5148777674746023,0.000411399798192268,,,True
+Obsession with Internet - Raw Score,Emotional Support - T Score,spearman,-0.3285227229699166,0.031485396679064005,,,False
+Obsession with Internet - Raw Score,Informational Support - T Score,spearman,-0.3466895165924795,0.022753305329379036,,,False
+Obsession with Internet - Raw Score,Instrumental Support - T Score,spearman,-0.51598248804675,0.0003977900078102026,,,True
+Obsession with Internet - Raw Score,Perceived Social Support Total T Score,spearman,-0.4344606477761861,0.0036015556022022327,,,False
+Obsession with Internet - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.282216528830968,0.06672003918924052,,,False
+Obsession with Internet - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.4263178015843611,0.004363666481693572,,,False
+Obsession with Internet - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.34279094174817737,0.024432691882672494,,,False
+Obsession with Internet - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.27184670064999056,0.07782162087460472,,,False
+Obsession with Internet - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.34737741031736036,0.022467244399430313,,,False
+Obsession with Internet - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.21786198643036786,0.16048494056622883,,,False
+Obsession with Internet - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.36141592703631936,0.01725448111957257,,,False
+Obsession with Internet - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.36304210340356075,0.016722738038630832,,,False
+Obsession with Internet - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.2571849762631024,0.09592931155248646,,,False
+Obsession with Internet - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.3607857864217857,0.01746433355251005,,,False
+Obsession with Internet - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,-0.13394162939908513,0.3918315349939382,,,False
+Obsession with Internet - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.3191534154028172,0.03697310689478427,,,False
+Obsession with Internet - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.34946900373571294,0.021615878126869503,,,False
+Obsession with Internet - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.40848882083480065,0.006538643197391726,,,False
+Obsession with Internet - Raw Score,Real Self Concept Total Score,spearman,-0.3060438091821561,0.04594436729663131,,,False
+Obsession with Internet - Raw Score,Ideal Self Concept Total Score,spearman,-0.4365217025537612,0.003428218471280108,,,False
+Obsession with Internet - Raw Score,Social Self Concept Total Score,spearman,-0.38373709147154644,0.011076864074891264,,,False
+Obsession with Internet - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Raw Score,Perceived Social Stress Score,spearman,0.3702372557621648,0.014533114214474318,,,False
+Obsession with Internet - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Emotional Support - Raw Score,spearman,-0.17493638815120915,0.261857929909766,,,False
+Internet as a Source of Recreation - Raw Score,Informational Support - Raw Score,spearman,-0.1874374896623847,0.2287465098906379,,,False
+Internet as a Source of Recreation - Raw Score,Instrumental Support - Raw Score,spearman,-0.3733580137517788,0.013661987975401297,,,False
+Internet as a Source of Recreation - Raw Score,Emotional Support - T Score,spearman,-0.18467682850483877,0.23579895664035888,,,False
+Internet as a Source of Recreation - Raw Score,Informational Support - T Score,spearman,-0.1918958089187597,0.21766506668152202,,,False
+Internet as a Source of Recreation - Raw Score,Instrumental Support - T Score,spearman,-0.3747695416936914,0.01328280151216645,,,False
+Internet as a Source of Recreation - Raw Score,Perceived Social Support Total T Score,spearman,-0.2318256931056376,0.13469271107024694,,,False
+Internet as a Source of Recreation - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Power Self Concept - Real Self Concept Score,spearman,0.028657915524797437,0.8552512910512309,,,False
+Internet as a Source of Recreation - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.04317424881746125,0.7833944965048469,,,False
+Internet as a Source of Recreation - Raw Score,Power Self Concept – Social Self Concept Score,spearman,0.09404031045883596,0.5486235464780913,,,False
+Internet as a Source of Recreation - Raw Score,Social Self Concept - Real Self Concept Score,spearman,0.03418755887299381,0.8277093618872541,,,False
+Internet as a Source of Recreation - Raw Score,Social Self Concept – Social Self Concept Score,spearman,0.08044952902899703,0.6080700844730174,,,False
+Internet as a Source of Recreation - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,0.0033099616040211375,0.9831935439381864,,,False
+Internet as a Source of Recreation - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.1033286874607685,0.5096556764037723,,,False
+Internet as a Source of Recreation - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,0.007540765884555703,0.9617228958414423,,,False
+Internet as a Source of Recreation - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,0.11684213526622754,0.4555651618730615,,,False
+Internet as a Source of Recreation - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.032339192599353646,0.8368946839773562,,,False
+Internet as a Source of Recreation - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,0.27746079261629114,0.07164436798682039,,,False
+Internet as a Source of Recreation - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.03386145545370039,0.8293282980797692,,,False
+Internet as a Source of Recreation - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.04739189578770143,0.7628185770020213,,,False
+Internet as a Source of Recreation - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,0.021739561719696356,0.8899469163352334,,,False
+Internet as a Source of Recreation - Raw Score,Real Self Concept Total Score,spearman,-0.003989715351959766,0.9797427217292121,,,False
+Internet as a Source of Recreation - Raw Score,Ideal Self Concept Total Score,spearman,-0.09564530911086642,0.541790172267296,,,False
+Internet as a Source of Recreation - Raw Score,Social Self Concept Total Score,spearman,0.0675924310183484,0.6667115705385394,,,False
+Internet as a Source of Recreation - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Raw Score,Perceived Social Stress Score,spearman,0.11593124618923642,0.4591104280595484,,,False
+Internet as a Source of Recreation - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Emotional Support - Raw Score,spearman,0.05349138360126138,0.7333486767938792,,,False
+Enhanced Socialization - Raw Score,Informational Support - Raw Score,spearman,-0.1062894555748394,0.4975345925450423,,,False
+Enhanced Socialization - Raw Score,Instrumental Support - Raw Score,spearman,0.17565906553277713,0.25986125272489935,,,False
+Enhanced Socialization - Raw Score,Emotional Support - T Score,spearman,0.19050866184782705,0.22107231128747729,,,False
+Enhanced Socialization - Raw Score,Informational Support - T Score,spearman,-0.11081948128826706,0.47927934804673067,,,False
+Enhanced Socialization - Raw Score,Instrumental Support - T Score,spearman,0.17368852966118373,0.26532959590622435,,,False
+Enhanced Socialization - Raw Score,Perceived Social Support Total T Score,spearman,0.10292997048327963,0.5112992748401081,,,False
+Enhanced Socialization - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Power Self Concept - Real Self Concept Score,spearman,0.04663101345769567,0.7665191072041266,,,False
+Enhanced Socialization - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,0.2078586653855768,0.18105354295775994,,,False
+Enhanced Socialization - Raw Score,Power Self Concept – Social Self Concept Score,spearman,0.08268903903342358,0.5980862133335951,,,False
+Enhanced Socialization - Raw Score,Social Self Concept - Real Self Concept Score,spearman,0.004926206246782106,0.9749891642316082,,,False
+Enhanced Socialization - Raw Score,Social Self Concept – Social Self Concept Score,spearman,0.0801324419112808,0.6094894392663204,,,False
+Enhanced Socialization - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,0.11601373940948183,0.45878874506151857,,,False
+Enhanced Socialization - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,0.21186096565165966,0.17260918669826517,,,False
+Enhanced Socialization - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,0.1799920942358072,0.2481026717896879,,,False
+Enhanced Socialization - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.005262133203879373,0.9732842241526314,,,False
+Enhanced Socialization - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.16237043239785168,0.29820858580576337,,,False
+Enhanced Socialization - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,0.17707114107259336,0.25598919950910703,,,False
+Enhanced Socialization - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,0.10328273125148017,0.5098449820555843,,,False
+Enhanced Socialization - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,0.17271283695526152,0.2680652387136632,,,False
+Enhanced Socialization - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,0.08649945632373103,0.5812661627475975,,,False
+Enhanced Socialization - Raw Score,Real Self Concept Total Score,spearman,0.04749759297573872,0.762304932217799,,,False
+Enhanced Socialization - Raw Score,Ideal Self Concept Total Score,spearman,0.21330572374984502,0.1696317247352769,,,False
+Enhanced Socialization - Raw Score,Social Self Concept Total Score,spearman,0.10597622150585224,0.49880990998763786,,,False
+Enhanced Socialization - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Raw Score,Perceived Social Stress Score,spearman,0.03366385036201253,0.8303096461031055,,,False
+Enhanced Socialization - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Emotional Support - Raw Score,spearman,-0.003218792862282383,0.9836563934664863,,,False
+Perceived Control of Internet Use - Raw Score,Informational Support - Raw Score,spearman,-0.09134187691359409,0.5602037869356875,,,False
+Perceived Control of Internet Use - Raw Score,Instrumental Support - Raw Score,spearman,0.011842095985470289,0.9399217951075212,,,False
+Perceived Control of Internet Use - Raw Score,Emotional Support - T Score,spearman,0.05018781239242274,0.7492660638410549,,,False
+Perceived Control of Internet Use - Raw Score,Informational Support - T Score,spearman,-0.0971801927337139,0.5352938163088803,,,False
+Perceived Control of Internet Use - Raw Score,Instrumental Support - T Score,spearman,0.008933856456632536,0.9546582979008393,,,False
+Perceived Control of Internet Use - Raw Score,Perceived Social Support Total T Score,spearman,-0.048309978214460675,0.7583604541952784,,,False
+Perceived Control of Internet Use - Raw Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Power Self Concept - Real Self Concept Score,spearman,-0.15367137148507706,0.32518591381205486,,,False
+Perceived Control of Internet Use - Raw Score,Power Self Concept - Ideal Self Concept score,spearman,-0.0016952950632546312,0.9913916225851913,,,False
+Perceived Control of Internet Use - Raw Score,Power Self Concept – Social Self Concept Score,spearman,-0.06372040550545453,0.6847844656348847,,,False
+Perceived Control of Internet Use - Raw Score,Social Self Concept - Real Self Concept Score,spearman,-0.1024043480477656,0.5134700704801298,,,False
+Perceived Control of Internet Use - Raw Score,Social Self Concept – Social Self Concept Score,spearman,-0.00045445259317994786,0.9976923384282754,,,False
+Perceived Control of Internet Use - Raw Score,Ability Self Concept - Real Self Concept Score,spearman,-0.0844393569339897,0.5903334776397295,,,False
+Perceived Control of Internet Use - Raw Score,Ability Self Concept - Ideal Self Concept Score,spearman,0.030966601433946556,0.8437296269690043,,,False
+Perceived Control of Internet Use - Raw Score,Ability Self Concept – Social Self Concept Score,spearman,-0.012605476492196576,0.9360567081443997,,,False
+Perceived Control of Internet Use - Raw Score,Physical Self Concept - Real Self Concept Score,spearman,-0.13550392982183748,0.38628110707530405,,,False
+Perceived Control of Internet Use - Raw Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.04076914172694024,0.7951945186446454,,,False
+Perceived Control of Internet Use - Raw Score,Physical Self Concept – Social Self Concept Score,spearman,0.0920578551687013,0.5571201013919023,,,False
+Perceived Control of Internet Use - Raw Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.08558471630671152,0.5852845519307904,,,False
+Perceived Control of Internet Use - Raw Score,Psychological Self Concept – Ideal Self Concept Score,spearman,0.04036434447149694,0.7971850701044233,,,False
+Perceived Control of Internet Use - Raw Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.05893306079518881,0.7073712357287121,,,False
+Perceived Control of Internet Use - Raw Score,Real Self Concept Total Score,spearman,-0.12433673176811239,0.4269656211985404,,,False
+Perceived Control of Internet Use - Raw Score,Ideal Self Concept Total Score,spearman,0.006942350804761672,0.964758480001638,,,False
+Perceived Control of Internet Use - Raw Score,Social Self Concept Total Score,spearman,-0.03975996320489842,0.8001594183648348,,,False
+Perceived Control of Internet Use - Raw Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Raw Score,Perceived Social Stress Score,spearman,0.2606289739996829,0.09140912894875221,,,False
+Perceived Control of Internet Use - Raw Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Emotional Support - Raw Score,spearman,-0.17245800872346576,0.2687827867971684,,,False
+Functional Impairment - Weighted Score,Informational Support - Raw Score,spearman,-0.3116314824699502,0.041925812303801865,,,False
+Functional Impairment - Weighted Score,Instrumental Support - Raw Score,spearman,-0.20771986577237836,0.18135159644023977,,,False
+Functional Impairment - Weighted Score,Emotional Support - T Score,spearman,-0.19859594066748693,0.20171979643099933,,,False
+Functional Impairment - Weighted Score,Informational Support - T Score,spearman,-0.3172413079716049,0.0381841741256046,,,False
+Functional Impairment - Weighted Score,Instrumental Support - T Score,spearman,-0.21034894690283396,0.17576536981943017,,,False
+Functional Impairment - Weighted Score,Perceived Social Support Total T Score,spearman,-0.2526890052932903,0.10208706920347223,,,False
+Functional Impairment - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.2314563146683522,0.13533259027513964,,,False
+Functional Impairment - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.12830643520535062,0.4122353439802954,,,False
+Functional Impairment - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.1517597675179289,0.33131271433069887,,,False
+Functional Impairment - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.1806940343265327,0.24623211250843802,,,False
+Functional Impairment - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.097626881657345,0.5334103455854657,,,False
+Functional Impairment - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.20481153669651098,0.18767768325350956,,,False
+Functional Impairment - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.15335148493835193,0.32620619198970924,,,False
+Functional Impairment - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.08136602869460163,0.6039756232492337,,,False
+Functional Impairment - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.22177295357725055,0.15292437789781033,,,False
+Functional Impairment - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.11954373547919851,0.44513805290969877,,,False
+Functional Impairment - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,0.11047111258527531,0.4806705999283336,,,False
+Functional Impairment - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.21072359634881188,0.17497949377036925,,,False
+Functional Impairment - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.14770071445535338,0.3445587052318506,,,False
+Functional Impairment - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.15622701739246533,0.31710658043125867,,,False
+Functional Impairment - Weighted Score,Real Self Concept Total Score,spearman,-0.24328005601815872,0.11594893159456786,,,False
+Functional Impairment - Weighted Score,Ideal Self Concept Total Score,spearman,-0.18261886056352908,0.24115167879772037,,,False
+Functional Impairment - Weighted Score,Social Self Concept Total Score,spearman,-0.11879321144463471,0.44802155808784183,,,False
+Functional Impairment - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Functional Impairment - Weighted Score,Perceived Social Stress Score,spearman,0.21552401634450297,0.16513255640877514,,,False
+Functional Impairment - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Emotional Support - Raw Score,spearman,-0.47760400271309816,0.0012006509334110576,,,True
+Withdrawl - Weighted Score,Informational Support - Raw Score,spearman,-0.44190610756242815,0.0030094142949537695,,,False
+Withdrawl - Weighted Score,Instrumental Support - Raw Score,spearman,-0.539867702828622,0.00018673550745538443,,,True
+Withdrawl - Weighted Score,Emotional Support - T Score,spearman,-0.3751049476320953,0.01319402827664035,,,False
+Withdrawl - Weighted Score,Informational Support - T Score,spearman,-0.44805171770254093,0.002586887954592931,,,True
+Withdrawl - Weighted Score,Instrumental Support - T Score,spearman,-0.5426546771569922,0.00017032802889979944,,,True
+Withdrawl - Weighted Score,Perceived Social Support Total T Score,spearman,-0.5264274817972828,0.00028775713848645454,,,True
+Withdrawl - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.12667307948334663,0.4182607367776221,,,False
+Withdrawl - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,0.019191094391355624,0.9027823624452951,,,False
+Withdrawl - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.1427865558682239,0.36102380034346504,,,False
+Withdrawl - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.309342951690406,0.04353559625988234,,,False
+Withdrawl - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.2585180280721134,0.09415970402266327,,,False
+Withdrawl - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.18204706768603213,0.24265340421702655,,,False
+Withdrawl - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.04356303858500495,0.7814914232725052,,,False
+Withdrawl - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.1562313120846687,0.317093110960217,,,False
+Withdrawl - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.18048298866224532,0.24679351234820598,,,False
+Withdrawl - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.03158627445854503,0.8406424741059877,,,False
+Withdrawl - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,-0.03565437734774918,0.8204361653809452,,,False
+Withdrawl - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.29842167585870255,0.05192390607502403,,,False
+Withdrawl - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.06648913014182746,0.671842890433694,,,False
+Withdrawl - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.26711219703308187,0.08334906203200844,,,False
+Withdrawl - Weighted Score,Real Self Concept Total Score,spearman,-0.2737388184588309,0.07569471857054497,,,False
+Withdrawl - Weighted Score,Ideal Self Concept Total Score,spearman,-0.07166817320054929,0.6478871493839404,,,False
+Withdrawl - Weighted Score,Social Self Concept Total Score,spearman,-0.21156233844147287,0.1732292830418637,,,False
+Withdrawl - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Withdrawl - Weighted Score,Perceived Social Stress Score,spearman,0.35939201389643727,0.017936155835435293,,,False
+Withdrawl - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Emotional Support - Raw Score,spearman,-0.41468092186861494,0.005695587125398835,,,False
+Occupational & Relationship Consequences - Weighted Score,Informational Support - Raw Score,spearman,-0.3838121279816235,0.011059816868540852,,,False
+Occupational & Relationship Consequences - Weighted Score,Instrumental Support - Raw Score,spearman,-0.2896198824189484,0.059592252653171196,,,False
+Occupational & Relationship Consequences - Weighted Score,Emotional Support - T Score,spearman,-0.3665639660027575,0.015618449768578433,,,False
+Occupational & Relationship Consequences - Weighted Score,Informational Support - T Score,spearman,-0.3884630781687879,0.010046061881725271,,,False
+Occupational & Relationship Consequences - Weighted Score,Instrumental Support - T Score,spearman,-0.29139497382721635,0.05797706218823278,,,False
+Occupational & Relationship Consequences - Weighted Score,Perceived Social Support Total T Score,spearman,-0.3962033559663377,0.008535299101304832,,,False
+Occupational & Relationship Consequences - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.33574813684723254,0.027728643387694537,,,False
+Occupational & Relationship Consequences - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.19553213154824348,0.20890627214205487,,,False
+Occupational & Relationship Consequences - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.3728412834027946,0.013803082537748807,,,False
+Occupational & Relationship Consequences - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.35779716124007993,0.018489190847792988,,,False
+Occupational & Relationship Consequences - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.3034423980617438,0.047918966401283014,,,False
+Occupational & Relationship Consequences - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.2549664431133226,0.09893106366366773,,,False
+Occupational & Relationship Consequences - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.15824651963006953,0.3108126716940432,,,False
+Occupational & Relationship Consequences - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.2946519019424563,0.05510472700025707,,,False
+Occupational & Relationship Consequences - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.3688306931079416,0.014940892192700114,,,False
+Occupational & Relationship Consequences - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.22387398672994838,0.14897210242374537,,,False
+Occupational & Relationship Consequences - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,-0.1889995681178728,0.22482070270134685,,,False
+Occupational & Relationship Consequences - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.3312818135082925,0.03000407344696769,,,False
+Occupational & Relationship Consequences - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.1971332499930575,0.2051287256893956,,,False
+Occupational & Relationship Consequences - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.42487411687058957,0.0045125481575784415,,,False
+Occupational & Relationship Consequences - Weighted Score,Real Self Concept Total Score,spearman,-0.3719198733647318,0.014057750191810282,,,False
+Occupational & Relationship Consequences - Weighted Score,Ideal Self Concept Total Score,spearman,-0.20973297606571795,0.17706295247949416,,,False
+Occupational & Relationship Consequences - Weighted Score,Social Self Concept Total Score,spearman,-0.38838266049950243,0.010062888972597134,,,False
+Occupational & Relationship Consequences - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Occupational & Relationship Consequences - Weighted Score,Perceived Social Stress Score,spearman,0.20120701785774708,0.19573370799409667,,,False
+Occupational & Relationship Consequences - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Emotional Support - Raw Score,spearman,-0.4529405229410867,0.002288989637193242,,,True
+Compulsive Behaviour - Weighted Score,Informational Support - Raw Score,spearman,-0.4128771995166683,0.005930825523191863,,,False
+Compulsive Behaviour - Weighted Score,Instrumental Support - Raw Score,spearman,-0.30998517924373703,0.04307885353652257,,,False
+Compulsive Behaviour - Weighted Score,Emotional Support - T Score,spearman,-0.3720758850275539,0.014014351662463856,,,False
+Compulsive Behaviour - Weighted Score,Informational Support - T Score,spearman,-0.4112828081044108,0.006145734809020281,,,False
+Compulsive Behaviour - Weighted Score,Instrumental Support - T Score,spearman,-0.3099971660645394,0.043070365896757175,,,False
+Compulsive Behaviour - Weighted Score,Perceived Social Support Total T Score,spearman,-0.4089669498611764,0.006469902585841442,,,False
+Compulsive Behaviour - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.3487104741064729,0.021921452365185296,,,False
+Compulsive Behaviour - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.32444721119617764,0.03378354881234858,,,False
+Compulsive Behaviour - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.5971343656320519,2.3682389705624092e-05,,,True
+Compulsive Behaviour - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.5055189649580306,0.0005445879070848674,,,True
+Compulsive Behaviour - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.6270165899242539,6.828912421620542e-06,,,True
+Compulsive Behaviour - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.3360716625116638,0.027569541782305203,,,False
+Compulsive Behaviour - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.355079953434253,0.01946449691650352,,,False
+Compulsive Behaviour - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.4505839907915589,0.0024285800870769737,,,True
+Compulsive Behaviour - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.5242057554693758,0.00030854626694123245,,,True
+Compulsive Behaviour - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.4280921304432696,0.004186571191357492,,,False
+Compulsive Behaviour - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,-0.4958782954863421,0.0007210223433888703,,,True
+Compulsive Behaviour - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.4734672436687013,0.0013423863796327615,,,True
+Compulsive Behaviour - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.34195237300647446,0.02480711638465881,,,False
+Compulsive Behaviour - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.608585283071328,1.4926275763752764e-05,,,True
+Compulsive Behaviour - Weighted Score,Real Self Concept Total Score,spearman,-0.46823589244308544,0.001542782226918845,,,True
+Compulsive Behaviour - Weighted Score,Ideal Self Concept Total Score,spearman,-0.3492344614984102,0.021709980074278795,,,False
+Compulsive Behaviour - Weighted Score,Social Self Concept Total Score,spearman,-0.6196776262346355,9.379232048271658e-06,,,True
+Compulsive Behaviour - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Compulsive Behaviour - Weighted Score,Perceived Social Stress Score,spearman,0.2523061861850142,0.10262505775971162,,,False
+Compulsive Behaviour - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Emotional Support - Raw Score,spearman,-0.3511736478542488,0.02094216580811693,,,False
+Obsession with Internet - Weighted Score,Informational Support - Raw Score,spearman,-0.34446397259950884,0.02369975294394006,,,False
+Obsession with Internet - Weighted Score,Instrumental Support - Raw Score,spearman,-0.5148777674746023,0.000411399798192268,,,True
+Obsession with Internet - Weighted Score,Emotional Support - T Score,spearman,-0.3285227229699166,0.031485396679064005,,,False
+Obsession with Internet - Weighted Score,Informational Support - T Score,spearman,-0.3466895165924795,0.022753305329379036,,,False
+Obsession with Internet - Weighted Score,Instrumental Support - T Score,spearman,-0.51598248804675,0.0003977900078102026,,,True
+Obsession with Internet - Weighted Score,Perceived Social Support Total T Score,spearman,-0.4344606477761861,0.0036015556022022327,,,False
+Obsession with Internet - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.282216528830968,0.06672003918924052,,,False
+Obsession with Internet - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.4263178015843611,0.004363666481693572,,,False
+Obsession with Internet - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.34279094174817737,0.024432691882672494,,,False
+Obsession with Internet - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.27184670064999056,0.07782162087460472,,,False
+Obsession with Internet - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.34737741031736036,0.022467244399430313,,,False
+Obsession with Internet - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.21786198643036786,0.16048494056622883,,,False
+Obsession with Internet - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.36141592703631936,0.01725448111957257,,,False
+Obsession with Internet - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.36304210340356075,0.016722738038630832,,,False
+Obsession with Internet - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.2571849762631024,0.09592931155248646,,,False
+Obsession with Internet - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,-0.3607857864217857,0.01746433355251005,,,False
+Obsession with Internet - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,-0.13394162939908513,0.3918315349939382,,,False
+Obsession with Internet - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.3191534154028172,0.03697310689478427,,,False
+Obsession with Internet - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.34946900373571294,0.021615878126869503,,,False
+Obsession with Internet - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.40848882083480065,0.006538643197391726,,,False
+Obsession with Internet - Weighted Score,Real Self Concept Total Score,spearman,-0.3060438091821561,0.04594436729663131,,,False
+Obsession with Internet - Weighted Score,Ideal Self Concept Total Score,spearman,-0.4365217025537612,0.003428218471280108,,,False
+Obsession with Internet - Weighted Score,Social Self Concept Total Score,spearman,-0.38373709147154644,0.011076864074891264,,,False
+Obsession with Internet - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Obsession with Internet - Weighted Score,Perceived Social Stress Score,spearman,0.3702372557621648,0.014533114214474318,,,False
+Obsession with Internet - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Emotional Support - Raw Score,spearman,-0.17493638815120915,0.261857929909766,,,False
+Internet as a Source of Recreation - Weighted Score,Informational Support - Raw Score,spearman,-0.1874374896623847,0.2287465098906379,,,False
+Internet as a Source of Recreation - Weighted Score,Instrumental Support - Raw Score,spearman,-0.3733580137517788,0.013661987975401297,,,False
+Internet as a Source of Recreation - Weighted Score,Emotional Support - T Score,spearman,-0.18467682850483877,0.23579895664035888,,,False
+Internet as a Source of Recreation - Weighted Score,Informational Support - T Score,spearman,-0.1918958089187597,0.21766506668152202,,,False
+Internet as a Source of Recreation - Weighted Score,Instrumental Support - T Score,spearman,-0.3747695416936914,0.01328280151216645,,,False
+Internet as a Source of Recreation - Weighted Score,Perceived Social Support Total T Score,spearman,-0.2318256931056376,0.13469271107024694,,,False
+Internet as a Source of Recreation - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,0.028657915524797437,0.8552512910512309,,,False
+Internet as a Source of Recreation - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.04317424881746125,0.7833944965048469,,,False
+Internet as a Source of Recreation - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,0.09404031045883596,0.5486235464780913,,,False
+Internet as a Source of Recreation - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,0.03418755887299381,0.8277093618872541,,,False
+Internet as a Source of Recreation - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,0.08044952902899703,0.6080700844730174,,,False
+Internet as a Source of Recreation - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,0.0033099616040211375,0.9831935439381864,,,False
+Internet as a Source of Recreation - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,-0.1033286874607685,0.5096556764037723,,,False
+Internet as a Source of Recreation - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,0.007540765884555703,0.9617228958414423,,,False
+Internet as a Source of Recreation - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,0.11684213526622754,0.4555651618730615,,,False
+Internet as a Source of Recreation - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.032339192599353646,0.8368946839773562,,,False
+Internet as a Source of Recreation - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,0.27746079261629114,0.07164436798682039,,,False
+Internet as a Source of Recreation - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.03386145545370039,0.8293282980797692,,,False
+Internet as a Source of Recreation - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,-0.04739189578770143,0.7628185770020213,,,False
+Internet as a Source of Recreation - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,0.021739561719696356,0.8899469163352334,,,False
+Internet as a Source of Recreation - Weighted Score,Real Self Concept Total Score,spearman,-0.003989715351959766,0.9797427217292121,,,False
+Internet as a Source of Recreation - Weighted Score,Ideal Self Concept Total Score,spearman,-0.09564530911086642,0.541790172267296,,,False
+Internet as a Source of Recreation - Weighted Score,Social Self Concept Total Score,spearman,0.0675924310183484,0.6667115705385394,,,False
+Internet as a Source of Recreation - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Internet as a Source of Recreation - Weighted Score,Perceived Social Stress Score,spearman,0.11593124618923642,0.4591104280595484,,,False
+Internet as a Source of Recreation - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Emotional Support - Raw Score,spearman,0.05349138360126138,0.7333486767938792,,,False
+Enhanced Socialization - Weighted Score,Informational Support - Raw Score,spearman,-0.1062894555748394,0.4975345925450423,,,False
+Enhanced Socialization - Weighted Score,Instrumental Support - Raw Score,spearman,0.17565906553277713,0.25986125272489935,,,False
+Enhanced Socialization - Weighted Score,Emotional Support - T Score,spearman,0.19050866184782705,0.22107231128747729,,,False
+Enhanced Socialization - Weighted Score,Informational Support - T Score,spearman,-0.11081948128826706,0.47927934804673067,,,False
+Enhanced Socialization - Weighted Score,Instrumental Support - T Score,spearman,0.17368852966118373,0.26532959590622435,,,False
+Enhanced Socialization - Weighted Score,Perceived Social Support Total T Score,spearman,0.10292997048327963,0.5112992748401081,,,False
+Enhanced Socialization - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,0.04663101345769567,0.7665191072041266,,,False
+Enhanced Socialization - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,0.2078586653855768,0.18105354295775994,,,False
+Enhanced Socialization - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,0.08268903903342358,0.5980862133335951,,,False
+Enhanced Socialization - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,0.004926206246782106,0.9749891642316082,,,False
+Enhanced Socialization - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,0.0801324419112808,0.6094894392663204,,,False
+Enhanced Socialization - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,0.11601373940948183,0.45878874506151857,,,False
+Enhanced Socialization - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,0.21186096565165966,0.17260918669826517,,,False
+Enhanced Socialization - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,0.1799920942358072,0.2481026717896879,,,False
+Enhanced Socialization - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.005262133203879373,0.9732842241526314,,,False
+Enhanced Socialization - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.16237043239785168,0.29820858580576337,,,False
+Enhanced Socialization - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,0.17707114107259336,0.25598919950910703,,,False
+Enhanced Socialization - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,0.10328273125148017,0.5098449820555843,,,False
+Enhanced Socialization - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,0.17271283695526152,0.2680652387136632,,,False
+Enhanced Socialization - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,0.08649945632373103,0.5812661627475975,,,False
+Enhanced Socialization - Weighted Score,Real Self Concept Total Score,spearman,0.04749759297573872,0.762304932217799,,,False
+Enhanced Socialization - Weighted Score,Ideal Self Concept Total Score,spearman,0.21330572374984502,0.1696317247352769,,,False
+Enhanced Socialization - Weighted Score,Social Self Concept Total Score,spearman,0.10597622150585224,0.49880990998763786,,,False
+Enhanced Socialization - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Enhanced Socialization - Weighted Score,Perceived Social Stress Score,spearman,0.03366385036201253,0.8303096461031055,,,False
+Enhanced Socialization - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Emotional Support - Raw Score,spearman,-0.003218792862282383,0.9836563934664863,,,False
+Perceived Control of Internet Use - Weighted Score,Informational Support - Raw Score,spearman,-0.09134187691359409,0.5602037869356875,,,False
+Perceived Control of Internet Use - Weighted Score,Instrumental Support - Raw Score,spearman,0.011842095985470289,0.9399217951075212,,,False
+Perceived Control of Internet Use - Weighted Score,Emotional Support - T Score,spearman,0.05018781239242274,0.7492660638410549,,,False
+Perceived Control of Internet Use - Weighted Score,Informational Support - T Score,spearman,-0.0971801927337139,0.5352938163088803,,,False
+Perceived Control of Internet Use - Weighted Score,Instrumental Support - T Score,spearman,0.008933856456632536,0.9546582979008393,,,False
+Perceived Control of Internet Use - Weighted Score,Perceived Social Support Total T Score,spearman,-0.048309978214460675,0.7583604541952784,,,False
+Perceived Control of Internet Use - Weighted Score,Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Power Self Concept - Real Self Concept Score,spearman,-0.15367137148507706,0.32518591381205486,,,False
+Perceived Control of Internet Use - Weighted Score,Power Self Concept - Ideal Self Concept score,spearman,-0.0016952950632546312,0.9913916225851913,,,False
+Perceived Control of Internet Use - Weighted Score,Power Self Concept – Social Self Concept Score,spearman,-0.06372040550545453,0.6847844656348847,,,False
+Perceived Control of Internet Use - Weighted Score,Social Self Concept - Real Self Concept Score,spearman,-0.1024043480477656,0.5134700704801298,,,False
+Perceived Control of Internet Use - Weighted Score,Social Self Concept – Social Self Concept Score,spearman,-0.00045445259317994786,0.9976923384282754,,,False
+Perceived Control of Internet Use - Weighted Score,Ability Self Concept - Real Self Concept Score,spearman,-0.0844393569339897,0.5903334776397295,,,False
+Perceived Control of Internet Use - Weighted Score,Ability Self Concept - Ideal Self Concept Score,spearman,0.030966601433946556,0.8437296269690043,,,False
+Perceived Control of Internet Use - Weighted Score,Ability Self Concept – Social Self Concept Score,spearman,-0.012605476492196576,0.9360567081443997,,,False
+Perceived Control of Internet Use - Weighted Score,Physical Self Concept - Real Self Concept Score,spearman,-0.13550392982183748,0.38628110707530405,,,False
+Perceived Control of Internet Use - Weighted Score,Physical Self Concept – Ideal Self Concept Score,spearman,0.04076914172694024,0.7951945186446454,,,False
+Perceived Control of Internet Use - Weighted Score,Physical Self Concept – Social Self Concept Score,spearman,0.0920578551687013,0.5571201013919023,,,False
+Perceived Control of Internet Use - Weighted Score,Psychological Self Concept - Real Self Concept Score,spearman,-0.08558471630671152,0.5852845519307904,,,False
+Perceived Control of Internet Use - Weighted Score,Psychological Self Concept – Ideal Self Concept Score,spearman,0.04036434447149694,0.7971850701044233,,,False
+Perceived Control of Internet Use - Weighted Score,Psychological Self Concept – Social Self Concept Score,spearman,-0.05893306079518881,0.7073712357287121,,,False
+Perceived Control of Internet Use - Weighted Score,Real Self Concept Total Score,spearman,-0.12433673176811239,0.4269656211985404,,,False
+Perceived Control of Internet Use - Weighted Score,Ideal Self Concept Total Score,spearman,0.006942350804761672,0.964758480001638,,,False
+Perceived Control of Internet Use - Weighted Score,Social Self Concept Total Score,spearman,-0.03975996320489842,0.8001594183648348,,,False
+Perceived Control of Internet Use - Weighted Score,Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Perceived Control of Internet Use - Weighted Score,Perceived Social Stress Score,spearman,0.2606289739996829,0.09140912894875221,,,False
+Perceived Control of Internet Use - Weighted Score,Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Emotional Support - Raw Score,spearman,-0.38734382012039725,0.010282443811188362,,,False
+Internet Usage Total Score (Weighted),Informational Support - Raw Score,spearman,-0.4318910237980547,0.0038283747576860045,,,False
+Internet Usage Total Score (Weighted),Instrumental Support - Raw Score,spearman,-0.4311341780368763,0.0038975192443607754,,,False
+Internet Usage Total Score (Weighted),Emotional Support - T Score,spearman,-0.28855938034910067,0.06057424472989126,,,False
+Internet Usage Total Score (Weighted),Informational Support - T Score,spearman,-0.437773533171212,0.003326544431228074,,,False
+Internet Usage Total Score (Weighted),Instrumental Support - T Score,spearman,-0.4338259567733398,0.0036564565456498367,,,False
+Internet Usage Total Score (Weighted),Perceived Social Support Total T Score,spearman,-0.427031095425139,0.004291702317150872,,,False
+Internet Usage Total Score (Weighted),Emotional Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Informational Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Instrumental Support - Rank,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Perceived Social Support TOTAL - Rank,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Power Self Concept - Real Self Concept Score,spearman,-0.19010949996114473,0.22205955420829052,,,False
+Internet Usage Total Score (Weighted),Power Self Concept - Ideal Self Concept score,spearman,-0.014526715931591022,0.9263358568682732,,,False
+Internet Usage Total Score (Weighted),Power Self Concept – Social Self Concept Score,spearman,-0.22565635272470386,0.14567856715483896,,,False
+Internet Usage Total Score (Weighted),Social Self Concept - Real Self Concept Score,spearman,-0.3347920997533109,0.02820325790232008,,,False
+Internet Usage Total Score (Weighted),Social Self Concept – Social Self Concept Score,spearman,-0.2985350272363038,0.051830604523028824,,,False
+Internet Usage Total Score (Weighted),Ability Self Concept - Real Self Concept Score,spearman,-0.19708289944954868,0.2052467854946027,,,False
+Internet Usage Total Score (Weighted),Ability Self Concept - Ideal Self Concept Score,spearman,-0.0740780580169423,0.6368569319229838,,,False
+Internet Usage Total Score (Weighted),Ability Self Concept – Social Self Concept Score,spearman,-0.1923479864037935,0.21656228408639502,,,False
+Internet Usage Total Score (Weighted),Physical Self Concept - Real Self Concept Score,spearman,-0.24377935010448742,0.11517930931579623,,,False
+Internet Usage Total Score (Weighted),Physical Self Concept – Ideal Self Concept Score,spearman,-0.0693020398745336,0.6587900296648111,,,False
+Internet Usage Total Score (Weighted),Physical Self Concept – Social Self Concept Score,spearman,-0.05022237974014052,0.7490989635051797,,,False
+Internet Usage Total Score (Weighted),Psychological Self Concept - Real Self Concept Score,spearman,-0.2977582739090713,0.0524726799793401,,,False
+Internet Usage Total Score (Weighted),Psychological Self Concept – Ideal Self Concept Score,spearman,-0.0688665532938878,0.660804420623714,,,False
+Internet Usage Total Score (Weighted),Psychological Self Concept – Social Self Concept Score,spearman,-0.29668325329620215,0.05337185260789967,,,False
+Internet Usage Total Score (Weighted),Real Self Concept Total Score,spearman,-0.3014997649900059,0.049437847827453,,,False
+Internet Usage Total Score (Weighted),Ideal Self Concept Total Score,spearman,-0.0924477744324903,0.5554440923353332,,,False
+Internet Usage Total Score (Weighted),Social Self Concept Total Score,spearman,-0.2616727175101224,0.09007230497716608,,,False
+Internet Usage Total Score (Weighted),Ideal Self Concept Total Category,,,,Test not run: unsupported type combination.,,False
+Internet Usage Total Score (Weighted),Perceived Social Stress Score,spearman,0.3926475438475684,0.009203121895303482,,,False
+Internet Usage Total Score (Weighted),Perceived Social Stress Category,,,,Test not run: unsupported type combination.,,False
+Functional Impairment  - Category,Emotional Support - Raw Score,anova,0.8585072613938557,0.4706976640000383,,,False
+Functional Impairment  - Category,Informational Support - Raw Score,anova,1.8914624361282568,0.1469939239404799,,,False
+Functional Impairment  - Category,Instrumental Support - Raw Score,anova,0.2800469475536234,0.8394583266633103,,,False
+Functional Impairment  - Category,Emotional Support - T Score,anova,0.7982183515669544,0.5023780215040944,,,False
+Functional Impairment  - Category,Informational Support - T Score,anova,2.9877827360276403,0.04265067987209111,,,False
+Functional Impairment  - Category,Instrumental Support - T Score,anova,0.2504286290815191,0.860538142079904,,,False
+Functional Impairment  - Category,Perceived Social Support Total T Score,anova,1.7347841896220209,0.17575538356900877,,,False
+Functional Impairment  - Category,Emotional Support - Rank,chi2,24.384583333333335,0.018023996138110215,,,False
+Functional Impairment  - Category,Informational Support - Rank,chi2,11.452589285714286,0.24595653862746103,,,False
+Functional Impairment  - Category,Instrumental Support - Rank,chi2,8.980729166666668,0.7045755357452975,,,False
+Functional Impairment  - Category,Perceived Social Support TOTAL - Rank,chi2,14.342291666666666,0.27938628074817584,,,False
+Functional Impairment  - Category,Power Self Concept - Real Self Concept Score,anova,0.30250658988667634,0.823380898989694,,,False
+Functional Impairment  - Category,Power Self Concept - Ideal Self Concept score,anova,0.22250036625836822,0.8801811652051068,,,False
+Functional Impairment  - Category,Power Self Concept – Social Self Concept Score,anova,0.18796133586892533,0.9039572877430363,,,False
+Functional Impairment  - Category,Social Self Concept - Real Self Concept Score,anova,0.2789989375516468,0.8402071100227909,,,False
+Functional Impairment  - Category,Social Self Concept – Social Self Concept Score,anova,0.02479332359969446,0.9946320404672817,,,False
+Functional Impairment  - Category,Ability Self Concept - Real Self Concept Score,anova,0.2112428964730609,0.8880052080445519,,,False
+Functional Impairment  - Category,Ability Self Concept - Ideal Self Concept Score,anova,0.061319744504917215,0.9798399938220456,,,False
+Functional Impairment  - Category,Ability Self Concept – Social Self Concept Score,anova,0.07886116531205896,0.9710849016255243,,,False
+Functional Impairment  - Category,Physical Self Concept - Real Self Concept Score,anova,0.3955722829521373,0.7568894747031133,,,False
+Functional Impairment  - Category,Physical Self Concept – Ideal Self Concept Score,anova,0.3476162281723128,0.7910481610460853,,,False
+Functional Impairment  - Category,Physical Self Concept – Social Self Concept Score,anova,0.0340432786279835,0.9914397199306594,,,False
+Functional Impairment  - Category,Psychological Self Concept - Real Self Concept Score,anova,0.32152321984730553,0.8097450310922373,,,False
+Functional Impairment  - Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.04614779487683761,0.9866457042966756,,,False
+Functional Impairment  - Category,Psychological Self Concept – Social Self Concept Score,anova,0.03428072685856426,0.991351977628381,,,False
+Functional Impairment  - Category,Real Self Concept Total Score,anova,0.27836575234203326,0.8406594291196007,,,False
+Functional Impairment  - Category,Ideal Self Concept Total Score,anova,0.09516501247779381,0.9622579598519269,,,False
+Functional Impairment  - Category,Social Self Concept Total Score,anova,0.023870027315938003,0.9949245697203649,,,False
+Functional Impairment  - Category,Ideal Self Concept Total Category,chi2,13.277116935483871,0.03884039834531372,,,False
+Functional Impairment  - Category,Perceived Social Stress Score,anova,0.9131751450870611,0.44346888209849367,,,False
+Functional Impairment  - Category,Perceived Social Stress Category,chi2,1.1085937499999998,0.7749999337216861,,,False
+Withdrawl – Category,Emotional Support - Raw Score,anova,4.72458803877287,0.014388603033732197,,,False
+Withdrawl – Category,Informational Support - Raw Score,anova,1.6759731998418832,0.19999899148400305,,,False
+Withdrawl – Category,Instrumental Support - Raw Score,anova,1.600098683240207,0.21452860435158969,,,False
+Withdrawl – Category,Emotional Support - T Score,anova,6.261861407242779,0.004306156521182262,,,False
+Withdrawl – Category,Informational Support - T Score,anova,1.9529389185208081,0.1551481254750629,,,False
+Withdrawl – Category,Instrumental Support - T Score,anova,1.4550002520850664,0.2454875286634364,,,False
+Withdrawl – Category,Perceived Social Support Total T Score,anova,6.926328948078901,0.0026125040447289036,,,True
+Withdrawl – Category,Emotional Support - Rank,chi2,17.15904761904762,0.02849488769610385,,,False
+Withdrawl – Category,Informational Support - Rank,chi2,7.441632653061225,0.2819271430173297,,,False
+Withdrawl – Category,Instrumental Support - Rank,chi2,9.72016806722689,0.2852183365920328,,,False
+Withdrawl – Category,Perceived Social Support TOTAL - Rank,chi2,19.820952380952377,0.01103509334242924,,,False
+Withdrawl – Category,Power Self Concept - Real Self Concept Score,anova,0.2689135818862579,0.7655798467672909,,,False
+Withdrawl – Category,Power Self Concept - Ideal Self Concept score,anova,0.42917540285267675,0.6540081618149952,,,False
+Withdrawl – Category,Power Self Concept – Social Self Concept Score,anova,0.06267762865681328,0.9393382685605367,,,False
+Withdrawl – Category,Social Self Concept - Real Self Concept Score,anova,0.5903827166102811,0.5588709471555005,,,False
+Withdrawl – Category,Social Self Concept – Social Self Concept Score,anova,0.005728363679489101,0.9942888276245144,,,False
+Withdrawl – Category,Ability Self Concept - Real Self Concept Score,anova,0.4735116111659157,0.6262577751878022,,,False
+Withdrawl – Category,Ability Self Concept - Ideal Self Concept Score,anova,0.6357901584339773,0.5347833211768231,,,False
+Withdrawl – Category,Ability Self Concept – Social Self Concept Score,anova,0.24735107384434615,0.7820520305054424,,,False
+Withdrawl – Category,Physical Self Concept - Real Self Concept Score,anova,0.2333476571516736,0.7929486008736519,,,False
+Withdrawl – Category,Physical Self Concept – Ideal Self Concept Score,anova,0.1453871414178873,0.8651423207386054,,,False
+Withdrawl – Category,Physical Self Concept – Social Self Concept Score,anova,0.1615529932903394,0.8513737977135498,,,False
+Withdrawl – Category,Psychological Self Concept - Real Self Concept Score,anova,0.5503059278487048,0.5810775318271897,,,False
+Withdrawl – Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.2929086821278478,0.7476767781019842,,,False
+Withdrawl – Category,Psychological Self Concept – Social Self Concept Score,anova,0.0318442502755336,0.9686819695642213,,,False
+Withdrawl – Category,Real Self Concept Total Score,anova,0.40425691147188764,0.6701688702787099,,,False
+Withdrawl – Category,Ideal Self Concept Total Score,anova,0.3294011736195056,0.7212871411770323,,,False
+Withdrawl – Category,Social Self Concept Total Score,anova,0.007940551895539077,0.992092454436294,,,False
+Withdrawl – Category,Ideal Self Concept Total Category,chi2,5.944700460829493,0.20331631447451975,,,False
+Withdrawl – Category,Perceived Social Stress Score,anova,0.8767189366617296,0.4239894266188097,,,False
+Withdrawl – Category,Perceived Social Stress Category,chi2,0.7371428571428572,0.6917217991335399,,,False
+Occupational & Relationship Consequences – Category,Emotional Support - Raw Score,anova,2.5521613039638367,0.09053917442693944,,,False
+Occupational & Relationship Consequences – Category,Informational Support - Raw Score,anova,2.709076675322192,0.07881527221725879,,,False
+Occupational & Relationship Consequences – Category,Instrumental Support - Raw Score,anova,1.1519359751132068,0.32628525518605667,,,False
+Occupational & Relationship Consequences – Category,Emotional Support - T Score,anova,2.72975310729035,0.07739368850970185,,,False
+Occupational & Relationship Consequences – Category,Informational Support - T Score,anova,3.789344238558117,0.03111361681379348,,,False
+Occupational & Relationship Consequences – Category,Instrumental Support - T Score,anova,0.9988455567303763,0.3773041007547908,,,False
+Occupational & Relationship Consequences – Category,Perceived Social Support Total T Score,anova,5.185165811067664,0.009947263538411386,,,False
+Occupational & Relationship Consequences – Category,Emotional Support - Rank,chi2,18.805122549019604,0.015937322045861485,,,False
+Occupational & Relationship Consequences – Category,Informational Support - Rank,chi2,9.071554621848739,0.1695937018579023,,,False
+Occupational & Relationship Consequences – Category,Instrumental Support - Rank,chi2,11.572368800461362,0.1713276028229266,,,False
+Occupational & Relationship Consequences – Category,Perceived Social Support TOTAL - Rank,chi2,14.461911764705881,0.07049233085289706,,,False
+Occupational & Relationship Consequences – Category,Power Self Concept - Real Self Concept Score,anova,1.5843536726056757,0.2176802071390308,,,False
+Occupational & Relationship Consequences – Category,Power Self Concept - Ideal Self Concept score,anova,0.5189036868504608,0.599124189031309,,,False
+Occupational & Relationship Consequences – Category,Power Self Concept – Social Self Concept Score,anova,0.7758528759704423,0.4671137911803728,,,False
+Occupational & Relationship Consequences – Category,Social Self Concept - Real Self Concept Score,anova,0.9312738237640859,0.4024266463045295,,,False
+Occupational & Relationship Consequences – Category,Social Self Concept – Social Self Concept Score,anova,0.1393324955216278,0.8703590952635696,,,False
+Occupational & Relationship Consequences – Category,Ability Self Concept - Real Self Concept Score,anova,0.6632253811198351,0.5207600484973705,,,False
+Occupational & Relationship Consequences – Category,Ability Self Concept - Ideal Self Concept Score,anova,0.4804871506933819,0.622005552280159,,,False
+Occupational & Relationship Consequences – Category,Ability Self Concept – Social Self Concept Score,anova,0.2345481808815789,0.7920082119542127,,,False
+Occupational & Relationship Consequences – Category,Physical Self Concept - Real Self Concept Score,anova,1.3590134698900445,0.2685196798746591,,,False
+Occupational & Relationship Consequences – Category,Physical Self Concept – Ideal Self Concept Score,anova,0.7197340096601628,0.4930788751049725,,,False
+Occupational & Relationship Consequences – Category,Physical Self Concept – Social Self Concept Score,anova,0.15985058376254593,0.8528128462756763,,,False
+Occupational & Relationship Consequences – Category,Psychological Self Concept - Real Self Concept Score,anova,1.3348948176426048,0.27465644294545144,,,False
+Occupational & Relationship Consequences – Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.4038348702803274,0.6704461656554024,,,False
+Occupational & Relationship Consequences – Category,Psychological Self Concept – Social Self Concept Score,anova,0.6450285627064711,0.530017430097574,,,False
+Occupational & Relationship Consequences – Category,Real Self Concept Total Score,anova,1.2469882219646449,0.29829939345208245,,,False
+Occupational & Relationship Consequences – Category,Ideal Self Concept Total Score,anova,0.43247161667893474,0.6519012702360732,,,False
+Occupational & Relationship Consequences – Category,Social Self Concept Total Score,anova,0.3968607378812409,0.6750458927695361,,,False
+Occupational & Relationship Consequences – Category,Ideal Self Concept Total Category,chi2,17.901197817836813,0.001290189505759559,,,True
+Occupational & Relationship Consequences – Category,Perceived Social Stress Score,anova,1.4865696034903757,0.23837363633631645,,,False
+Occupational & Relationship Consequences – Category,Perceived Social Stress Category,chi2,0.8536764705882351,0.6525691063397604,,,False
+Compulsive Behaviour – Category,Emotional Support - Raw Score,anova,1.5172266076383583,0.22520011675162876,,,False
+Compulsive Behaviour – Category,Informational Support - Raw Score,anova,0.4508009534301008,0.7181693576345831,,,False
+Compulsive Behaviour – Category,Instrumental Support - Raw Score,anova,1.6133085277106776,0.20186257686312126,,,False
+Compulsive Behaviour – Category,Emotional Support - T Score,anova,0.8847407667025151,0.45745529457034484,,,False
+Compulsive Behaviour – Category,Informational Support - T Score,anova,0.2372850140225512,0.8698185512854427,,,False
+Compulsive Behaviour – Category,Instrumental Support - T Score,anova,1.1679680332812674,0.3342889411820389,,,False
+Compulsive Behaviour – Category,Perceived Social Support Total T Score,anova,0.8939108408614688,0.4529031767388013,,,False
+Compulsive Behaviour – Category,Emotional Support - Rank,chi2,17.66583333333333,0.12622009562334746,,,False
+Compulsive Behaviour – Category,Informational Support - Rank,chi2,10.217619047619046,0.33315680975898626,,,False
+Compulsive Behaviour – Category,Instrumental Support - Rank,chi2,9.260457516339871,0.6805375965917793,,,False
+Compulsive Behaviour – Category,Perceived Social Support TOTAL - Rank,chi2,12.780555555555557,0.3851906351834132,,,False
+Compulsive Behaviour – Category,Power Self Concept - Real Self Concept Score,anova,0.6197926777186784,0.6064062549547993,,,False
+Compulsive Behaviour – Category,Power Self Concept - Ideal Self Concept score,anova,0.8169675095519378,0.4923384392230228,,,False
+Compulsive Behaviour – Category,Power Self Concept – Social Self Concept Score,anova,0.9392031027900992,0.4309970104460993,,,False
+Compulsive Behaviour – Category,Social Self Concept - Real Self Concept Score,anova,1.2150077487663227,0.3170872116354125,,,False
+Compulsive Behaviour – Category,Social Self Concept – Social Self Concept Score,anova,1.0645043612415903,0.37524656045815624,,,False
+Compulsive Behaviour – Category,Ability Self Concept - Real Self Concept Score,anova,0.6471076093717603,0.5894963375449124,,,False
+Compulsive Behaviour – Category,Ability Self Concept - Ideal Self Concept Score,anova,0.9074286149569225,0.44626493318793126,,,False
+Compulsive Behaviour – Category,Ability Self Concept – Social Self Concept Score,anova,0.32073877898758063,0.8103075696352156,,,False
+Compulsive Behaviour – Category,Physical Self Concept - Real Self Concept Score,anova,0.6794517512344265,0.5699260966425621,,,False
+Compulsive Behaviour – Category,Physical Self Concept – Ideal Self Concept Score,anova,1.0053899269156499,0.40067867208539654,,,False
+Compulsive Behaviour – Category,Physical Self Concept – Social Self Concept Score,anova,0.4465080631146483,0.7211483103527888,,,False
+Compulsive Behaviour – Category,Psychological Self Concept - Real Self Concept Score,anova,0.9633176666933212,0.4197207187898774,,,False
+Compulsive Behaviour – Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.8175736641772829,0.49201669338194465,,,False
+Compulsive Behaviour – Category,Psychological Self Concept – Social Self Concept Score,anova,0.7222860295912812,0.5447779597547775,,,False
+Compulsive Behaviour – Category,Real Self Concept Total Score,anova,0.7647364182278985,0.5207295820216908,,,False
+Compulsive Behaviour – Category,Ideal Self Concept Total Score,anova,0.8100415407085031,0.49602730971149334,,,False
+Compulsive Behaviour – Category,Social Self Concept Total Score,anova,0.6667421258492682,0.5775570683781843,,,False
+Compulsive Behaviour – Category,Ideal Self Concept Total Category,chi2,20.927822580645163,0.0018902045077564972,,,True
+Compulsive Behaviour – Category,Perceived Social Stress Score,anova,0.46910186785899743,0.7055360444421732,,,False
+Compulsive Behaviour – Category,Perceived Social Stress Category,chi2,0.3702777777777778,0.9463115973080725,,,False
+Obsession with Internet – Category,Emotional Support - Raw Score,anova,2.8973348653545936,0.04716773061658144,,,False
+Obsession with Internet – Category,Informational Support - Raw Score,anova,1.7527729158866596,0.17218608751963574,,,False
+Obsession with Internet – Category,Instrumental Support - Raw Score,anova,1.6842220700931163,0.1861875003199261,,,False
+Obsession with Internet – Category,Emotional Support - T Score,anova,3.238863117730891,0.03230703738215413,,,False
+Obsession with Internet – Category,Informational Support - T Score,anova,2.465431397973304,0.076587312068061,,,False
+Obsession with Internet – Category,Instrumental Support - T Score,anova,2.6316096250476932,0.06350957974933638,,,False
+Obsession with Internet – Category,Perceived Social Support Total T Score,anova,6.750785566391157,0.0008906833220241554,,,True
+Obsession with Internet – Category,Emotional Support - Rank,chi2,22.43689236111111,0.03290522049607788,,,False
+Obsession with Internet – Category,Informational Support - Rank,chi2,12.010565476190475,0.21271432937883916,,,False
+Obsession with Internet – Category,Instrumental Support - Rank,chi2,25.221660539215687,0.013806723120045798,,,False
+Obsession with Internet – Category,Perceived Social Support TOTAL - Rank,chi2,17.49861111111111,0.13178407984653012,,,False
+Obsession with Internet – Category,Power Self Concept - Real Self Concept Score,anova,0.33114989093715114,0.8028428062821064,,,False
+Obsession with Internet – Category,Power Self Concept - Ideal Self Concept score,anova,0.4630977426508216,0.7096686467902373,,,False
+Obsession with Internet – Category,Power Self Concept – Social Self Concept Score,anova,0.10349821104941982,0.9575298348623993,,,False
+Obsession with Internet – Category,Social Self Concept - Real Self Concept Score,anova,0.42916985757740794,0.7332360410403118,,,False
+Obsession with Internet – Category,Social Self Concept – Social Self Concept Score,anova,0.01706369308104154,0.9969121655423939,,,False
+Obsession with Internet – Category,Ability Self Concept - Real Self Concept Score,anova,0.028391977731782172,0.9934446569081884,,,False
+Obsession with Internet – Category,Ability Self Concept - Ideal Self Concept Score,anova,0.2239405899014831,0.8791757888441877,,,False
+Obsession with Internet – Category,Ability Self Concept – Social Self Concept Score,anova,0.06291045629254399,0.9790822602488337,,,False
+Obsession with Internet – Category,Physical Self Concept - Real Self Concept Score,anova,0.49212303075768954,0.6898063718694671,,,False
+Obsession with Internet – Category,Physical Self Concept – Ideal Self Concept Score,anova,0.20064252091428098,0.895310350176974,,,False
+Obsession with Internet – Category,Physical Self Concept – Social Self Concept Score,anova,0.1585698006571518,0.9235185727986763,,,False
+Obsession with Internet – Category,Psychological Self Concept - Real Self Concept Score,anova,0.1850578427767801,0.9059213557856288,,,False
+Obsession with Internet – Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.3249132783181073,0.8073140797522166,,,False
+Obsession with Internet – Category,Psychological Self Concept – Social Self Concept Score,anova,0.11724701820585184,0.9494522167438791,,,False
+Obsession with Internet – Category,Real Self Concept Total Score,anova,0.21725826674065968,0.8838323128628168,,,False
+Obsession with Internet – Category,Ideal Self Concept Total Score,anova,0.23736147527097026,0.8697647339783608,,,False
+Obsession with Internet – Category,Social Self Concept Total Score,anova,0.021894588384355016,0.9955329003341216,,,False
+Obsession with Internet – Category,Ideal Self Concept Total Category,chi2,12.651839717741936,0.04891024689314061,,,False
+Obsession with Internet – Category,Perceived Social Stress Score,anova,1.9163811924196434,0.14287610299559875,,,False
+Obsession with Internet – Category,Perceived Social Stress Category,chi2,1.10859375,0.7749999337216861,,,False
+Internet as a Source of Recreation – Category,Emotional Support - Raw Score,anova,2.1416101794438074,0.1105511164338491,,,False
+Internet as a Source of Recreation – Category,Informational Support - Raw Score,anova,0.5198581429248269,0.6711151012361409,,,False
+Internet as a Source of Recreation – Category,Instrumental Support - Raw Score,anova,1.287216747883151,0.29230625950975203,,,False
+Internet as a Source of Recreation – Category,Emotional Support - T Score,anova,3.3702693033732682,0.027964866284655065,,,False
+Internet as a Source of Recreation – Category,Informational Support - T Score,anova,0.8092818564772926,0.4964333369561431,,,False
+Internet as a Source of Recreation – Category,Instrumental Support - T Score,anova,1.1139585742072329,0.35511964594357465,,,False
+Internet as a Source of Recreation – Category,Perceived Social Support Total T Score,anova,3.3438270815286724,0.02878730578206471,,,False
+Internet as a Source of Recreation – Category,Emotional Support - Rank,chi2,22.125432027649765,0.0361378316174999,,,False
+Internet as a Source of Recreation – Category,Informational Support - Rank,chi2,7.798173140223832,0.5546066569953199,,,False
+Internet as a Source of Recreation – Category,Instrumental Support - Rank,chi2,23.05404863558326,0.02727057520011637,,,False
+Internet as a Source of Recreation – Category,Perceived Social Support TOTAL - Rank,chi2,21.846223758320527,0.039279855793398585,,,False
+Internet as a Source of Recreation – Category,Power Self Concept - Real Self Concept Score,anova,0.28802306005208944,0.8337546604612657,,,False
+Internet as a Source of Recreation – Category,Power Self Concept - Ideal Self Concept score,anova,0.43030809176988927,0.7324398284618026,,,False
+Internet as a Source of Recreation – Category,Power Self Concept – Social Self Concept Score,anova,0.728211576102537,0.5413686913647915,,,False
+Internet as a Source of Recreation – Category,Social Self Concept - Real Self Concept Score,anova,0.4612087874443728,0.7109712840501968,,,False
+Internet as a Source of Recreation – Category,Social Self Concept – Social Self Concept Score,anova,0.7738967541193578,0.5156547929279465,,,False
+Internet as a Source of Recreation – Category,Ability Self Concept - Real Self Concept Score,anova,0.6611450993722088,0.5809419192670408,,,False
+Internet as a Source of Recreation – Category,Ability Self Concept - Ideal Self Concept Score,anova,0.7762056932275955,0.5143820692843585,,,False
+Internet as a Source of Recreation – Category,Ability Self Concept – Social Self Concept Score,anova,0.8036003378489759,0.4994787648027055,,,False
+Internet as a Source of Recreation – Category,Physical Self Concept - Real Self Concept Score,anova,0.516940514392435,0.6730673960403089,,,False
+Internet as a Source of Recreation – Category,Physical Self Concept – Ideal Self Concept Score,anova,0.34212231997788195,0.7949811227935895,,,False
+Internet as a Source of Recreation – Category,Physical Self Concept – Social Self Concept Score,anova,1.2364628965081543,0.30952267470257616,,,False
+Internet as a Source of Recreation – Category,Psychological Self Concept - Real Self Concept Score,anova,0.4591241060015558,0.7124102551608069,,,False
+Internet as a Source of Recreation – Category,Psychological Self Concept – Ideal Self Concept Score,anova,0.6268687761235415,0.6019924070682985,,,False
+Internet as a Source of Recreation – Category,Psychological Self Concept – Social Self Concept Score,anova,0.32122059691659144,0.8099620471452988,,,False
+Internet as a Source of Recreation – Category,Real Self Concept Total Score,anova,0.4396459966141364,0.7259217814260197,,,False
+Internet as a Source of Recreation – Category,Ideal Self Concept Total Score,anova,0.5555640121011088,0.6475021771665972,,,False
+Internet as a Source of Recreation – Category,Social Self Concept Total Score,anova,0.612046039583554,0.6112647546703722,,,False
+Internet as a Source of Recreation – Category,Ideal Self Concept Total Category,chi2,9.99732421584659,0.12476474779362333,,,False
+Internet as a Source of Recreation – Category,Perceived Social Stress Score,anova,0.8139285885955582,0.493954163400413,,,False
+Internet as a Source of Recreation – Category,Perceived Social Stress Category,chi2,1.2483870967741937,0.7414239895054593,,,False
+Internet Usage Total Categoty,Emotional Support - Raw Score,anova,1.935083251159963,0.15769363799460093,,,False
+Internet Usage Total Categoty,Informational Support - Raw Score,anova,2.615492503932829,0.08560101504719485,,,False
+Internet Usage Total Categoty,Instrumental Support - Raw Score,anova,0.5270762845403245,0.5943715146847555,,,False
+Internet Usage Total Categoty,Emotional Support - T Score,anova,2.2866327684536016,0.11473892427253787,,,False
+Internet Usage Total Categoty,Informational Support - T Score,anova,5.063600110741232,0.010957988943586409,,,False
+Internet Usage Total Categoty,Instrumental Support - T Score,anova,0.4778347951398902,0.6236188199735975,,,False
+Internet Usage Total Categoty,Perceived Social Support Total T Score,anova,5.581144908974485,0.0072811563406789655,,,False
+Internet Usage Total Categoty,Emotional Support - Rank,chi2,11.063541666666666,0.19812477144599444,,,False
+Internet Usage Total Categoty,Informational Support - Rank,chi2,9.46,0.14931255601998514,,,False
+Internet Usage Total Categoty,Instrumental Support - Rank,chi2,6.702941176470588,0.5689956686983678,,,False
+Internet Usage Total Categoty,Perceived Social Support TOTAL - Rank,chi2,10.75,0.21627083917441858,,,False
+Internet Usage Total Categoty,Power Self Concept - Real Self Concept Score,anova,0.09819024469008977,0.9066942395120291,,,False
+Internet Usage Total Categoty,Power Self Concept - Ideal Self Concept score,anova,0.034339750409481756,0.9662716205019083,,,False
+Internet Usage Total Categoty,Power Self Concept – Social Self Concept Score,anova,0.13212291952436095,0.8766140875950245,,,False
+Internet Usage Total Categoty,Social Self Concept - Real Self Concept Score,anova,0.07107815513354514,0.9315064627326561,,,False
+Internet Usage Total Categoty,Social Self Concept – Social Self Concept Score,anova,0.09338194821496451,0.9110435122127671,,,False
+Internet Usage Total Categoty,Ability Self Concept - Real Self Concept Score,anova,0.39531019416911656,0.6760730352371773,,,False
+Internet Usage Total Categoty,Ability Self Concept - Ideal Self Concept Score,anova,0.04556376848949456,0.9555081882346135,,,False
+Internet Usage Total Categoty,Ability Self Concept – Social Self Concept Score,anova,0.1351797178277876,0.8739562803524449,,,False
+Internet Usage Total Categoty,Physical Self Concept - Real Self Concept Score,anova,0.13833030000433022,0.8712257832953082,,,False
+Internet Usage Total Categoty,Physical Self Concept – Ideal Self Concept Score,anova,0.056631141680002724,0.9450181781319819,,,False
+Internet Usage Total Categoty,Physical Self Concept – Social Self Concept Score,anova,0.31107694030360383,0.7344138982922614,,,False
+Internet Usage Total Categoty,Psychological Self Concept - Real Self Concept Score,anova,0.46526465335131145,0.631324449145082,,,False
+Internet Usage Total Categoty,Psychological Self Concept – Ideal Self Concept Score,anova,0.044837766750139514,0.9562005753266881,,,False
+Internet Usage Total Categoty,Psychological Self Concept – Social Self Concept Score,anova,0.051702375902128554,0.949674806002061,,,False
+Internet Usage Total Categoty,Real Self Concept Total Score,anova,0.24240527373720985,0.7858824685838809,,,False
+Internet Usage Total Categoty,Ideal Self Concept Total Score,anova,0.011054835721404954,0.989009064965789,,,False
+Internet Usage Total Categoty,Social Self Concept Total Score,anova,0.08640938866157168,0.917389391983986,,,False
+Internet Usage Total Categoty,Ideal Self Concept Total Category,chi2,1.8162298387096774,0.7695117025145706,,,False
+Internet Usage Total Categoty,Perceived Social Stress Score,anova,0.5503641024309354,0.5810446340805411,,,False
+Internet Usage Total Categoty,Perceived Social Stress Category,chi2,0.241875,0.8860893384459212,,,False
